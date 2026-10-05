@@ -1,0 +1,2677 @@
+/* =====================================================
+   SERVICES PAGE — HERO
+   COMPACT VERSION
+====================================================== */
+
+.services-hero {
+    padding: 3rem 0 2.5rem;
+    background: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.services-hero__container {
+    position: relative;
+
+    width: min(1280px, calc(100% - 80px));
+    min-height: 500px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   CONTENT
+====================================================== */
+
+.services-hero__content {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    z-index: 2;
+
+    width: 52%;
+}
+
+.services-hero__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+}
+
+.services-hero__line {
+    width: 32px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+
+.services-hero__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.88;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.services-hero__title-accent {
+    color: var(--color-primary);
+}
+
+
+.services-hero__description {
+    max-width: 450px;
+
+    margin: 1.5rem 0 1.75rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   VISUAL
+====================================================== */
+
+.services-hero__visual {
+    position: absolute;
+    top: 0;
+    right: 4%;
+
+    width: 40%;
+    height: 450px;
+}
+
+.services-hero__image-wrap {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+.services-hero__image-wrap::before {
+    content: "";
+
+    position: absolute;
+
+    top: 16px;
+    left: -16px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--color-primary);
+
+    opacity: 0.55;
+}
+
+.services-hero__image {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   IMAGE DETAILS
+====================================================== */
+
+.services-hero__image-number {
+    position: absolute;
+    z-index: 3;
+
+    top: -18px;
+    right: -18px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+
+    color: var(--color-primary);
+}
+
+.services-hero__image-label {
+    position: absolute;
+    z-index: 3;
+
+    left: 1rem;
+    bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-white);
+}
+
+.services-hero__image-mark {
+    position: absolute;
+    z-index: 3;
+
+    right: 1rem;
+    bottom: 0.75rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+
+    color: var(--color-white);
+}
+
+
+/* =====================================================
+   BOTTOM LINE
+====================================================== */
+
+.services-hero__bottom {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 0.8rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .services-hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .services-hero__container {
+        width: min(100% - 56px, 900px);
+        min-height: 460px;
+    }
+
+    .services-hero__content {
+        top: 2.75rem;
+        width: 53%;
+    }
+
+    .services-hero__title {
+        font-size: clamp(3.2rem, 6vw, 5rem);
+    }
+
+    .services-hero__description {
+        margin: 1.25rem 0 1.5rem;
+    }
+
+    .services-hero__visual {
+        right: 0;
+        width: 41%;
+        height: 410px;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .services-hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .services-hero__container {
+        width: min(100% - 40px, 620px);
+        min-height: auto;
+    }
+
+    .services-hero__content {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .services-hero__eyebrow {
+        justify-content: center;
+    }
+
+    .services-hero__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .services-hero__description {
+        max-width: 500px;
+
+        margin: 1.25rem auto 1.5rem;
+    }
+
+    .services-hero__action {
+        display: flex;
+        justify-content: center;
+    }
+
+    .services-hero__visual {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        width: 65%;
+        height: 350px;
+
+        margin: 3rem auto 0;
+    }
+
+    .services-hero__image-number {
+        top: -15px;
+        right: -15px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+    .services-hero__bottom {
+        position: relative;
+
+        margin-top: 2.5rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .services-hero {
+        padding: 2.75rem 0 2rem;
+    }
+
+    .services-hero__container {
+        width: calc(100% - 28px);
+    }
+
+    .services-hero__eyebrow {
+        gap: 0.45rem;
+
+        margin-bottom: 1rem;
+
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .services-hero__line {
+        width: 20px;
+    }
+
+    .services-hero__title {
+        font-size: 2.65rem;
+        line-height: 0.9;
+    }
+
+    .services-hero__description {
+        margin: 1rem auto 1.4rem;
+
+        font-size: 16px;
+    }
+
+    .services-hero__visual {
+        width: 78%;
+        height: 285px;
+
+        margin-top: 2.5rem;
+    }
+
+    .services-hero__image-wrap::before {
+        top: 12px;
+        left: -12px;
+    }
+
+    .services-hero__image-number {
+        top: -12px;
+        right: -12px;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 0.9rem;
+    }
+
+    .services-hero__image-label {
+        left: 0.7rem;
+        bottom: 0.7rem;
+
+        font-size: 0.5rem;
+    }
+
+    .services-hero__image-mark {
+        right: 0.7rem;
+        bottom: 0.55rem;
+
+        font-size: 1.35rem;
+    }
+
+    .services-hero__bottom {
+        margin-top: 2rem;
+
+        font-size: 0.5rem;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* =====================================================
+   SERVICES PAGE — SECTION 02
+   PIERCING SERVICES
+====================================================== */
+/* =====================================================
+   PIERCING SERVICES
+   CENTERED EDITORIAL COMPOSITION
+===================================================== */
+
+.piercing-services {
+    padding: 5rem 0 3.5rem;
+
+    background: var(--color-surface);
+    color: var(--color-text);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.piercing-services__container {
+    width: min(1180px, calc(100% - 60px));
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.piercing-services__header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.piercing-services__eyebrow {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+
+    font-size: 0.68rem;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.15em;
+
+    color: var(--color-textt);
+}
+
+.piercing-services__line {
+    width: 30px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.piercing-services__index {
+    font-family: var(--font-body);
+
+    font-size: 0.68rem;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.piercing-services__intro {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 2.5rem;
+
+    padding: 3.5rem 0 3rem;
+}
+
+.piercing-services__intro-number {
+    font-family: var(--font-heading);
+
+    font-size: 6.5rem;
+
+    line-height: 0.65;
+
+    color: var(--color-primary);
+
+    opacity: 0.12;
+}
+
+.piercing-services__intro-content {
+    max-width: 650px;
+}
+
+.piercing-services__title {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(3.2rem, 5.5vw, 5.5rem);
+
+    font-weight: var(--weight-regular);
+
+    line-height: 0.88;
+
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.piercing-services__title-accent {
+    color: var(--color-primary);
+}
+
+.piercing-services__description {
+    max-width: 530px;
+
+    margin: 1.35rem 0 0;
+
+    font-family: var(--font-body);
+
+    font-size: 16px;
+
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   SERVICES LIST
+===================================================== */
+
+.piercing-services__list {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+/* =====================================================
+   SERVICE ITEM
+===================================================== */
+
+.piercing-services__item {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto;
+
+    padding: 3.25rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.piercing-services__item-image {
+    position: relative;
+
+    flex: 0 0 390px;
+
+    width: 390px;
+
+    height: 275px;
+
+    overflow: hidden;
+
+    z-index: 2;
+
+    background: var(--color-surface-secondary);
+}
+
+.piercing-services__item-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease,
+        filter 0.8s ease;
+}
+
+
+/* =====================================================
+   IMAGE HOVER
+===================================================== */
+
+.piercing-services__item:hover
+.piercing-services__item-image img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   IMAGE OVERLAY
+===================================================== */
+
+.piercing-services__item-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(0, 0, 0, 0.16) 100%
+        );
+
+    opacity: 0;
+
+    transition: opacity var(--transition-normal);
+}
+
+.piercing-services__item:hover
+.piercing-services__item-image::after {
+    opacity: 1;
+}
+
+
+/* =====================================================
+   CONTENT PANEL
+===================================================== */
+
+.piercing-services__item-content {
+    position: relative;
+
+    z-index: 3;
+
+    flex: 0 0 430px;
+
+    width: 430px;
+
+    min-height: 230px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 2rem 2.25rem;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+}
+
+
+/* =====================================================
+   ALTERNATING COMPOSITION
+===================================================== */
+
+/* -----------------------------------------
+   01 / 03
+   IMAGE → CONTENT
+----------------------------------------- */
+
+.piercing-services__item:nth-child(odd) {
+    flex-direction: row;
+}
+
+
+/* -----------------------------------------
+   02
+   CONTENT → IMAGE
+----------------------------------------- */
+
+.piercing-services__item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+/* =====================================================
+   SLIGHT EDITORIAL OVERLAP
+===================================================== */
+
+.piercing-services__item:nth-child(odd)
+.piercing-services__item-content {
+    margin-left: -18px;
+}
+
+.piercing-services__item:nth-child(even)
+.piercing-services__item-content {
+    margin-right: -18px;
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.piercing-services__item-number {
+    position: absolute;
+
+    top: 1.35rem;
+
+    font-family: var(--font-body);
+
+    font-size: 0.65rem;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+
+    z-index: 5;
+}
+
+.piercing-services__item:nth-child(odd)
+.piercing-services__item-number {
+    left: 0;
+}
+
+.piercing-services__item:nth-child(even)
+.piercing-services__item-number {
+    right: 0;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.piercing-services__item-label {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    font-family: var(--font-body);
+
+    font-size: 0.6rem;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.15em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.piercing-services__item-content h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.6rem, 4vw, 3.8rem);
+
+    font-weight: var(--weight-regular);
+
+    line-height: 0.94;
+
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.piercing-services__item-content p {
+    max-width: 390px;
+
+    margin: 1rem 0 1.15rem;
+
+    font-family: var(--font-body);
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+.piercing-services__item-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    align-self: flex-start;
+
+    gap: 0.45rem;
+
+    font-family: var(--font-body);
+
+    font-size: 0.7rem;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.04em;
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    transition:
+        color var(--transition-normal),
+        gap var(--transition-normal);
+}
+
+.piercing-services__item-link svg {
+    width: 14px;
+    height: 14px;
+
+    transition: transform var(--transition-normal);
+}
+
+.piercing-services__item-link:hover {
+    color: var(--color-primary);
+
+    gap: 0.7rem;
+}
+
+.piercing-services__item-link:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.piercing-services__footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+
+    font-size: 0.58rem;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .piercing-services {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .piercing-services__container {
+        width: min(920px, calc(100% - 50px));
+    }
+
+    .piercing-services__intro {
+        padding: 3rem 0 2.75rem;
+    }
+
+    .piercing-services__item {
+        max-width: 800px;
+
+        padding: 3rem 0;
+    }
+
+    .piercing-services__item-image {
+        flex-basis: 350px;
+
+        width: 350px;
+
+        height: 250px;
+    }
+
+    .piercing-services__item-content {
+        flex-basis: 390px;
+
+        width: 390px;
+
+        min-height: 215px;
+
+        padding: 1.75rem 2rem;
+    }
+
+    .piercing-services__item-content h3 {
+        font-size: 3rem;
+    }
+
+    .piercing-services__item-content p {
+        max-width: 350px;
+    }
+}
+
+
+/* =====================================================
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .piercing-services {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .piercing-services__container {
+        width: calc(100% - 40px);
+    }
+
+
+    /* INTRO */
+
+    .piercing-services__intro {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 0.8rem;
+
+        padding: 2.75rem 0 2.5rem;
+    }
+
+    .piercing-services__intro-number {
+        font-size: 4.5rem;
+    }
+
+    .piercing-services__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+
+    /* SERVICE */
+
+    .piercing-services__item,
+    .piercing-services__item:nth-child(odd),
+    .piercing-services__item:nth-child(even) {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 520px;
+
+        padding: 2.75rem 0;
+    }
+
+
+    /* IMAGE */
+
+    .piercing-services__item-image {
+        flex: none;
+
+        width: 100%;
+
+        height: 300px;
+    }
+
+
+    /* CONTENT */
+
+    .piercing-services__item-content {
+        flex: none;
+
+        width: calc(100% - 30px);
+
+        min-height: auto;
+
+        margin-top: -25px;
+
+        padding: 1.75rem 1.75rem;
+
+        align-self: center;
+    }
+
+
+    /* Remove desktop overlap */
+
+    .piercing-services__item:nth-child(odd)
+    .piercing-services__item-content,
+
+    .piercing-services__item:nth-child(even)
+    .piercing-services__item-content {
+        margin-left: 0;
+
+        margin-right: 0;
+    }
+
+
+    /* Number */
+
+    .piercing-services__item-number {
+        position: static;
+
+        align-self: flex-start;
+
+        margin-bottom: -0.5rem;
+    }
+
+
+    .piercing-services__item-content h3 {
+        font-size: 3rem;
+    }
+
+    .piercing-services__item-content p {
+        max-width: 100%;
+
+        margin-top: 0.9rem;
+    }
+}
+
+
+/* =====================================================
+   480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .piercing-services {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .piercing-services__container {
+        width: calc(100% - 28px);
+    }
+
+
+    /* HEADER */
+
+    .piercing-services__eyebrow {
+        gap: 0.45rem;
+
+        font-size: 0.57rem;
+    }
+
+    .piercing-services__line {
+        width: 20px;
+    }
+
+
+    /* INTRO */
+
+    .piercing-services__intro {
+        padding: 2.5rem 0 2.25rem;
+    }
+
+    .piercing-services__intro-number {
+        font-size: 4rem;
+    }
+
+    .piercing-services__title {
+        font-size: 2.9rem;
+    }
+
+    .piercing-services__description {
+        font-size: 16px;
+    }
+
+
+    /* SERVICE */
+
+    .piercing-services__item {
+        padding: 2.5rem 0;
+    }
+
+    .piercing-services__item-image {
+        height: 260px;
+    }
+
+    .piercing-services__item-content {
+        width: calc(100% - 20px);
+
+        margin-top: -20px;
+
+        padding: 1.5rem;
+    }
+
+    .piercing-services__item-label {
+        font-size: 0.55rem;
+    }
+
+    .piercing-services__item-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .piercing-services__item-content p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    /* FOOTER */
+
+    .piercing-services__footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.5rem;
+
+        font-size: 0.5rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .piercing-services {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .piercing-services__container {
+        width: calc(100% - 22px);
+    }
+
+
+    /* HEADER */
+
+    .piercing-services__eyebrow {
+        font-size: 0.53rem;
+
+        letter-spacing: 0.08em;
+    }
+
+    .piercing-services__line {
+        width: 17px;
+    }
+
+
+    /* INTRO */
+
+    .piercing-services__intro {
+        padding: 2.3rem 0 2rem;
+    }
+
+    .piercing-services__intro-number {
+        font-size: 3.6rem;
+    }
+
+    .piercing-services__title {
+        font-size: 2.55rem;
+    }
+
+
+    /* SERVICE */
+
+    .piercing-services__item {
+        padding: 2.25rem 0;
+    }
+
+    .piercing-services__item-image {
+        height: 225px;
+    }
+
+    .piercing-services__item-content {
+        width: calc(100% - 14px);
+
+        margin-top: -16px;
+
+        padding: 1.35rem;
+    }
+
+    .piercing-services__item-label {
+        font-size: 0.52rem;
+
+        letter-spacing: 0.1em;
+    }
+
+    .piercing-services__item-content h3 {
+        font-size: 2.25rem;
+    }
+
+    .piercing-services__item-content p {
+        margin: 0.75rem 0 1rem;
+
+        font-size: 16px;
+
+        line-height: 1.58;
+    }
+
+    .piercing-services__item-link {
+        font-size: 0.64rem;
+    }
+}
+
+
+/* =====================================================
+   RTL
+===================================================== */
+
+html[dir="rtl"] .piercing-services__item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .piercing-services__item:nth-child(even) {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .piercing-services__item:nth-child(odd)
+.piercing-services__item-content {
+    margin-left: 0;
+
+    margin-right: -18px;
+}
+
+html[dir="rtl"] .piercing-services__item:nth-child(even)
+.piercing-services__item-content {
+    margin-right: 0;
+
+    margin-left: -18px;
+}
+
+
+/* =====================================================
+   RTL MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .piercing-services__item:nth-child(odd),
+    html[dir="rtl"] .piercing-services__item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .piercing-services__item:nth-child(odd)
+    .piercing-services__item-content,
+
+    html[dir="rtl"] .piercing-services__item:nth-child(even)
+    .piercing-services__item-content {
+        margin-left: 0;
+
+        margin-right: 0;
+    }
+
+    html[dir="rtl"] .piercing-services__item-number {
+        align-self: flex-end;
+    }
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+html[data-theme="dark"] .piercing-services {
+    background: var(--color-surface);
+
+    color: var(--color-text);
+}
+
+html[data-theme="dark"]
+.piercing-services__item-content {
+    background: var(--color-surface);
+
+    border-color: var(--color-border);
+}
+
+html[data-theme="dark"]
+.piercing-services__item-image {
+    background: var(--color-surface-secondary);
+}
+
+html[data-theme="dark"]
+.piercing-services__item-image::after {
+    background:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(0, 0, 0, 0.3) 100%
+        );
+}
+
+html[data-theme="dark"]
+.piercing-services__item-content h3 {
+    color: var(--color-heading);
+}
+
+html[data-theme="dark"]
+.piercing-services__item-content p,
+html[data-theme="dark"]
+.piercing-services__item-label,
+html[data-theme="dark"]
+.piercing-services__eyebrow,
+html[data-theme="dark"]
+.piercing-services__index,
+html[data-theme="dark"]
+.piercing-services__footer {
+    color: var(--color-textt);
+}
+
+html[data-theme="dark"]
+.piercing-services__item-link {
+    color: var(--color-text);
+}
+/* =====================================================
+   SERVICES PAGE — SECTION 03
+   JEWELRY & STYLING
+====================================================== */
+
+.jewelry-styling {
+    padding: 5rem 0 3.5rem;
+    background: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.jewelry-styling__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.jewelry-styling__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.jewelry-styling__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+}
+
+.jewelry-styling__line {
+    width: 32px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.jewelry-styling__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   MAIN
+====================================================== */
+
+.jewelry-styling__main {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 7rem;
+
+    padding: 4.5rem 0 3.5rem;
+}
+
+
+/* =====================================================
+   CONTENT
+====================================================== */
+
+.jewelry-styling__content {
+    max-width: 560px;
+}
+
+.jewelry-styling__label {
+    display: block;
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-styling__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 6vw, 6rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.86;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.jewelry-styling__title-accent {
+    color: var(--color-primary);
+}
+
+.jewelry-styling__description {
+    max-width: 470px;
+
+    margin: 1.75rem 0 2rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   LIST
+====================================================== */
+
+.jewelry-styling__list {
+    border-top: 1px solid var(--color-border);
+}
+
+.jewelry-styling__item {
+    display: grid;
+    grid-template-columns: 45px 1fr 20px;
+    align-items: center;
+    gap: 1.25rem;
+
+    padding: 1.25rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-styling__item:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.jewelry-styling__item-number {
+    align-self: start;
+    padding-top: 0.2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.1em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-styling__item-content h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: var(--weight-regular);
+    line-height: 1;
+
+    color: var(--color-heading);
+}
+
+.jewelry-styling__item-content p {
+    max-width: 430px;
+
+    margin: 0.55rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.55;
+
+    color: var(--color-textt);
+}
+
+.jewelry-styling__item > svg {
+    width: 17px;
+    height: 17px;
+
+    color: var(--color-textt);
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-styling__item:hover > svg {
+    color: var(--color-primary);
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+.jewelry-styling__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+.jewelry-styling__footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    color: var(--color-text);
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-styling__footer a:hover {
+    color: var(--color-primary);
+}
+
+.jewelry-styling__footer svg {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .jewelry-styling {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .jewelry-styling__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .jewelry-styling__main {
+        gap: 4rem;
+        padding: 3.75rem 0 3rem;
+    }
+
+    .jewelry-styling__title {
+        font-size: clamp(3.4rem, 6vw, 5rem);
+    }
+
+    .jewelry-styling__item {
+        grid-template-columns: 38px 1fr 18px;
+        gap: 1rem;
+    }
+
+    .jewelry-styling__item-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .jewelry-styling {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .jewelry-styling__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .jewelry-styling__main {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        padding: 3rem 0 2.75rem;
+    }
+
+    .jewelry-styling__content {
+        max-width: 100%;
+    }
+
+    .jewelry-styling__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .jewelry-styling__description {
+        margin: 1.25rem 0 1.75rem;
+    }
+
+    .jewelry-styling__item {
+        padding: 1.1rem 0;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .jewelry-styling {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .jewelry-styling__container {
+        width: calc(100% - 28px);
+    }
+
+    .jewelry-styling__eyebrow {
+        gap: 0.45rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .jewelry-styling__line {
+        width: 20px;
+    }
+
+    .jewelry-styling__index {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-styling__main {
+        gap: 2.25rem;
+        padding: 2.5rem 0 2.25rem;
+    }
+
+    .jewelry-styling__label {
+        font-size: 0.58rem;
+        margin-bottom: 1rem;
+    }
+
+    .jewelry-styling__title {
+        font-size: 2.7rem;
+    }
+
+    .jewelry-styling__description {
+        margin: 1rem 0 1.5rem;
+        font-size: 16px;
+    }
+
+    .jewelry-styling__item {
+        grid-template-columns: 28px 1fr 15px;
+        gap: 0.7rem;
+        padding: 1rem 0;
+    }
+
+    .jewelry-styling__item-number {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-styling__item-content h3 {
+        font-size: 1.45rem;
+    }
+
+    .jewelry-styling__item-content p {
+        margin-top: 0.45rem;
+        font-size: 16px;
+    }
+
+    .jewelry-styling__item > svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .jewelry-styling__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.65rem;
+
+        font-size: 0.52rem;
+    }
+}
+
+/* =====================================================
+   SERVICES PAGE — SECTION 04
+   AURIA EXPERIENCE
+====================================================== */
+
+.services-experience {
+    padding: 5rem 0 3.5rem;
+    background: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.services-experience__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.services-experience__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-experience__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+}
+
+.services-experience__line {
+    width: 32px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.services-experience__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   INTRO
+====================================================== */
+
+.services-experience__intro {
+    display: grid;
+    grid-template-columns: 120px 1fr 330px;
+    align-items: end;
+    gap: 3rem;
+
+    padding: 4rem 0 3.5rem;
+}
+
+.services-experience__number {
+    font-family: var(--font-heading);
+    font-size: 7rem;
+    line-height: 0.7;
+
+    color: var(--color-primary);
+    opacity: 0.13;
+}
+
+.services-experience__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.87;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.services-experience__title-accent {
+    color: var(--color-primary);
+}
+
+.services-experience__description {
+    margin: 0 0 0.25rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   STEPS
+====================================================== */
+
+.services-experience__steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-experience__step {
+    min-height: 235px;
+
+    padding: 1.5rem 1.5rem 1.5rem;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.services-experience__step:first-child {
+    padding-left: 0;
+}
+
+.services-experience__step:last-child {
+    border-right: 0;
+}
+
+.services-experience__step-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2.5rem;
+}
+
+.services-experience__step-top span {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.12em;
+
+    color: var(--color-primary);
+}
+
+.services-experience__step-top svg {
+    width: 18px;
+    height: 18px;
+
+    color: var(--color-textt);
+}
+
+.services-experience__step h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: var(--weight-regular);
+    line-height: 1;
+
+    color: var(--color-heading);
+}
+
+.services-experience__step p {
+    max-width: 220px;
+
+    margin: 0.75rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.55;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   CTA
+====================================================== */
+
+.services-experience__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-experience__cta-text span {
+    display: block;
+
+    margin-bottom: 0.35rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.services-experience__cta-text p {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+
+    color: var(--color-heading);
+}
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+.services-experience__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .services-experience {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .services-experience__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .services-experience__intro {
+        grid-template-columns: 90px 1fr 250px;
+        gap: 2rem;
+
+        padding: 3.5rem 0 3rem;
+    }
+
+    .services-experience__number {
+        font-size: 5.5rem;
+    }
+
+    .services-experience__title {
+        font-size: clamp(3.2rem, 6vw, 5rem);
+    }
+
+    .services-experience__step {
+        padding: 1.25rem;
+        min-height: 220px;
+    }
+
+    .services-experience__step:first-child {
+        padding-left: 0;
+    }
+
+    .services-experience__step h3 {
+        font-size: 1.55rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .services-experience {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .services-experience__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .services-experience__intro {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+
+        padding: 3rem 0 2.5rem;
+    }
+
+    .services-experience__number {
+        font-size: 4.5rem;
+    }
+
+    .services-experience__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .services-experience__description {
+        max-width: 520px;
+        margin-top: 1rem;
+    }
+
+    .services-experience__steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-experience__step {
+        min-height: 200px;
+        padding: 1.25rem;
+    }
+
+    .services-experience__step:nth-child(2) {
+        border-right: 0;
+    }
+
+    .services-experience__step:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .services-experience__step:first-child {
+        padding-left: 1.25rem;
+    }
+
+    .services-experience__step-top {
+        margin-bottom: 2rem;
+    }
+
+    .services-experience__cta {
+        gap: 1.5rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .services-experience {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .services-experience__container {
+        width: calc(100% - 28px);
+    }
+
+    .services-experience__eyebrow {
+        gap: 0.45rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .services-experience__line {
+        width: 20px;
+    }
+
+    .services-experience__index {
+        font-size: 0.58rem;
+    }
+
+    .services-experience__intro {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .services-experience__number {
+        font-size: 3.8rem;
+    }
+
+    .services-experience__title {
+        font-size: 2.7rem;
+    }
+
+    .services-experience__description {
+        margin-top: 0.9rem;
+        font-size: 16px;
+    }
+
+    .services-experience__steps {
+        grid-template-columns: 1fr;
+    }
+
+    .services-experience__step,
+    .services-experience__step:first-child {
+        min-height: auto;
+        padding: 1.2rem 0;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .services-experience__step:last-child {
+        border-bottom: 0;
+    }
+
+    .services-experience__step-top {
+        margin-bottom: 1.5rem;
+    }
+
+    .services-experience__step h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-experience__step p {
+        margin-top: 0.6rem;
+        font-size: 16px;
+    }
+
+    .services-experience__cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        padding: 1.5rem 0;
+    }
+
+    .services-experience__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+
+        font-size: 0.52rem;
+    }
+}
+
+/* =====================================================
+   SERVICES PAGE — SECTION 05
+   AFTERCARE & SUPPORT
+====================================================== */
+
+.services-aftercare {
+    padding: 5rem 0 3.5rem;
+
+    background: var(--color-surface);
+    color: var(--color-text);
+
+    overflow: hidden;
+}
+
+.services-aftercare__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.services-aftercare__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-aftercare__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+}
+
+.services-aftercare__line {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.services-aftercare__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   MAIN
+====================================================== */
+
+.services-aftercare__main {
+    display: grid;
+    grid-template-columns: 110px 1.25fr 0.8fr;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 4rem 0 3.5rem;
+}
+
+
+/* =====================================================
+   NUMBER
+====================================================== */
+
+.services-aftercare__number {
+    font-family: var(--font-heading);
+    font-size: 7rem;
+    line-height: 0.7;
+
+    color: var(--color-primary);
+    opacity: 0.13;
+}
+
+
+/* =====================================================
+   CONTENT
+====================================================== */
+
+.services-aftercare__content {
+    max-width: 620px;
+}
+
+.services-aftercare__label {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.15em;
+
+    color: var(--color-primary);
+}
+
+.services-aftercare__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 5.8vw, 5.8rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.87;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.services-aftercare__title-accent {
+    color: var(--color-primary);
+}
+
+.services-aftercare__description {
+    max-width: 500px;
+
+    margin: 1.5rem 0 2rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   ACTIONS
+====================================================== */
+
+.services-aftercare__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.services-aftercare__contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.05em;
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.services-aftercare__contact svg {
+    width: 15px;
+    height: 15px;
+
+    transition: var(--transition-normal);
+}
+
+.services-aftercare__contact:hover {
+    color: var(--color-primary);
+}
+
+.services-aftercare__contact:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   CARE POINTS
+====================================================== */
+
+.services-aftercare__points {
+    border-top: 1px solid var(--color-border);
+}
+
+.services-aftercare__point {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 1rem;
+
+    padding: 1.1rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-aftercare__point > span {
+    padding-top: 0.15rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.1em;
+
+    color: var(--color-primary);
+}
+
+.services-aftercare__point h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: var(--weight-regular);
+    line-height: 1;
+
+    color: var(--color-heading);
+}
+
+.services-aftercare__point p {
+    margin: 0.5rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   CTA
+====================================================== */
+
+.services-aftercare__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.75rem 0;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.services-aftercare__cta-content span {
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.services-aftercare__cta-content p {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+
+    color: var(--color-heading);
+}
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+.services-aftercare__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .services-aftercare {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .services-aftercare__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .services-aftercare__main {
+        grid-template-columns: 80px 1.3fr 0.8fr;
+        gap: 2.5rem;
+
+        padding: 3.5rem 0 3rem;
+    }
+
+    .services-aftercare__number {
+        font-size: 5.5rem;
+    }
+
+    .services-aftercare__title {
+        font-size: clamp(3.2rem, 6vw, 5rem);
+    }
+
+    .services-aftercare__point h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .services-aftercare {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .services-aftercare__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .services-aftercare__main {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+
+        padding: 3rem 0 2.75rem;
+    }
+
+    .services-aftercare__number {
+        font-size: 4.5rem;
+    }
+
+    .services-aftercare__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .services-aftercare__description {
+        margin: 1.25rem 0 1.75rem;
+    }
+
+    .services-aftercare__points {
+        margin-top: 0.5rem;
+    }
+
+    .services-aftercare__cta {
+        gap: 1.5rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .services-aftercare {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .services-aftercare__container {
+        width: calc(100% - 28px);
+    }
+
+    .services-aftercare__eyebrow {
+        gap: 0.45rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .services-aftercare__line {
+        width: 20px;
+    }
+
+    .services-aftercare__index {
+        font-size: 0.58rem;
+    }
+
+    .services-aftercare__main {
+        gap: 2rem;
+        padding: 2.5rem 0 2.25rem;
+    }
+
+    .services-aftercare__number {
+        font-size: 3.8rem;
+    }
+
+    .services-aftercare__label {
+        font-size: 0.58rem;
+        margin-bottom: 1rem;
+    }
+
+    .services-aftercare__title {
+        font-size: 2.7rem;
+    }
+
+    .services-aftercare__description {
+        margin: 1rem 0 1.5rem;
+        font-size: 16px;
+    }
+
+    .services-aftercare__actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .services-aftercare__point {
+        grid-template-columns: 28px 1fr;
+        gap: 0.7rem;
+        padding: 1rem 0;
+    }
+
+    .services-aftercare__point h3 {
+        font-size: 1.4rem;
+    }
+
+    .services-aftercare__point p {
+        font-size: 16px;
+    }
+
+    .services-aftercare__cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        padding: 1.5rem 0;
+    }
+
+    .services-aftercare__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+
+        font-size: 0.52rem;
+    }
+}

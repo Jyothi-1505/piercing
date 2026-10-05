@@ -1,0 +1,3808 @@
+
+/* =====================================================
+   JEWELRY PAGE — SECTION 01
+   HERO
+====================================================== */
+
+.jewelry-hero {
+    /* padding: 4.5rem 0 3rem; */
+    /* padding: 60px 0; */
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    overflow: hidden;
+}
+
+.jewelry-hero__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.jewelry-hero__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.jewelry-hero__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+}
+
+.jewelry-hero__line {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.jewelry-hero__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   MAIN
+====================================================== */
+
+.jewelry-hero__main {
+    display: grid;
+    grid-template-columns: 0.75fr 1.5fr 0.75fr;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 2.5rem 0 3rem;
+}
+
+
+/* =====================================================
+   IMAGES
+====================================================== */
+
+.jewelry-hero__image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.jewelry-hero__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.jewelry-hero__image:hover img {
+    transform: scale(1.04);
+}
+
+.jewelry-hero__image--left {
+    width: 100%;
+    height: 360px;
+}
+
+.jewelry-hero__image--right {
+    width: 100%;
+    height: 420px;
+}
+
+.jewelry-hero__image--left::after,
+.jewelry-hero__image--right::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.45),
+        transparent 45%
+    );
+
+    pointer-events: none;
+}
+
+.jewelry-hero__image-label {
+    position: absolute;
+    z-index: 2;
+
+    left: 1rem;
+    bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-white);
+}
+
+
+/* =====================================================
+   CONTENT
+====================================================== */
+
+.jewelry-hero__content {
+    text-align: center;
+}
+
+.jewelry-hero__small-label {
+    display: block;
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.15em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-hero__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.8rem, 6vw, 6.2rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.88;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.jewelry-hero__title-accent {
+    color: var(--color-primary);
+}
+
+.jewelry-hero__description {
+    max-width: 500px;
+
+    margin: 1.5rem auto 2rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   BOTTOM
+====================================================== */
+
+.jewelry-hero__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .jewelry-hero {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .jewelry-hero__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .jewelry-hero__main {
+        gap: 2rem;
+        padding: 3.5rem 0 2.75rem;
+    }
+
+    .jewelry-hero__image--left {
+        height: 300px;
+    }
+
+    .jewelry-hero__image--right {
+        height: 350px;
+    }
+
+    .jewelry-hero__title {
+        font-size: clamp(3.2rem, 6vw, 5rem);
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .jewelry-hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .jewelry-hero__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .jewelry-hero__main {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+
+        padding: 3rem 0 2.5rem;
+    }
+
+    .jewelry-hero__content {
+        order: 1;
+    }
+
+    .jewelry-hero__image--left {
+        order: 2;
+
+        width: 70%;
+        height: 260px;
+
+        margin: 0 auto;
+    }
+
+    .jewelry-hero__image--right {
+        order: 3;
+
+        width: 70%;
+        height: 300px;
+
+        margin: 0 auto;
+    }
+
+    .jewelry-hero__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .jewelry-hero__description {
+        margin: 1.25rem auto 1.75rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .jewelry-hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .jewelry-hero__container {
+        width: calc(100% - 28px);
+    }
+
+    .jewelry-hero__eyebrow {
+        gap: 0.45rem;
+
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .jewelry-hero__line {
+        width: 20px;
+    }
+
+    .jewelry-hero__index {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-hero__main {
+        gap: 1.5rem;
+        padding: 2.5rem 0 2rem;
+    }
+
+    .jewelry-hero__small-label {
+        margin-bottom: 1rem;
+        font-size: 0.58rem;
+    }
+
+    .jewelry-hero__title {
+        font-size: 2.65rem;
+    }
+
+    .jewelry-hero__description {
+        margin: 1rem auto 1.5rem;
+        font-size: 16px;
+    }
+
+    .jewelry-hero__image--left {
+        width: 78%;
+        height: 210px;
+    }
+
+    .jewelry-hero__image--right {
+        width: 78%;
+        height: 240px;
+    }
+
+    .jewelry-hero__image-label {
+        left: 0.7rem;
+        bottom: 0.7rem;
+
+        font-size: 0.5rem;
+    }
+
+    .jewelry-hero__bottom {
+        font-size: 0.5rem;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* =====================================================
+   JEWELRY PAGE — SECTION 02
+   JEWELRY COLLECTION
+====================================================== */
+/* =========================================================
+   SHOP PRODUCTS — COMPACT PRODUCT GRID
+========================================================= */
+
+.shop-products {
+    background: var(--color-surface);
+    padding: 4rem 0 2.5rem;
+    overflow: hidden;
+}
+
+.shop-products__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.shop-products__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.shop-products__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    font-family: var(--font-body);
+    font-size: .7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .16em;
+    color: var(--color-primary);
+}
+
+.shop-products__line {
+    width: 32px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.shop-products__index {
+    font-family: var(--font-body);
+    font-size: .7rem;
+    letter-spacing: .12em;
+    color: var(--color-text);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.shop-products__intro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 2.25rem;
+}
+
+.shop-products__label {
+    display: block;
+    margin-bottom: .5rem;
+    font-family: var(--font-body);
+    font-size: .68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .14em;
+    color: var(--color-text);
+}
+
+.shop-products__title {
+    /* margin: 0;
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3.1rem);
+    line-height: 1;
+    font-weight: var(--weight-regular);
+    color: var(--color-heading); */
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.8rem, 6vw, 6.2rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.88;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.shop-products__title span {
+    display: block;
+    color: var(--color-primary);
+}
+
+.shop-products__intro > p {
+    max-width: 360px;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: .9rem;
+    line-height: 1.65;
+    color: var(--color-text);
+}
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.shop-products__filters {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    margin-bottom: 2rem;
+    padding-bottom: .75rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.shop-products__filters::-webkit-scrollbar {
+    display: none;
+}
+
+.shop-products__filter {
+    flex: 0 0 auto;
+    padding: .5rem .9rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: .7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: .04em;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.shop-products__filter:hover,
+.shop-products__filter.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.shop-products__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.shop-product {
+    min-width: 0;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+
+.shop-product:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.shop-product__image {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: var(--color-surface-secondary);
+}
+
+.shop-product__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.shop-product:hover .shop-product__image img {
+    transform: scale(1.045);
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.shop-product__badge {
+    position: absolute;
+    top: .65rem;
+    left: .65rem;
+    z-index: 2;
+    padding: .28rem .5rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: .58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   WISHLIST
+========================================================= */
+
+.shop-product__wishlist {
+    position: absolute;
+    top: .55rem;
+    right: .55rem;
+    z-index: 3;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.88);
+    color: var(--color-heading);
+
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.shop-product__wishlist:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.shop-product__wishlist svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* =========================================================
+   VIEW PRODUCT
+========================================================= */
+
+.shop-product__view {
+    position: absolute;
+    left: .65rem;
+    right: .65rem;
+    bottom: .65rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+
+    padding: .55rem .7rem;
+
+    background: var(--color-white);
+    color: var(--color-heading);
+
+    font-family: var(--font-body);
+    font-size: .65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(8px);
+
+    transition: var(--transition-fast);
+}
+
+.shop-product:hover .shop-product__view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.shop-product__view svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
+
+.shop-product__content {
+    padding: .9rem .9rem 1rem;
+}
+
+.shop-product__category {
+    margin-bottom: .3rem;
+
+    font-family: var(--font-body);
+    font-size: .58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    color: var(--color-primary);
+}
+
+.shop-product__content h3 {
+    margin: 0 0 .55rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    line-height: 1.2;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.shop-product__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.shop-product__price {
+    font-family: var(--font-body);
+    font-size: .78rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-text);
+}
+
+.shop-product__material {
+    font-family: var(--font-body);
+    font-size: .62rem;
+    color: var(--color-text);
+    text-align: right;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.shop-products__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: .62rem;
+    letter-spacing: .1em;
+    color: var(--color-text);
+}
+
+.shop-products__footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+
+    color: var(--color-primary);
+    text-decoration: none;
+
+    font-weight: var(--weight-semibold);
+}
+
+.shop-products__footer svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .shop-products {
+        padding: 3.5rem 0 2.25rem;
+    }
+
+    .shop-products__container {
+        width: min(100% - 40px, 900px);
+    }
+
+    .shop-products__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .shop-product__image {
+        height: 205px;
+    }
+
+    .shop-product__content {
+        padding: .8rem;
+    }
+}
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .shop-products {
+        padding: 3rem 0 2rem;
+    }
+
+    .shop-products__container {
+        width: calc(100% - 32px);
+    }
+
+    .shop-products__intro {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .shop-products__intro > p {
+        max-width: 500px;
+    }
+
+    .shop-products__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .9rem;
+    }
+
+    .shop-product__image {
+        height: 190px;
+    }
+
+    .shop-product__view {
+        display: none;
+    }
+
+    .shop-product__content h3 {
+        font-size: .98rem;
+    }
+
+    .shop-products__footer {
+        margin-top: 1.5rem;
+    }
+}
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .shop-products {
+        padding: 2.5rem 0 1.75rem;
+    }
+
+    .shop-products__container {
+        width: calc(100% - 24px);
+    }
+
+    .shop-products__header {
+        margin-bottom: 1.5rem;
+    }
+
+    .shop-products__eyebrow {
+        font-size: .6rem;
+    }
+
+    .shop-products__line {
+        width: 24px;
+    }
+
+    .shop-products__index {
+        font-size: .58rem;
+    }
+
+    .shop-products__title {
+        font-size: 1.8rem;
+    }
+
+    .shop-products__intro > p {
+        font-size: .78rem;
+        line-height: 1.55;
+    }
+
+    .shop-products__filters {
+        margin-bottom: 1.5rem;
+        gap: .35rem;
+    }
+
+    .shop-products__filter {
+        padding: .42rem .7rem;
+        font-size: .6rem;
+    }
+
+    .shop-products__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .65rem;
+    }
+
+    .shop-product__image {
+        height: 145px;
+    }
+
+    .shop-product__badge {
+        top: .45rem;
+        left: .45rem;
+        padding: .22rem .35rem;
+        font-size: .48rem;
+    }
+
+    .shop-product__wishlist {
+        top: .4rem;
+        right: .4rem;
+        width: 26px;
+        height: 26px;
+    }
+
+    .shop-product__wishlist svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .shop-product__content {
+        padding: .65rem .6rem .7rem;
+    }
+
+    .shop-product__category {
+        margin-bottom: .2rem;
+        font-size: .5rem;
+    }
+
+    .shop-product__content h3 {
+        margin-bottom: .4rem;
+        font-size: .82rem;
+        line-height: 1.2;
+    }
+
+    .shop-product__price {
+        font-size: .65rem;
+    }
+
+    .shop-product__material {
+        font-size: .52rem;
+    }
+
+    .shop-products__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .6rem;
+        margin-top: 1.25rem;
+    }
+
+    .shop-products__footer {
+        font-size: .55rem;
+    }
+}
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .shop-products {
+    direction: rtl;
+}
+
+[dir="rtl"] .shop-products__intro {
+    direction: rtl;
+}
+
+[dir="rtl"] .shop-products__intro > div,
+[dir="rtl"] .shop-products__intro > p {
+    text-align: right;
+}
+
+[dir="rtl"] .shop-products__filters {
+    direction: rtl;
+}
+
+[dir="rtl"] .shop-product {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .shop-product__badge {
+    left: auto;
+    right: .65rem;
+}
+
+[dir="rtl"] .shop-product__wishlist {
+    right: auto;
+    left: .55rem;
+}
+
+[dir="rtl"] .shop-product__category,
+[dir="rtl"] .shop-product__content h3 {
+    text-align: right;
+}
+
+[dir="rtl"] .shop-product__bottom {
+    direction: rtl;
+}
+
+[dir="rtl"] .shop-product__material {
+    text-align: left;
+}
+
+[dir="rtl"] .shop-products__footer {
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+
+    [dir="rtl"] .shop-product__badge {
+        right: .45rem;
+    }
+
+    [dir="rtl"] .shop-product__wishlist {
+        left: .4rem;
+    }
+}
+/* =========================================================
+   PRODUCT QUICK VIEW MODAL
+========================================================= */
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+}
+
+.product-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   MODAL BACKDROP
+========================================================= */
+
+.product-modal__backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(20, 16, 14, .72);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   MODAL DIALOG
+========================================================= */
+
+.product-modal__dialog {
+    position: relative;
+    z-index: 2;
+
+    width: min(920px, 100%);
+    max-height: min(680px, calc(100vh - 4rem));
+
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+
+    overflow: hidden;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .28);
+
+    transform: translateY(20px) scale(.98);
+
+    transition: transform .35s ease;
+}
+
+.product-modal.is-open .product-modal__dialog {
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.product-modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .9);
+    color: var(--color-heading);
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+.product-modal__close:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: rotate(90deg);
+}
+
+.product-modal__close svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================================================
+   MODAL VISUAL
+========================================================= */
+
+.product-modal__visual {
+    position: relative;
+
+    min-height: 520px;
+
+    overflow: hidden;
+
+    background: var(--color-surface-secondary);
+}
+
+.product-modal__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.product-modal__visual::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(20, 16, 14, .4),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   VISUAL LABEL
+========================================================= */
+
+.product-modal__visual-label {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.15rem;
+    z-index: 2;
+
+    font-family: var(--font-body);
+    font-size: .58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .14em;
+
+    color: var(--color-white);
+}
+
+.product-modal__visual-number {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1rem;
+    z-index: 2;
+
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, .72);
+}
+
+
+/* =========================================================
+   MODAL CONTENT
+========================================================= */
+
+.product-modal__content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 3.5rem 2.5rem 1.5rem;
+
+    overflow-y: auto;
+}
+
+.product-modal__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: .62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .14em;
+
+    color: var(--color-primary);
+}
+
+.product-modal__line {
+    width: 28px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.product-modal__title {
+    margin: 0 0 .55rem;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.product-modal__price {
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: .95rem;
+    font-weight: var(--weight-semibold);
+
+    color: var(--color-primary);
+}
+
+.product-modal__description {
+    max-width: 420px;
+
+    margin: 0 0 1.75rem;
+
+    font-family: var(--font-body);
+    font-size: .9rem;
+    line-height: 1.7;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   PRODUCT SPECS
+========================================================= */
+
+.product-modal__specs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    margin-bottom: 1.75rem;
+}
+
+.product-modal__spec {
+    min-width: 0;
+
+    padding: .9rem .75rem;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.product-modal__spec:last-child {
+    border-right: 0;
+}
+
+.product-modal__spec span {
+    display: block;
+
+    margin-bottom: .3rem;
+
+    font-family: var(--font-body);
+    font-size: .52rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .1em;
+
+    color: var(--color-text);
+}
+
+.product-modal__spec strong {
+    display: block;
+
+    font-family: var(--font-body);
+    font-size: .7rem;
+    font-weight: var(--weight-semibold);
+
+    color: var(--color-heading);
+}
+
+
+/* =========================================================
+   MODAL ACTION
+========================================================= */
+
+.product-modal__actions {
+    margin-top: auto;
+}
+
+.product-modal__actions .btn {
+    width: 100%;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.product-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: .52rem;
+    letter-spacing: .1em;
+
+    color: var(--color-text);
+}
+
+.product-modal__footer button {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    font-family: var(--font-body);
+    font-size: .55rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .08em;
+
+    color: var(--color-primary);
+
+    cursor: pointer;
+}
+
+.product-modal__footer button svg {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* =========================================================
+   BODY LOCK
+========================================================= */
+
+body.product-modal-open {
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+[data-theme="dark"] .product-modal__backdrop {
+    background: rgba(5, 5, 5, .78);
+}
+
+[data-theme="dark"] .product-modal__close {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: var(--color-heading);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .product-modal__close {
+    right: auto;
+    left: 1rem;
+}
+
+[dir="rtl"] .product-modal__visual-label {
+    left: auto;
+    right: 1.25rem;
+}
+
+[dir="rtl"] .product-modal__visual-number {
+    right: auto;
+    left: 1.25rem;
+}
+
+[dir="rtl"] .product-modal__content {
+    text-align: right;
+}
+
+[dir="rtl"] .product-modal__eyebrow {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .product-modal__spec {
+    border-right: 0;
+    border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .product-modal__spec:last-child {
+    border-left: 0;
+}
+
+[dir="rtl"] .product-modal__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .product-modal {
+        padding: 1rem;
+    }
+
+    .product-modal__dialog {
+        grid-template-columns: 1fr;
+
+        width: min(600px, 100%);
+        max-height: calc(100vh - 2rem);
+
+        overflow-y: auto;
+    }
+
+    .product-modal__visual {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .product-modal__content {
+        padding: 2rem 1.5rem 1.25rem;
+    }
+
+    .product-modal__title {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .product-modal {
+        padding: .65rem;
+    }
+
+    .product-modal__dialog {
+        max-height: calc(100vh - 1.3rem);
+        border-radius: var(--radius-small);
+    }
+
+    .product-modal__visual {
+        height: 230px;
+        min-height: 230px;
+    }
+
+    .product-modal__content {
+        padding: 1.75rem 1rem 1rem;
+    }
+
+    .product-modal__title {
+        font-size: 1.8rem;
+    }
+
+    .product-modal__price {
+        margin-bottom: 1rem;
+    }
+
+    .product-modal__description {
+        font-size: .78rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+    }
+
+    .product-modal__specs {
+        grid-template-columns: 1fr;
+    }
+
+    .product-modal__spec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 1rem;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .product-modal__spec:last-child {
+        border-bottom: 0;
+    }
+
+    .product-modal__spec span,
+    .product-modal__spec strong {
+        margin: 0;
+    }
+
+    .product-modal__footer {
+        font-size: .48rem;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .product-modal {
+        padding: .4rem;
+    }
+
+    .product-modal__dialog {
+        max-height: calc(100vh - .8rem);
+    }
+
+    .product-modal__visual {
+        height: 190px;
+        min-height: 190px;
+    }
+
+    .product-modal__visual-label {
+        left: .75rem;
+        bottom: .75rem;
+        font-size: .48rem;
+    }
+
+    .product-modal__visual-number {
+        right: .75rem;
+        bottom: .7rem;
+        font-size: 1.8rem;
+    }
+
+    .product-modal__content {
+        padding: 1.4rem .8rem .8rem;
+    }
+
+    .product-modal__eyebrow {
+        font-size: .52rem;
+    }
+
+    .product-modal__title {
+        font-size: 1.55rem;
+    }
+
+    .product-modal__description {
+        font-size: .72rem;
+    }
+
+    .product-modal__spec {
+        padding: .7rem .5rem;
+    }
+
+    .product-modal__spec span {
+        font-size: .46rem;
+    }
+
+    .product-modal__spec strong {
+        font-size: .62rem;
+    }
+
+    .product-modal__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    [dir="rtl"] .product-modal__visual-label {
+        right: .75rem;
+    }
+
+    [dir="rtl"] .product-modal__visual-number {
+        left: .75rem;
+    }
+
+}
+/* =====================================================
+   JEWELRY PAGE — SECTION 03
+   STYLING & CURATION
+====================================================== */
+
+.jewelry-curation {
+    padding: 5rem 0 3.5rem;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    overflow: hidden;
+}
+
+.jewelry-curation__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.jewelry-curation__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.jewelry-curation__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+}
+
+.jewelry-curation__line {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.jewelry-curation__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   MAIN
+====================================================== */
+
+.jewelry-curation__main {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 6rem;
+
+    padding: 4.5rem 0 3.5rem;
+}
+
+
+/* =====================================================
+   VISUAL / EDITORIAL SIDE
+====================================================== */
+
+.jewelry-curation__visual {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.jewelry-curation__number {
+    position: absolute;
+
+    top: -0.5rem;
+    left: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(9rem, 14vw, 13rem);
+    line-height: 0.7;
+
+    color: var(--color-primary);
+    opacity: 0.11;
+}
+
+.jewelry-curation__vertical {
+    position: absolute;
+
+    left: 0;
+    bottom: 2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-textt);
+
+    transform: rotate(-90deg);
+    transform-origin: left center;
+}
+
+.jewelry-curation__statement {
+    position: relative;
+    z-index: 1;
+
+    margin-left: 4.5rem;
+}
+
+.jewelry-curation__statement > span {
+    display: block;
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.15em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-curation__statement h2 {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4.5rem, 7vw, 7rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.84;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.jewelry-curation__title-accent {
+    color: var(--color-primary);
+}
+
+
+/* =====================================================
+   CONTENT
+====================================================== */
+
+.jewelry-curation__content {
+    max-width: 650px;
+}
+
+.jewelry-curation__label {
+    display: block;
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.15em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-curation__description {
+    max-width: 560px;
+
+    margin: 0 0 2.5rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   STEPS
+====================================================== */
+
+.jewelry-curation__steps {
+    border-top: 1px solid var(--color-border);
+
+    margin-bottom: 2rem;
+}
+
+.jewelry-curation__step {
+    display: grid;
+    grid-template-columns: 38px 1fr 20px;
+    align-items: start;
+    gap: 1rem;
+
+    padding: 1.25rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-curation__step:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.jewelry-curation__step > span {
+    padding-top: 0.2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.1em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-curation__step h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.55rem;
+    font-weight: var(--weight-regular);
+    line-height: 1;
+
+    color: var(--color-heading);
+}
+
+.jewelry-curation__step p {
+    max-width: 430px;
+
+    margin: 0.5rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--color-textt);
+}
+
+.jewelry-curation__step > svg {
+    width: 16px;
+    height: 16px;
+
+    color: var(--color-textt);
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-curation__step:hover > svg {
+    color: var(--color-primary);
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+.jewelry-curation__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-textt);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .jewelry-curation {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .jewelry-curation__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .jewelry-curation__main {
+        gap: 3.5rem;
+
+        padding: 3.75rem 0 3rem;
+    }
+
+    .jewelry-curation__visual {
+        min-height: 420px;
+    }
+
+    .jewelry-curation__statement {
+        margin-left: 3.5rem;
+    }
+
+    .jewelry-curation__statement h2 {
+        font-size: clamp(3.8rem, 7vw, 5.5rem);
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .jewelry-curation {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .jewelry-curation__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .jewelry-curation__main {
+        grid-template-columns: 1fr;
+        gap: 2.75rem;
+
+        padding: 3rem 0 2.5rem;
+    }
+
+    .jewelry-curation__visual {
+        min-height: 280px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border);
+
+        padding-bottom: 2rem;
+    }
+
+    .jewelry-curation__number {
+        font-size: 8rem;
+    }
+
+    .jewelry-curation__statement {
+        margin-left: 3.5rem;
+    }
+
+    .jewelry-curation__statement h2 {
+        font-size: clamp(3.5rem, 11vw, 5rem);
+    }
+
+    .jewelry-curation__vertical {
+        bottom: 1.5rem;
+    }
+
+    .jewelry-curation__description {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .jewelry-curation {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .jewelry-curation__container {
+        width: calc(100% - 28px);
+    }
+
+    .jewelry-curation__eyebrow {
+        gap: 0.45rem;
+
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .jewelry-curation__line {
+        width: 20px;
+    }
+
+    .jewelry-curation__index {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-curation__main {
+        gap: 2.25rem;
+
+        padding: 2.5rem 0 2.25rem;
+    }
+
+    .jewelry-curation__visual {
+        min-height: 235px;
+
+        padding-bottom: 1.5rem;
+    }
+
+    .jewelry-curation__number {
+        font-size: 6rem;
+    }
+
+    .jewelry-curation__statement {
+        margin-left: 2.5rem;
+    }
+
+    .jewelry-curation__statement > span {
+        margin-bottom: 0.9rem;
+        font-size: 0.58rem;
+    }
+
+    .jewelry-curation__statement h2 {
+        font-size: 2.8rem;
+    }
+
+    .jewelry-curation__vertical {
+        font-size: 0.52rem;
+        letter-spacing: 0.1em;
+    }
+
+    .jewelry-curation__label {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-curation__description {
+        margin-bottom: 1.5rem;
+        font-size: 16px;
+    }
+
+    .jewelry-curation__step {
+        grid-template-columns: 28px 1fr 15px;
+        gap: 0.7rem;
+
+        padding: 1rem 0;
+    }
+
+    .jewelry-curation__step h3 {
+        font-size: 1.4rem;
+    }
+
+    .jewelry-curation__step p {
+        font-size: 16px;
+    }
+
+    .jewelry-curation__step > svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .jewelry-curation__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+
+        font-size: 0.52rem;
+    }
+}
+
+/* =====================================================
+   JEWELRY CURATION — FINAL RTL ALIGNMENT FIX
+====================================================== */
+
+[dir="rtl"] .jewelry-curation {
+    direction: rtl;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   MAIN RTL GRID
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__main {
+    direction: rtl;
+}
+
+
+/* =====================================================
+   LEFT CONTENT → RIGHT IN RTL
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__visual {
+    order: 1;
+
+    border-right: 0;
+    border-left: 1px solid var(--color-border);
+
+    min-width: 0;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   LARGE 03
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__number {
+    left: auto;
+    right: 0;
+
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   EDITORIAL HEADING
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__statement {
+    margin-left: 0;
+    margin-right: 2.5rem;
+
+    max-width: calc(100% - 3rem);
+
+    text-align: right;
+}
+
+[dir="rtl"] .jewelry-curation__statement h2 {
+    max-width: 100%;
+
+    font-size: clamp(4rem, 6vw, 6rem);
+
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+
+/* =====================================================
+   VERTICAL TEXT
+====================================================== */
+/* =====================================================
+   RTL — MIRROR VERTICAL STATEMENT
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__vertical {
+    position: absolute;
+
+    right: 0;
+    left: auto;
+
+    bottom: 2rem;
+    top: auto;
+
+    writing-mode: initial;
+    white-space: nowrap;
+
+    transform-origin: right center;
+    transform: rotate(90deg);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0;
+        bottom: 2rem;
+        top: auto;
+
+        transform-origin: right center;
+        transform: rotate(90deg);
+
+        font-size: 0.58rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0;
+        bottom: 1.5rem;
+        top: auto;
+
+        transform-origin: right center;
+        transform: rotate(90deg);
+
+        font-size: 0.55rem;
+        letter-spacing: 0.12em;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0;
+        bottom: 1.25rem;
+        top: auto;
+
+        transform-origin: right center;
+        transform: rotate(90deg);
+
+        font-size: 0.5rem;
+        letter-spacing: 0.1em;
+    }
+}
+/* =====================================================
+   RIGHT CONTENT → LEFT IN RTL
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__content {
+    order: 2;
+
+    min-width: 0;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__description {
+    margin-right: 0;
+    margin-left: auto;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   STEPS
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__steps {
+    direction: rtl;
+}
+
+[dir="rtl"] .jewelry-curation__step {
+    direction: rtl;
+
+    grid-template-columns: 38px minmax(0, 1fr) 20px;
+
+    min-width: 0;
+
+    text-align: right;
+}
+
+
+/* Number stays on RIGHT */
+
+[dir="rtl"] .jewelry-curation__step > span {
+    grid-column: 1;
+    text-align: right;
+}
+
+
+/* Text */
+
+[dir="rtl"] .jewelry-curation__step > div {
+    grid-column: 2;
+
+    min-width: 0;
+
+    text-align: right;
+}
+
+
+/* Arrow moves to LEFT */
+
+[dir="rtl"] .jewelry-curation__step > svg {
+    grid-column: 3;
+
+    justify-self: start;
+
+    width: 15px;
+    height: 15px;
+}
+
+
+/* =====================================================
+   BUTTON
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__content .btn {
+    direction: rtl;
+}
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+[dir="rtl"] .jewelry-curation__footer {
+    direction: rtl;
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    [dir="rtl"] .jewelry-curation__statement {
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+    [dir="rtl"] .jewelry-curation__statement h2 {
+        font-size: clamp(3.5rem, 6vw, 5.2rem);
+    }
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0.5rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .jewelry-curation__main {
+        grid-template-columns: 1fr;
+    }
+
+    [dir="rtl"] .jewelry-curation__visual {
+        order: 1;
+
+        border-left: 0;
+        border-right: 0;
+
+        border-bottom: 1px solid var(--color-border);
+
+        width: 100%;
+    }
+
+    [dir="rtl"] .jewelry-curation__content {
+        order: 2;
+
+        width: 100%;
+    }
+
+    [dir="rtl"] .jewelry-curation__number {
+        right: 0;
+        left: auto;
+    }
+
+    [dir="rtl"] .jewelry-curation__statement {
+        margin-right: 2.5rem;
+        margin-left: 0;
+
+        max-width: calc(100% - 2.5rem);
+    }
+
+    [dir="rtl"] .jewelry-curation__statement h2 {
+        font-size: clamp(3.3rem, 10vw, 4.8rem);
+    }
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0;
+        left: auto;
+    }
+
+    [dir="rtl"] .jewelry-curation__step {
+        grid-template-columns: 28px minmax(0, 1fr) 15px;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    [dir="rtl"] .jewelry-curation__statement {
+        margin-right: 2rem;
+        margin-left: 0;
+
+        max-width: calc(100% - 2rem);
+    }
+
+    [dir="rtl"] .jewelry-curation__statement h2 {
+        font-size: 2.7rem;
+        line-height: 0.88;
+    }
+
+    [dir="rtl"] .jewelry-curation__vertical {
+        right: 0.25rem;
+    }
+
+    [dir="rtl"] .jewelry-curation__step {
+        grid-template-columns: 26px minmax(0, 1fr) 14px;
+    }
+
+    [dir="rtl"] .jewelry-curation__step > svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    [dir="rtl"] .jewelry-curation__footer {
+        align-items: flex-start;
+
+        text-align: right;
+    }
+}
+
+
+/* =====================================================
+   JEWELRY PAGE — SECTION 04
+   THE JEWELRY STANDARD
+====================================================== */
+
+.jewelry-standard {
+    padding: 5rem 0 3.5rem;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    overflow: hidden;
+}
+
+.jewelry-standard__container {
+    width: min(1280px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+====================================================== */
+
+.jewelry-standard__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.jewelry-standard__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+}
+
+.jewelry-standard__line {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+.jewelry-standard__index {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   INTRO
+====================================================== */
+
+.jewelry-standard__intro {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: end;
+    gap: 6rem;
+
+    padding: 4rem 0 3.5rem;
+}
+
+.jewelry-standard__intro-left {
+    max-width: 700px;
+}
+
+.jewelry-standard__label {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.15em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-standard__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 6vw, 6.2rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.86;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.jewelry-standard__title span {
+    display: block;
+
+    color: var(--color-primary);
+}
+
+.jewelry-standard__description {
+    max-width: 470px;
+
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   STANDARD CARDS
+====================================================== */
+
+.jewelry-standard__standards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =====================================================
+   CARD
+====================================================== */
+
+.jewelry-standard__card {
+    min-width: 0;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.jewelry-standard__card:last-child {
+    border-right: 0;
+}
+
+
+/* =====================================================
+   VISUAL
+====================================================== */
+
+.jewelry-standard__visual {
+    position: relative;
+
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.jewelry-standard__visual--material {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(180, 83, 9, 0.14),
+            transparent 55%
+        );
+}
+
+.jewelry-standard__visual--fit {
+    background:
+        linear-gradient(
+            135deg,
+            transparent 48%,
+            rgba(180, 83, 9, 0.12) 49%,
+            transparent 51%
+        );
+}
+
+.jewelry-standard__visual--care {
+    background:
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(180, 83, 9, 0.12),
+            transparent 50%
+        );
+}
+
+.jewelry-standard__visual svg {
+    width: 42px;
+    height: 42px;
+
+    stroke-width: 1;
+
+    color: var(--color-primary);
+}
+
+.jewelry-standard__visual-number {
+    position: absolute;
+
+    top: 1rem;
+    left: 1.25rem;
+
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: 0.7;
+
+    color: var(--color-primary);
+
+    opacity: 0.14;
+}
+
+.jewelry-standard__visual-word {
+    position: absolute;
+
+    right: 1.25rem;
+    bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   CARD CONTENT
+====================================================== */
+
+.jewelry-standard__card-content {
+    padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.jewelry-standard__card-label {
+    display: block;
+
+    margin-bottom: 0.65rem;
+
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-text);
+}
+
+.jewelry-standard__card-content h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: var(--weight-regular);
+    line-height: 1;
+
+    color: var(--color-heading);
+}
+
+.jewelry-standard__card-content p {
+    max-width: 300px;
+
+    margin: 0.65rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--color-text);
+}
+
+
+/* =====================================================
+   BOTTOM
+====================================================== */
+
+.jewelry-standard__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.13em;
+
+    color: var(--color-text);
+}
+
+.jewelry-standard__bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.jewelry-standard__bottom a:hover {
+    color: var(--color-primary);
+}
+
+.jewelry-standard__bottom svg {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* =====================================================
+   HOVER
+====================================================== */
+
+.jewelry-standard__card {
+    transition: var(--transition-normal);
+}
+
+.jewelry-standard__card:hover
+.jewelry-standard__visual svg {
+    transform: scale(1.08);
+
+    transition: var(--transition-normal);
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .jewelry-standard {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .jewelry-standard__container {
+        width: min(100% - 56px, 900px);
+    }
+
+    .jewelry-standard__intro {
+        gap: 3.5rem;
+
+        padding: 3.5rem 0 3rem;
+    }
+
+    .jewelry-standard__title {
+        font-size: clamp(3.4rem, 6vw, 5rem);
+    }
+
+    .jewelry-standard__visual {
+        height: 200px;
+    }
+
+    .jewelry-standard__card-content {
+        padding: 1.25rem;
+    }
+
+    .jewelry-standard__card-content h3 {
+        font-size: 1.55rem;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .jewelry-standard {
+        padding: 4rem 0 2.75rem;
+    }
+
+    .jewelry-standard__container {
+        width: min(100% - 40px, 620px);
+    }
+
+    .jewelry-standard__intro {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        padding: 3rem 0 2.5rem;
+    }
+
+    .jewelry-standard__title {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+
+    .jewelry-standard__description {
+        max-width: 520px;
+    }
+
+    .jewelry-standard__standards {
+        grid-template-columns: 1fr;
+    }
+
+    .jewelry-standard__card {
+        display: grid;
+        grid-template-columns: 42% 1fr;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .jewelry-standard__card:last-child {
+        border-bottom: 0;
+    }
+
+    .jewelry-standard__visual {
+        height: 190px;
+
+        border-bottom: 0;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .jewelry-standard__card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .jewelry-standard {
+        padding: 3.25rem 0 2.25rem;
+    }
+
+    .jewelry-standard__container {
+        width: calc(100% - 28px);
+    }
+
+    .jewelry-standard__eyebrow {
+        gap: 0.45rem;
+
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .jewelry-standard__line {
+        width: 20px;
+    }
+
+    .jewelry-standard__index {
+        font-size: 0.58rem;
+    }
+
+    .jewelry-standard__intro {
+        gap: 1.25rem;
+
+        padding: 2.5rem 0 2rem;
+    }
+
+    .jewelry-standard__label {
+        margin-bottom: 1rem;
+
+        font-size: 0.58rem;
+    }
+
+    .jewelry-standard__title {
+        font-size: 2.7rem;
+    }
+
+    .jewelry-standard__description {
+        font-size: 16px;
+    }
+
+    .jewelry-standard__card {
+        grid-template-columns: 38% 1fr;
+    }
+
+    .jewelry-standard__visual {
+        height: 165px;
+    }
+
+    .jewelry-standard__visual-number {
+        top: 0.8rem;
+        left: 0.8rem;
+
+        font-size: 3rem;
+    }
+
+    .jewelry-standard__visual-word {
+        right: 0.7rem;
+        bottom: 0.7rem;
+
+        font-size: 0.5rem;
+    }
+
+    .jewelry-standard__visual svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .jewelry-standard__card-content {
+        padding: 1rem;
+    }
+
+    .jewelry-standard__card-label {
+        font-size: 0.52rem;
+    }
+
+    .jewelry-standard__card-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .jewelry-standard__card-content p {
+        font-size: 16px;
+    }
+
+    .jewelry-standard__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+
+        font-size: 0.52rem;
+    }
+}
+
+
+/* =====================================================
+   RTL
+====================================================== */
+
+[dir="rtl"] .jewelry-standard {
+    direction: rtl;
+}
+
+[dir="rtl"] .jewelry-standard__intro {
+    direction: rtl;
+}
+
+[dir="rtl"] .jewelry-standard__intro-left,
+[dir="rtl"] .jewelry-standard__description {
+    text-align: right;
+}
+
+[dir="rtl"] .jewelry-standard__standards {
+    direction: rtl;
+}
+
+[dir="rtl"] .jewelry-standard__card {
+    border-right: 0;
+    border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .jewelry-standard__card:last-child {
+    border-left: 0;
+}
+
+[dir="rtl"] .jewelry-standard__visual-number {
+    left: auto;
+    right: 1.25rem;
+}
+
+[dir="rtl"] .jewelry-standard__visual-word {
+    right: auto;
+    left: 1.25rem;
+}
+
+[dir="rtl"] .jewelry-standard__card-content {
+    text-align: right;
+}
+
+[dir="rtl"] .jewelry-standard__bottom {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .jewelry-standard__card {
+        border-left: 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    [dir="rtl"] .jewelry-standard__card:last-child {
+        border-bottom: 0;
+    }
+
+    [dir="rtl"] .jewelry-standard__visual {
+        border-right: 0;
+        border-left: 1px solid var(--color-border);
+    }
+}
+
+@media (max-width: 360px) {
+
+    [dir="rtl"] .jewelry-standard__visual-number {
+        right: 0.8rem;
+        left: auto;
+    }
+
+    [dir="rtl"] .jewelry-standard__visual-word {
+        left: 0.7rem;
+        right: auto;
+    }
+
+    [dir="rtl"] .jewelry-standard__bottom {
+        align-items: flex-start;
+        text-align: right;
+    }
+}
+/* =====================================================
+   JEWELRY STANDARD — COMPACT CARDS
+====================================================== */
+
+.jewelry-standard__standards {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.jewelry-standard__visual {
+    height: 165px;
+}
+
+.jewelry-standard__card-content {
+    padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.jewelry-standard__card-label {
+    margin-bottom: 0.45rem;
+    font-size: 0.55rem;
+}
+
+.jewelry-standard__card-content h3 {
+    font-size: 1.55rem;
+}
+
+.jewelry-standard__card-content p {
+    margin-top: 0.45rem;
+    font-size: 15px;
+    line-height: 1.45;
+    max-width: 270px;
+}
+
+.jewelry-standard__visual-number {
+    top: 0.8rem;
+    left: 1rem;
+    font-size: 3.2rem;
+}
+
+.jewelry-standard__visual-word {
+    right: 1rem;
+    bottom: 0.8rem;
+    font-size: 0.52rem;
+}
+
+.jewelry-standard__visual svg {
+    width: 34px;
+    height: 34px;
+}
+
+
+/* =====================================================
+   1024px
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    .jewelry-standard__standards {
+        max-width: 850px;
+    }
+
+    .jewelry-standard__visual {
+        height: 145px;
+    }
+
+    .jewelry-standard__card-content {
+        padding: 1rem;
+    }
+
+    .jewelry-standard__card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .jewelry-standard__card-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* =====================================================
+   768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .jewelry-standard__standards {
+        max-width: 100%;
+    }
+
+    .jewelry-standard__card {
+        grid-template-columns: 35% 1fr;
+    }
+
+    .jewelry-standard__visual {
+        height: 145px;
+    }
+
+    .jewelry-standard__card-content {
+        padding: 0.9rem 1rem;
+    }
+
+    .jewelry-standard__card-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .jewelry-standard__card-content p {
+        margin-top: 0.4rem;
+        font-size: 15px;
+    }
+}
+
+
+/* =====================================================
+   360px
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .jewelry-standard__card {
+        grid-template-columns: 34% 1fr;
+    }
+
+    .jewelry-standard__visual {
+        height: 125px;
+    }
+
+    .jewelry-standard__card-content {
+        padding: 0.75rem;
+    }
+
+    .jewelry-standard__visual-number {
+        top: 0.6rem;
+        left: 0.65rem;
+        font-size: 2.6rem;
+    }
+
+    .jewelry-standard__visual-word {
+        right: 0.6rem;
+        bottom: 0.6rem;
+        font-size: 0.46rem;
+    }
+
+    .jewelry-standard__visual svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .jewelry-standard__card-label {
+        margin-bottom: 0.35rem;
+        font-size: 0.48rem;
+    }
+
+    .jewelry-standard__card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .jewelry-standard__card-content p {
+        margin-top: 0.35rem;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}
+
+
+/* =====================================================
+   RTL COMPACT CARD FIX
+====================================================== */
+
+[dir="rtl"] .jewelry-standard__visual-number {
+    left: auto;
+    right: 1rem;
+}
+
+[dir="rtl"] .jewelry-standard__visual-word {
+    right: auto;
+    left: 1rem;
+}
+
+@media (max-width: 360px) {
+
+    [dir="rtl"] .jewelry-standard__visual-number {
+        right: 0.65rem;
+        left: auto;
+    }
+
+    [dir="rtl"] .jewelry-standard__visual-word {
+        left: 0.6rem;
+        right: auto;
+    }
+}
+
+/* =========================================================
+   SECTION 05 — JEWELRY FINAL CTA
+========================================================= */
+
+.jewelry-final-cta {
+    background: var(--color-background);
+    padding: 3.5rem 0 2rem;
+    overflow: hidden;
+}
+
+.jewelry-final-cta__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CTA CARD
+========================================================= */
+
+.jewelry-final-cta__card {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    height: 360px;
+    min-height: 360px;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.jewelry-final-cta__visual {
+    position: relative;
+
+    width: 100%;
+    height: 360px;
+    min-height: 360px;
+
+    overflow: hidden;
+}
+
+.jewelry-final-cta__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .6s ease;
+}
+
+.jewelry-final-cta__card:hover .jewelry-final-cta__image {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.jewelry-final-cta__visual::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(41, 24, 31, .45),
+            rgba(41, 24, 31, 0) 60%
+        );
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.jewelry-final-cta__visual-label {
+    position: absolute;
+
+    left: 1.1rem;
+    bottom: .9rem;
+
+    z-index: 2;
+
+    font-family: var(--font-body);
+    font-size: .55rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .13em;
+
+    color: var(--color-white);
+}
+
+
+/* =========================================================
+   IMAGE NUMBER
+========================================================= */
+
+.jewelry-final-cta__visual-number {
+    position: absolute;
+
+    right: 1.1rem;
+    bottom: .65rem;
+
+    z-index: 2;
+
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, .35);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.jewelry-final-cta__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 360px;
+
+    padding: 2rem 3rem;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SECTION NUMBER
+========================================================= */
+
+.jewelry-final-cta__number {
+    position: absolute;
+
+    top: 1rem;
+    right: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: .56rem;
+    letter-spacing: .12em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.jewelry-final-cta__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .6rem;
+    margin-bottom: .85rem;
+
+    font-family: var(--font-body);
+    font-size: .6rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .15em;
+
+    color: var(--color-primary);
+}
+
+.jewelry-final-cta__line {
+    width: 28px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.jewelry-final-cta__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 3.4vw, 3.6rem);
+    line-height: .93;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.jewelry-final-cta__title span {
+    display: block;
+}
+
+.jewelry-final-cta__accent {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.jewelry-final-cta__description {
+    max-width: 450px;
+
+    margin: 1rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: .8rem;
+    line-height: 1.6;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.jewelry-final-cta__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .65rem;
+
+    margin-top: 1.2rem;
+}
+
+.jewelry-final-cta__actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.jewelry-final-cta__actions svg {
+    width: 13px;
+    height: 13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.jewelry-final-cta__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+    padding-top: .8rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: .55rem;
+    letter-spacing: .1em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .jewelry-final-cta {
+        padding: 3rem 0 1.75rem;
+    }
+
+    .jewelry-final-cta__container {
+        width: min(100% - 40px, 950px);
+    }
+
+    .jewelry-final-cta__card {
+        grid-template-columns: 40% 60%;
+
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .jewelry-final-cta__visual {
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .jewelry-final-cta__content {
+        height: 330px;
+        padding: 1.75rem 2.25rem;
+    }
+
+    .jewelry-final-cta__title {
+        font-size: 3rem;
+    }
+
+    .jewelry-final-cta__description {
+        font-size: .76rem;
+    }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .jewelry-final-cta {
+        padding: 2.75rem 0 1.75rem;
+    }
+
+    .jewelry-final-cta__container {
+        width: calc(100% - 32px);
+    }
+
+    .jewelry-final-cta__card {
+        grid-template-columns: 1fr;
+
+        height: auto;
+        min-height: 0;
+    }
+
+    .jewelry-final-cta__visual {
+        height: 180px;
+        min-height: 180px;
+    }
+
+    .jewelry-final-cta__content {
+        height: 300px;
+        min-height: 300px;
+
+        padding: 2rem 1.5rem;
+    }
+
+    .jewelry-final-cta__title {
+        font-size: 2.8rem;
+    }
+
+    .jewelry-final-cta__description {
+        max-width: 420px;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .jewelry-final-cta {
+        padding: 2.25rem 0 1.5rem;
+    }
+
+    .jewelry-final-cta__container {
+        width: calc(100% - 24px);
+    }
+
+    .jewelry-final-cta__visual {
+        height: 150px;
+        min-height: 150px;
+    }
+
+    .jewelry-final-cta__visual-label {
+        left: .7rem;
+        bottom: .6rem;
+
+        font-size: .48rem;
+    }
+
+    .jewelry-final-cta__visual-number {
+        right: .7rem;
+        bottom: .45rem;
+
+        font-size: 2.4rem;
+    }
+
+    .jewelry-final-cta__content {
+        height: 285px;
+        min-height: 285px;
+
+        padding: 1.9rem 1rem 1.6rem;
+    }
+
+    .jewelry-final-cta__number {
+        top: .75rem;
+        right: .75rem;
+
+        font-size: .48rem;
+    }
+
+    .jewelry-final-cta__eyebrow {
+        gap: .4rem;
+        margin-bottom: .7rem;
+
+        font-size: .5rem;
+    }
+
+    .jewelry-final-cta__line {
+        width: 20px;
+    }
+
+    .jewelry-final-cta__title {
+        font-size: 2.25rem;
+    }
+
+    .jewelry-final-cta__description {
+        margin-top: .8rem;
+
+        font-size: .72rem;
+        line-height: 1.55;
+    }
+
+    .jewelry-final-cta__actions {
+        flex-direction: column;
+
+        width: 100%;
+        gap: .45rem;
+
+        margin-top: 1rem;
+    }
+
+    .jewelry-final-cta__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .jewelry-final-cta__footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: .4rem;
+
+        font-size: .48rem;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .jewelry-final-cta {
+    direction: rtl;
+}
+
+[dir="rtl"] .jewelry-final-cta__number {
+    right: auto;
+    left: 1.25rem;
+}
+
+[dir="rtl"] .jewelry-final-cta__visual-label {
+    left: auto;
+    right: 1.1rem;
+}
+
+[dir="rtl"] .jewelry-final-cta__visual-number {
+    right: auto;
+    left: 1.1rem;
+}
+
+[dir="rtl"] .jewelry-final-cta__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    [dir="rtl"] .jewelry-final-cta__number {
+        left: .75rem;
+    }
+
+    [dir="rtl"] .jewelry-final-cta__visual-label {
+        right: .7rem;
+    }
+
+    [dir="rtl"] .jewelry-final-cta__visual-number {
+        left: .7rem;
+    }
+}

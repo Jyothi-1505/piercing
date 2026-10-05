@@ -1,0 +1,3061 @@
+/* =========================================================
+   AFTERCARE HERO
+========================================================= */
+
+.aftercare-hero {
+    background: var(--color-background);
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.aftercare-hero__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+    align-items: center;
+
+    min-height: 480px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.aftercare-hero__content {
+    position: relative;
+    padding: 2rem 4rem 2rem 0;
+}
+
+.aftercare-hero__index {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-family: var(--font-body);
+    font-size: .6rem;
+    letter-spacing: .12em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.aftercare-hero__eyebrow {
+    display: flex;
+    align-items: center;
+
+    gap: .65rem;
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: .65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .15em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-hero__line {
+    width: 30px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.aftercare-hero__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .94;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-hero__title span {
+    display: block;
+}
+
+.aftercare-hero__accent {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.aftercare-hero__description {
+    max-width: 480px;
+
+    margin: 1.5rem 0 0;
+
+    font-family: var(--font-body);
+    font-size: .9rem;
+    line-height: 1.7;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.aftercare-hero__content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+
+    margin-top: 1.75rem;
+}
+
+.aftercare-hero__content .btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.aftercare-hero__visual {
+    position: relative;
+
+    min-height: 440px;
+}
+
+.aftercare-hero__image-frame {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 0;
+
+    width: 88%;
+    height: 88%;
+
+    border: 1px solid var(--color-primary);
+    opacity: .35;
+}
+
+.aftercare-hero__image-wrap {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 88%;
+    height: 88%;
+
+    overflow: hidden;
+}
+
+.aftercare-hero__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+.aftercare-hero__visual:hover .aftercare-hero__image {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   VISUAL LABEL
+========================================================= */
+
+.aftercare-hero__visual-label {
+    position: absolute;
+
+    left: .25rem;
+    bottom: 2rem;
+
+    font-family: var(--font-body);
+    font-size: .56rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .12em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   VISUAL NUMBER
+========================================================= */
+
+.aftercare-hero__visual-number {
+    position: absolute;
+
+    right: .25rem;
+    bottom: .5rem;
+
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: 1;
+
+    color: var(--color-primary);
+    opacity: .16;
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-hero {
+        padding: 3.5rem 0;
+    }
+
+    .aftercare-hero__container {
+        grid-template-columns: 48% 52%;
+        min-height: 420px;
+    }
+
+    .aftercare-hero__content {
+        padding-right: 2.5rem;
+    }
+
+    .aftercare-hero__title {
+        font-size: 4rem;
+    }
+
+    .aftercare-hero__visual {
+        min-height: 390px;
+    }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-hero {
+        padding: 3rem 0;
+    }
+
+    .aftercare-hero__container {
+        width: calc(100% - 32px);
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+    .aftercare-hero__content {
+        padding: 2.5rem 0 2rem;
+        text-align: center;
+    }
+
+    .aftercare-hero__index {
+        left: auto;
+        right: 0;
+    }
+
+    .aftercare-hero__eyebrow {
+        justify-content: center;
+    }
+
+    .aftercare-hero__description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aftercare-hero__visual {
+        min-height: 360px;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-hero {
+        padding: 2.25rem 0;
+    }
+
+    .aftercare-hero__container {
+        width: calc(100% - 24px);
+    }
+
+    .aftercare-hero__content {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .aftercare-hero__index {
+        font-size: .5rem;
+    }
+
+    .aftercare-hero__eyebrow {
+        gap: .4rem;
+        font-size: .5rem;
+    }
+
+    .aftercare-hero__line {
+        width: 20px;
+    }
+
+    .aftercare-hero__title {
+        font-size: 2.6rem;
+    }
+
+    .aftercare-hero__description {
+        margin-top: 1rem;
+
+        font-size: .76rem;
+        line-height: 1.6;
+    }
+
+    .aftercare-hero__content .btn {
+        margin-top: 1.3rem;
+    }
+
+    .aftercare-hero__visual {
+        min-height: 280px;
+    }
+
+    .aftercare-hero__image-wrap {
+        width: 90%;
+        height: 90%;
+    }
+
+    .aftercare-hero__image-frame {
+        width: 90%;
+        height: 90%;
+
+        top: 1rem;
+    }
+
+    .aftercare-hero__visual-label {
+        bottom: .5rem;
+        font-size: .46rem;
+    }
+
+    .aftercare-hero__visual-number {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-hero {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-hero__content {
+    padding-left: 4rem;
+    padding-right: 0;
+}
+
+[dir="rtl"] .aftercare-hero__index {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .aftercare-hero__image-frame {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .aftercare-hero__image-wrap {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .aftercare-hero__visual-label {
+    left: auto;
+    right: .25rem;
+}
+
+[dir="rtl"] .aftercare-hero__visual-number {
+    right: auto;
+    left: .25rem;
+}
+
+
+@media (max-width: 1024px) {
+
+    [dir="rtl"] .aftercare-hero__content {
+        padding-left: 2.5rem;
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .aftercare-hero__content {
+        padding-left: 0;
+    }
+
+    [dir="rtl"] .aftercare-hero__index {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* =========================================================
+   AFTERCARE — SECTION 02
+========================================================= */
+
+.aftercare-first-day {
+    background: var(--color-surface);
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+}
+
+.aftercare-first-day__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.aftercare-first-day__header {
+    position: relative;
+
+    max-width: 700px;
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+.aftercare-first-day__index {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    font-family: var(--font-body);
+    font-size: .58rem;
+    letter-spacing: .12em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.aftercare-first-day__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .65rem;
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: .64rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .15em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-first-day__line {
+    width: 30px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.aftercare-first-day__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+    line-height: .95;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-first-day__title span {
+    display: block;
+}
+
+.aftercare-first-day__accent {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.aftercare-first-day__intro {
+    max-width: 540px;
+
+    margin: 1.2rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: .86rem;
+    line-height: 1.65;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.aftercare-first-day__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.aftercare-first-day__step {
+    padding: 1.75rem 2rem 1.85rem;
+}
+
+.aftercare-first-day__step + .aftercare-first-day__step {
+    border-left: 1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   STEP TOP
+========================================================= */
+
+.aftercare-first-day__step-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1.25rem;
+}
+
+.aftercare-first-day__step-number {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+
+    color: var(--color-primary);
+}
+
+.aftercare-first-day__icon {
+    width: 19px;
+    height: 19px;
+
+    stroke-width: 1.4;
+
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.aftercare-first-day__step h3 {
+    margin: 0 0 .55rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    line-height: 1.1;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-first-day__step p {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: .76rem;
+    line-height: 1.65;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.aftercare-first-day__step {
+    transition: background-color .25s ease;
+}
+
+.aftercare-first-day__step:hover {
+    background: var(--color-background);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.aftercare-first-day__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: .55rem;
+    letter-spacing: .1em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-first-day {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .aftercare-first-day__container {
+        width: min(100% - 40px, 950px);
+    }
+
+    .aftercare-first-day__header {
+        margin-bottom: 2.5rem;
+    }
+
+    .aftercare-first-day__step {
+        padding: 1.5rem 1.35rem;
+    }
+
+    .aftercare-first-day__step h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-first-day {
+        padding: 3rem 0 2.25rem;
+    }
+
+    .aftercare-first-day__container {
+        width: calc(100% - 32px);
+    }
+
+    .aftercare-first-day__header {
+        margin-bottom: 2rem;
+    }
+
+    .aftercare-first-day__index {
+        right: 0;
+    }
+
+    .aftercare-first-day__steps {
+        grid-template-columns: 1fr;
+    }
+
+    .aftercare-first-day__step {
+        padding: 1.4rem 1.25rem;
+    }
+
+    .aftercare-first-day__step + .aftercare-first-day__step {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .aftercare-first-day__step-top {
+        margin-bottom: .9rem;
+    }
+
+    .aftercare-first-day__step p {
+        max-width: 600px;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-first-day {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .aftercare-first-day__container {
+        width: calc(100% - 24px);
+    }
+
+    .aftercare-first-day__header {
+        margin-bottom: 1.5rem;
+    }
+
+    .aftercare-first-day__index {
+        font-size: .48rem;
+    }
+
+    .aftercare-first-day__eyebrow {
+        gap: .4rem;
+        margin-bottom: .8rem;
+
+        font-size: .5rem;
+    }
+
+    .aftercare-first-day__line {
+        width: 20px;
+    }
+
+    .aftercare-first-day__title {
+        font-size: 2.45rem;
+    }
+
+    .aftercare-first-day__intro {
+        margin-top: .9rem;
+
+        font-size: .74rem;
+        line-height: 1.6;
+    }
+
+    .aftercare-first-day__step {
+        padding: 1.25rem .9rem;
+    }
+
+    .aftercare-first-day__step-number {
+        font-size: 1.25rem;
+    }
+
+    .aftercare-first-day__icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .aftercare-first-day__step h3 {
+        font-size: 1.1rem;
+    }
+
+    .aftercare-first-day__step p {
+        font-size: .7rem;
+        line-height: 1.55;
+    }
+
+    .aftercare-first-day__footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: .4rem;
+
+        font-size: .48rem;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-first-day {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-first-day__index {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .aftercare-first-day__step {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-first-day__step + .aftercare-first-day__step {
+    border-left: 0;
+    border-right: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .aftercare-first-day__index {
+        left: 0;
+    }
+
+    [dir="rtl"] .aftercare-first-day__step + .aftercare-first-day__step {
+        border-right: 0;
+        border-top: 1px solid var(--color-border);
+    }
+}
+/* =========================================================
+   AFTERCARE — SECTION 03
+   EDITORIAL SPLIT LAYOUT
+========================================================= */
+
+.aftercare-routine {
+    background: var(--color-background);
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.aftercare-routine__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 43% 57%;
+    align-items: center;
+
+    min-height: 520px;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.aftercare-routine__visual {
+    position: relative;
+
+    height: 500px;
+
+    padding-right: 2.5rem;
+}
+
+.aftercare-routine__image-wrap {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.aftercare-routine__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+.aftercare-routine__visual:hover .aftercare-routine__image {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   VISUAL LABEL
+========================================================= */
+
+.aftercare-routine__visual-label {
+    position: absolute;
+
+    left: .5rem;
+    bottom: 1.25rem;
+
+    z-index: 2;
+
+    font-family: var(--font-body);
+    font-size: .56rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .12em;
+
+    color: var(--color-white);
+}
+
+
+/* =========================================================
+   VISUAL NUMBER
+========================================================= */
+
+.aftercare-routine__visual-number {
+    position: absolute;
+
+    right: 3rem;
+    bottom: .65rem;
+
+    z-index: 2;
+
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, .35);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.aftercare-routine__content {
+    position: relative;
+
+    padding-left: 2.5rem;
+}
+
+
+/* =========================================================
+   INDEX
+========================================================= */
+
+.aftercare-routine__index {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    font-family: var(--font-body);
+    font-size: .58rem;
+    letter-spacing: .12em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.aftercare-routine__eyebrow {
+    display: flex;
+    align-items: center;
+
+    gap: .6rem;
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: .63rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: .15em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-routine__line {
+    width: 30px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.aftercare-routine__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 4.5vw, 4.3rem);
+    line-height: .94;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-routine__title span {
+    display: block;
+}
+
+.aftercare-routine__accent {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.aftercare-routine__description {
+    max-width: 470px;
+
+    margin: 1.1rem 0 1.75rem;
+
+    font-family: var(--font-body);
+    font-size: .82rem;
+    line-height: 1.65;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   CARE LIST
+========================================================= */
+
+.aftercare-routine__list {
+    border-top: 1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   CARE ITEM
+========================================================= */
+
+.aftercare-routine__item {
+    display: grid;
+
+    grid-template-columns: 38px minmax(0, 1fr) 24px;
+
+    align-items: center;
+
+    gap: .8rem;
+
+    padding: .9rem 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    transition:
+        padding .25s ease,
+        background-color .25s ease;
+}
+
+.aftercare-routine__item:hover {
+    padding-left: .6rem;
+    padding-right: .6rem;
+
+    background: var(--color-surface);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.aftercare-routine__number {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   ITEM CONTENT
+========================================================= */
+
+.aftercare-routine__item-content h3 {
+    margin: 0 0 .2rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    line-height: 1.1;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-routine__item-content p {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: .68rem;
+    line-height: 1.5;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.aftercare-routine__item > svg {
+    width: 17px;
+    height: 17px;
+
+    stroke-width: 1.4;
+
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.aftercare-routine__footer {
+    width: min(1200px, calc(100% - 48px));
+    margin: 1rem auto 0;
+
+    padding-top: .8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: .54rem;
+    letter-spacing: .1em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-routine {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .aftercare-routine__container {
+        width: min(100% - 40px, 950px);
+
+        grid-template-columns: 42% 58%;
+
+        min-height: 450px;
+    }
+
+    .aftercare-routine__visual {
+        height: 430px;
+        padding-right: 1.75rem;
+    }
+
+    .aftercare-routine__content {
+        padding-left: 1.75rem;
+    }
+
+    .aftercare-routine__title {
+        font-size: 3.5rem;
+    }
+
+    .aftercare-routine__description {
+        margin-bottom: 1.3rem;
+    }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-routine {
+        padding: 3rem 0 2.25rem;
+    }
+
+    .aftercare-routine__container {
+        width: calc(100% - 32px);
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+    .aftercare-routine__visual {
+        height: 300px;
+        padding-right: 0;
+
+        margin-bottom: 2rem;
+    }
+
+    .aftercare-routine__content {
+        padding-left: 0;
+
+        text-align: center;
+    }
+
+    .aftercare-routine__index {
+        top: 0;
+        right: 0;
+    }
+
+    .aftercare-routine__eyebrow {
+        justify-content: center;
+    }
+
+    .aftercare-routine__description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aftercare-routine__list {
+        text-align: left;
+    }
+
+    .aftercare-routine__visual-number {
+        right: .75rem;
+        font-size: 3.5rem;
+    }
+
+    .aftercare-routine__footer {
+        width: calc(100% - 32px);
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-routine {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .aftercare-routine__container {
+        width: calc(100% - 24px);
+    }
+
+    .aftercare-routine__visual {
+        height: 220px;
+        margin-bottom: 1.75rem;
+    }
+
+    .aftercare-routine__visual-label {
+        left: .65rem;
+        bottom: .65rem;
+
+        font-size: .46rem;
+    }
+
+    .aftercare-routine__visual-number {
+        right: .65rem;
+        bottom: .4rem;
+
+        font-size: 2.5rem;
+    }
+
+    .aftercare-routine__index {
+        font-size: .48rem;
+    }
+
+    .aftercare-routine__eyebrow {
+        gap: .4rem;
+        margin-bottom: .8rem;
+
+        font-size: .5rem;
+    }
+
+    .aftercare-routine__line {
+        width: 20px;
+    }
+
+    .aftercare-routine__title {
+        font-size: 2.45rem;
+    }
+
+    .aftercare-routine__description {
+        margin-top: .9rem;
+        margin-bottom: 1.3rem;
+
+        font-size: .72rem;
+        line-height: 1.6;
+    }
+
+    .aftercare-routine__item {
+        grid-template-columns: 30px minmax(0, 1fr) 18px;
+
+        gap: .55rem;
+
+        padding: .8rem 0;
+    }
+
+    .aftercare-routine__item:hover {
+        padding-left: .35rem;
+        padding-right: .35rem;
+    }
+
+    .aftercare-routine__number {
+        font-size: 1rem;
+    }
+
+    .aftercare-routine__item-content h3 {
+        font-size: 1rem;
+    }
+
+    .aftercare-routine__item-content p {
+        font-size: .65rem;
+        line-height: 1.5;
+    }
+
+    .aftercare-routine__item > svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .aftercare-routine__footer {
+        width: calc(100% - 24px);
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: .4rem;
+
+        font-size: .48rem;
+    }
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-routine {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-routine__visual {
+    padding-right: 0;
+    padding-left: 2.5rem;
+}
+
+[dir="rtl"] .aftercare-routine__content {
+    padding-left: 0;
+    padding-right: 2.5rem;
+}
+
+[dir="rtl"] .aftercare-routine__index {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .aftercare-routine__visual-label {
+    left: auto;
+    right: .5rem;
+}
+
+[dir="rtl"] .aftercare-routine__visual-number {
+    right: auto;
+    left: 3rem;
+}
+
+[dir="rtl"] .aftercare-routine__item {
+    direction: rtl;
+}
+
+@media (max-width: 1024px) {
+
+    [dir="rtl"] .aftercare-routine__visual {
+        padding-left: 1.75rem;
+    }
+
+    [dir="rtl"] .aftercare-routine__content {
+        padding-right: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] .aftercare-routine__visual {
+        padding-left: 0;
+    }
+
+    [dir="rtl"] .aftercare-routine__content {
+        padding-right: 0;
+    }
+
+    [dir="rtl"] .aftercare-routine__list {
+        text-align: right;
+    }
+
+    [dir="rtl"] .aftercare-routine__visual-number {
+        left: .75rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    [dir="rtl"] .aftercare-routine__visual-label {
+        right: .65rem;
+    }
+
+    [dir="rtl"] .aftercare-routine__visual-number {
+        left: .65rem;
+    }
+}
+
+/* =========================================================
+   AFTERCARE — WHAT TO AVOID
+========================================================= */
+
+.aftercare-avoid {
+    background: var(--color-surface);
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+}
+
+.aftercare-avoid__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.aftercare-avoid__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.aftercare-avoid__index {
+    display: block;
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.16em;
+    color: var(--color-text);
+}
+
+.aftercare-avoid__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.18em;
+    color: var(--color-primary);
+}
+
+.aftercare-avoid__line {
+    width: 34px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.aftercare-avoid__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: var(--weight-regular);
+    line-height: 1;
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--color-heading);
+}
+
+.aftercare-avoid__title span {
+    display: block;
+    color: var(--color-primary);
+}
+
+.aftercare-avoid__description {
+    max-width: 560px;
+    margin: 1.25rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   MAIN EDITORIAL SPLIT
+========================================================= */
+
+.aftercare-avoid__main {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    min-height: 430px;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   LEFT — POINTS
+========================================================= */
+
+.aftercare-avoid__points {
+    padding: 0 3rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aftercare-avoid__item {
+    display: grid;
+    grid-template-columns: 35px 42px 1fr;
+    align-items: center;
+    gap: 1rem;
+
+    min-height: 105px;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.aftercare-avoid__item:last-child {
+    border-bottom: none;
+}
+
+.aftercare-avoid__number {
+    align-self: start;
+    padding-top: 1.35rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.12em;
+    color: var(--color-primary);
+}
+
+.aftercare-avoid__icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.aftercare-avoid__icon svg {
+    width: 17px;
+    height: 17px;
+    stroke-width: 1.4;
+}
+
+.aftercare-avoid__content h3 {
+    margin: 0 0 0.35rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: var(--weight-regular);
+    color: var(--color-heading);
+}
+
+.aftercare-avoid__content p {
+    max-width: 430px;
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   RIGHT — LESS IS MORE
+========================================================= */
+
+.aftercare-avoid__statement {
+    position: relative;
+
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-left: 1px solid var(--color-border);
+}
+
+.aftercare-avoid__statement-number {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--color-text);
+}
+
+.aftercare-avoid__statement-copy {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    line-height: 0.82;
+    letter-spacing: -0.04em;
+    color: var(--color-heading);
+}
+
+.aftercare-avoid__statement-word {
+    display: block;
+}
+
+.aftercare-avoid__statement-accent {
+    display: block;
+    color: var(--color-primary);
+}
+
+.aftercare-avoid__statement-caption {
+    max-width: 190px;
+    margin-top: 2rem;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-primary);
+
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.aftercare-avoid__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1.1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-avoid {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-avoid__main {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-avoid__points {
+    padding: 0 0 0 3rem;
+}
+
+[dir="rtl"] .aftercare-avoid__statement {
+    border-left: none;
+    border-right: 1px solid var(--color-border);
+
+    align-items: flex-end;
+}
+
+[dir="rtl"] .aftercare-avoid__statement-number {
+    right: auto;
+    left: 1.75rem;
+}
+
+[dir="rtl"] .aftercare-avoid__statement-caption {
+    text-align: right;
+}
+
+[dir="rtl"] .aftercare-avoid__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-avoid {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .aftercare-avoid__main {
+        grid-template-columns: 1.1fr 0.9fr;
+        min-height: 400px;
+    }
+
+    .aftercare-avoid__points {
+        padding-right: 2rem;
+    }
+
+    .aftercare-avoid__statement {
+        padding: 2.5rem;
+    }
+
+    .aftercare-avoid__statement-copy {
+        font-size: clamp(3.2rem, 6vw, 5.5rem);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-avoid__container {
+        width: min(100% - 36px, 680px);
+    }
+
+    .aftercare-avoid__header {
+        margin-bottom: 2.25rem;
+    }
+
+    .aftercare-avoid__main {
+        grid-template-columns: 1fr;
+    }
+
+    .aftercare-avoid__points {
+        padding: 0;
+    }
+
+    .aftercare-avoid__statement {
+        min-height: 300px;
+
+        padding: 2.5rem;
+
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid var(--color-border);
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .aftercare-avoid__statement-number {
+        right: 1.5rem;
+        left: auto;
+    }
+
+    .aftercare-avoid__statement-caption {
+        text-align: center;
+    }
+
+    [dir="rtl"] .aftercare-avoid__points {
+        padding: 0;
+    }
+
+    [dir="rtl"] .aftercare-avoid__statement-number {
+        left: 1.5rem;
+        right: auto;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-avoid {
+        padding: 3rem 0 2rem;
+    }
+
+    .aftercare-avoid__container {
+        width: calc(100% - 28px);
+    }
+
+    .aftercare-avoid__header {
+        margin-bottom: 1.75rem;
+    }
+
+    .aftercare-avoid__eyebrow {
+        font-size: 0.6rem;
+        gap: 0.5rem;
+    }
+
+    .aftercare-avoid__line {
+        width: 22px;
+    }
+
+    .aftercare-avoid__title {
+        font-size: 2.35rem;
+    }
+
+    .aftercare-avoid__description {
+        font-size: 0.88rem;
+    }
+
+    .aftercare-avoid__item {
+        grid-template-columns: 28px 34px 1fr;
+        gap: 0.65rem;
+
+        min-height: 92px;
+    }
+
+    .aftercare-avoid__number {
+        padding-top: 1.1rem;
+        font-size: 0.6rem;
+    }
+
+    .aftercare-avoid__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .aftercare-avoid__icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .aftercare-avoid__content h3 {
+        font-size: 1.12rem;
+    }
+
+    .aftercare-avoid__content p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .aftercare-avoid__statement {
+        min-height: 250px;
+        padding: 2rem 1.25rem;
+    }
+
+    .aftercare-avoid__statement-copy {
+        font-size: 3.8rem;
+    }
+
+    .aftercare-avoid__statement-caption {
+        margin-top: 1.5rem;
+        font-size: 0.68rem;
+    }
+
+    .aftercare-avoid__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        font-size: 0.56rem;
+    }
+
+    [dir="rtl"] .aftercare-avoid__footer {
+        align-items: flex-end;
+    }
+
+}
+
+/* =========================================================
+   AFTERCARE — HEALING GUIDE
+========================================================= */
+
+.healing-guide {
+    background: var(--color-background);
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+}
+
+.healing-guide__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.healing-guide__header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.healing-guide__index {
+    display: block;
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.16em;
+    color: var(--color-text);
+}
+
+.healing-guide__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.18em;
+    color: var(--color-primary);
+}
+
+.healing-guide__line {
+    width: 34px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.healing-guide__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: var(--weight-regular);
+    line-height: 1;
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--color-heading);
+}
+
+.healing-guide__title span {
+    color: var(--color-primary);
+}
+
+.healing-guide__description {
+    max-width: 560px;
+    margin: 1.25rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.healing-guide__timeline {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* Connecting line */
+
+.healing-guide__timeline::before {
+    content: "";
+
+    position: absolute;
+    top: 88px;
+    left: 16.66%;
+    right: 16.66%;
+
+    height: 1px;
+
+    background: var(--color-border);
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   STAGE
+========================================================= */
+
+.healing-guide__stage {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 1.5rem 2rem 2.25rem;
+
+    text-align: center;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.healing-guide__stage:last-child {
+    border-right: none;
+}
+
+.healing-guide__number {
+    display: block;
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   MARKER
+========================================================= */
+
+.healing-guide__marker {
+    position: relative;
+    z-index: 1;
+
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--color-background);
+
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.healing-guide__marker svg {
+    width: 20px;
+    height: 20px;
+
+    stroke-width: 1.35;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.healing-guide__period {
+    display: block;
+    margin-bottom: 0.55rem;
+
+    font-family: var(--font-body);
+    font-size: 0.63rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.healing-guide__stage h3 {
+    margin: 0 0 0.6rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.55rem;
+    font-weight: var(--weight-regular);
+    color: var(--color-heading);
+}
+
+.healing-guide__stage p {
+    max-width: 250px;
+    margin: 0 auto;
+
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    line-height: 1.6;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.healing-guide__note {
+    max-width: 700px;
+
+    margin: 2.5rem auto 0;
+    padding: 1.25rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.healing-guide__note-icon {
+    flex: 0 0 auto;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.healing-guide__note-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.healing-guide__note-label {
+    display: block;
+    margin-bottom: 0.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.healing-guide__note p {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    line-height: 1.55;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.healing-guide__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1.1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .healing-guide {
+    direction: rtl;
+}
+
+[dir="rtl"] .healing-guide__stage {
+    border-right: none;
+    border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .healing-guide__stage:last-child {
+    border-left: none;
+}
+
+[dir="rtl"] .healing-guide__note {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .healing-guide__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .healing-guide {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .healing-guide__timeline::before {
+        left: 16%;
+        right: 16%;
+    }
+
+    .healing-guide__stage {
+        min-height: 280px;
+        padding: 1.5rem 1.25rem 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .healing-guide__container {
+        width: min(100% - 36px, 680px);
+    }
+
+    .healing-guide__header {
+        margin-bottom: 2.5rem;
+    }
+
+    .healing-guide__timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .healing-guide__timeline::before {
+        top: 8%;
+        bottom: 8%;
+        left: 50%;
+        right: auto;
+
+        width: 1px;
+        height: auto;
+    }
+
+    .healing-guide__stage {
+        min-height: auto;
+
+        padding: 1.5rem 1.25rem 2rem;
+
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .healing-guide__stage:last-child {
+        border-bottom: none;
+    }
+
+    .healing-guide__marker {
+        margin-bottom: 1rem;
+        background: var(--color-background);
+    }
+
+    .healing-guide__note {
+        margin-top: 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .healing-guide {
+        padding: 3rem 0 2rem;
+    }
+
+    .healing-guide__container {
+        width: calc(100% - 28px);
+    }
+
+    .healing-guide__header {
+        margin-bottom: 2rem;
+    }
+
+    .healing-guide__eyebrow {
+        font-size: 0.6rem;
+        gap: 0.5rem;
+    }
+
+    .healing-guide__line {
+        width: 22px;
+    }
+
+    .healing-guide__title {
+        font-size: 2.35rem;
+    }
+
+    .healing-guide__description {
+        font-size: 0.88rem;
+    }
+
+    .healing-guide__timeline::before {
+        left: 50%;
+    }
+
+    .healing-guide__stage {
+        padding: 1.25rem 1rem 1.75rem;
+    }
+
+    .healing-guide__marker {
+        width: 46px;
+        height: 46px;
+    }
+
+    .healing-guide__marker svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .healing-guide__stage h3 {
+        font-size: 1.3rem;
+    }
+
+    .healing-guide__stage p {
+        font-size: 0.76rem;
+    }
+
+    .healing-guide__note {
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .healing-guide__note-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .healing-guide__note p {
+        font-size: 0.72rem;
+    }
+
+    .healing-guide__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        font-size: 0.56rem;
+    }
+
+    [dir="rtl"] .healing-guide__footer {
+        align-items: flex-end;
+    }
+
+}
+
+/* =========================================================
+   AFTERCARE — CONTACT AURIA
+========================================================= */
+
+.aftercare-contact {
+    background: var(--color-surface);
+    padding: 4rem 0 3rem;
+    overflow: hidden;
+}
+
+.aftercare-contact__container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.aftercare-contact__header {
+    text-align: center;
+    margin-bottom: 3.25rem;
+}
+
+.aftercare-contact__index {
+    display: block;
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+}
+
+.aftercare-contact__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.18em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-contact__line {
+    width: 34px;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.aftercare-contact__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: var(--weight-regular);
+    line-height: 1;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.aftercare-contact__title span {
+    color: var(--color-primary);
+}
+
+.aftercare-contact__description {
+    max-width: 560px;
+    margin: 1.25rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.aftercare-contact__journey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.aftercare-contact__step {
+    min-height: 280px;
+
+    padding: 1.5rem 2rem 2.25rem;
+
+    border-right: 1px solid var(--color-border);
+}
+
+.aftercare-contact__step:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   STEP TOP
+========================================================= */
+
+.aftercare-contact__step-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2.5rem;
+}
+
+.aftercare-contact__step-top > span {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+
+    color: var(--color-text);
+}
+
+.aftercare-contact__dot {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.aftercare-contact__dot svg {
+    width: 18px;
+    height: 18px;
+
+    stroke-width: 1.35;
+}
+
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.aftercare-contact__label {
+    display: block;
+
+    margin-bottom: 0.7rem;
+
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-contact__step h3 {
+    margin: 0 0 0.7rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+.aftercare-contact__step p {
+    max-width: 290px;
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    line-height: 1.65;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.aftercare-contact__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 2.25rem 0 1.25rem;
+}
+
+.aftercare-contact__cta-copy {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.aftercare-contact__cta-copy span {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.14em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-contact__cta-copy strong {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: var(--weight-regular);
+
+    color: var(--color-heading);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.aftercare-contact__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-contact {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-contact__step {
+    border-right: none;
+    border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .aftercare-contact__step:last-child {
+    border-left: none;
+}
+
+[dir="rtl"] .aftercare-contact__cta {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-contact__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-contact {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .aftercare-contact__step {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-contact__container {
+        width: min(100% - 36px, 680px);
+    }
+
+    .aftercare-contact__header {
+        margin-bottom: 2.5rem;
+    }
+
+    .aftercare-contact__journey {
+        grid-template-columns: 1fr;
+    }
+
+    .aftercare-contact__step {
+        min-height: auto;
+
+        padding: 1.5rem 1.25rem 2rem;
+
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .aftercare-contact__step:last-child {
+        border-bottom: none;
+    }
+
+    .aftercare-contact__step-top {
+        margin-bottom: 1.5rem;
+    }
+
+    .aftercare-contact__cta {
+        flex-direction: column;
+        gap: 1rem;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   480px / 360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-contact {
+        padding: 3rem 0 2rem;
+    }
+
+    .aftercare-contact__container {
+        width: calc(100% - 28px);
+    }
+
+    .aftercare-contact__header {
+        margin-bottom: 2rem;
+    }
+
+    .aftercare-contact__eyebrow {
+        font-size: 0.6rem;
+        gap: 0.5rem;
+    }
+
+    .aftercare-contact__line {
+        width: 22px;
+    }
+
+    .aftercare-contact__title {
+        font-size: 2.3rem;
+    }
+
+    .aftercare-contact__description {
+        font-size: 0.88rem;
+    }
+
+    .aftercare-contact__step {
+        padding: 1.25rem 0 1.75rem;
+    }
+
+    .aftercare-contact__step-top {
+        margin-bottom: 1.25rem;
+    }
+
+    .aftercare-contact__dot {
+        width: 40px;
+        height: 40px;
+    }
+
+    .aftercare-contact__dot svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .aftercare-contact__step h3 {
+        font-size: 1.35rem;
+    }
+
+    .aftercare-contact__step p {
+        font-size: 0.75rem;
+    }
+
+    .aftercare-contact__cta {
+        padding-top: 1.75rem;
+    }
+
+    .aftercare-contact__cta-copy {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .aftercare-contact__cta-copy strong {
+        font-size: 1.2rem;
+    }
+
+    .aftercare-contact__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        font-size: 0.56rem;
+    }
+
+    [dir="rtl"] .aftercare-contact__footer {
+        align-items: flex-end;
+    }
+
+}
+
+/* =========================================================
+   AFTERCARE — FINAL CTA
+========================================================= */
+
+.aftercare-final {
+    background: var(--color-background);
+    padding: 5rem 0 2.5rem;
+    overflow: hidden;
+}
+
+.aftercare-final__container {
+    width: min(1000px, calc(100% - 48px));
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INDEX
+========================================================= */
+
+.aftercare-final__index {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.16em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.aftercare-final__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.18em;
+
+    color: var(--color-primary);
+}
+
+.aftercare-final__line {
+    width: 34px;
+    height: 1px;
+
+    background: var(--color-primary);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.aftercare-final__title {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    font-weight: var(--weight-regular);
+    line-height: 0.95;
+    letter-spacing: var(--letter-spacing-tight);
+
+    color: var(--color-heading);
+}
+
+.aftercare-final__title span {
+    display: block;
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.aftercare-final__description {
+    max-width: 560px;
+
+    margin: 1.5rem auto 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.aftercare-final__action {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.aftercare-final__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 4rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border);
+
+    font-family: var(--font-body);
+    font-size: 0.63rem;
+    letter-spacing: 0.14em;
+
+    color: var(--color-text);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-final {
+    direction: rtl;
+}
+
+[dir="rtl"] .aftercare-final__footer {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .aftercare-final {
+        padding: 4.5rem 0 2.5rem;
+    }
+
+    .aftercare-final__title {
+        font-size: clamp(3rem, 7vw, 5rem);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .aftercare-final__container {
+        width: min(100% - 36px, 680px);
+    }
+
+    .aftercare-final {
+        padding: 4rem 0 2rem;
+    }
+
+    .aftercare-final__footer {
+        margin-top: 3rem;
+    }
+
+}
+
+
+/* =========================================================
+   480px / 360px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .aftercare-final {
+        padding: 3.5rem 0 1.75rem;
+    }
+
+    .aftercare-final__container {
+        width: calc(100% - 28px);
+    }
+
+    .aftercare-final__index {
+        margin-bottom: 1.25rem;
+        font-size: 0.62rem;
+    }
+
+    .aftercare-final__eyebrow {
+        gap: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .aftercare-final__line {
+        width: 22px;
+    }
+
+    .aftercare-final__title {
+        font-size: 3rem;
+        line-height: 0.95;
+    }
+
+    .aftercare-final__description {
+        margin-top: 1.25rem;
+        font-size: 0.88rem;
+    }
+
+    .aftercare-final__action {
+        margin-top: 1.75rem;
+    }
+
+    .aftercare-final__footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        margin-top: 2.75rem;
+
+        font-size: 0.55rem;
+        text-align: center;
+    }
+
+}

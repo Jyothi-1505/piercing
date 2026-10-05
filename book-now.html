@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+<link rel="icon" type="image/png" href="./assets/images/logo/auria-logo.png">
+    <title>Book Appointment | AURIA</title>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/global.css"
+    >
+
+
+    <!-- =====================================================
+         BOOK APPOINTMENT CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/book-now.css"
+    >
+
+
+    <!-- =====================================================
+         LUCIDE
+    ====================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+
+<body class="book-page">
+
+
+    <!-- =====================================================
+         FIXED PAGE CONTROLS
+
+         SAME GLOBAL CONTROLS USED THROUGHOUT AURIA
+    ====================================================== -->
+
+    <div
+        class="book-page-controls"
+        aria-label="Page controls"
+    >
+
+        <!-- RTL -->
+
+        <button
+            class="header-action header-action--text"
+            id="rtl-toggle"
+            type="button"
+            aria-label="Toggle right to left layout"
+        >
+            RTL
+        </button>
+
+
+        <!-- DARK MODE -->
+
+        <button
+            class="header-action header-action--theme"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+        >
+
+            <i
+                data-lucide="moon"
+                class="theme-icon theme-icon--moon"
+            ></i>
+
+            <i
+                data-lucide="sun"
+                class="theme-icon theme-icon--sun"
+            ></i>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOOK APPOINTMENT
+    ====================================================== -->
+
+    <main class="book-page__main">
+
+
+        <!-- =================================================
+             AURIA BRAND
+
+             EXACT SAME GLOBAL BRAND MARKUP
+        ================================================== -->
+
+       
+
+
+
+        <!-- =================================================
+             FORM
+        ================================================== -->
+
+        <div class="book-form-card">
+
+ <a
+            href="index.html"
+            class="brand-logo book-page__brand"
+            aria-label="AURIA Home"
+        >
+
+            <!-- Logo Image -->
+
+            <span class="brand-logo__image">
+
+                <img
+                    src="./assets/images/logo/auria-logo.png"
+                    alt="AURIA logo"
+                >
+
+            </span>
+
+
+            <!-- Website Name -->
+
+            <span class="brand-logo__content">
+
+                <span class="brand-logo__main">
+
+                    <span class="brand-logo__primary">
+                        AU
+                    </span>
+
+                    <span class="brand-logo__secondary">
+                        RIA
+                    </span>
+
+                </span>
+
+
+                <span class="brand-logo__tagline">
+                    PIERCING • JEWELRY • AFTERCARE
+                </span>
+
+            </span>
+
+        </a>
+            <!-- FORM INTRO -->
+
+            <div class="book-form-intro">
+
+                <span class="book-form-intro__eyebrow">
+                    BOOK AN APPOINTMENT
+                </span>
+
+                <h1 class="book-form-intro__title">
+
+                    <span>
+                        Your AURIA
+                    </span>
+
+                    <span class="book-form-intro__accent">
+                        experience starts here.
+                    </span>
+
+                </h1>
+
+                <p class="book-form-intro__description">
+                    Tell us what you're looking for and
+                    we'll help you plan your visit.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 APPOINTMENT FORM
+            ================================================== -->
+
+            <form
+                class="book-form"
+                id="appointment-form"
+                novalidate
+            >
+
+
+                <!-- =============================================
+                     01 — PERSONAL DETAILS
+                ============================================== -->
+
+                <div class="book-form__group">
+
+                    <div class="book-form__group-heading">
+
+                        <span class="book-form__number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <span class="book-form__label">
+                                YOUR DETAILS
+                            </span>
+
+                            <h2>
+                                Tell us about you.
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="book-form__fields">
+
+
+                        <!-- FULL NAME -->
+
+                        <div class="book-field">
+
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <div class="book-field__control">
+
+                                <i data-lucide="user"></i>
+
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="book-field">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="book-field__control">
+
+                                <i data-lucide="mail"></i>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="book-field">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <div class="book-field__control">
+
+                                <i data-lucide="phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =============================================
+                     02 — APPOINTMENT TYPE
+                ============================================== -->
+
+                <div class="book-form__group">
+
+                    <div class="book-form__group-heading">
+
+                        <span class="book-form__number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <span class="book-form__label">
+                                APPOINTMENT TYPE
+                            </span>
+
+                            <h2>
+                                What brings you to AURIA?
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="book-options">
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="ear-piercing"
+                                required
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="circle-dot"></i>
+
+                                <span>
+                                    Ear Piercing
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="nose-piercing"
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="sparkles"></i>
+
+                                <span>
+                                    Nose Piercing
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="body-piercing"
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="gem"></i>
+
+                                <span>
+                                    Body Piercing
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="jewelry-consultation"
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="gem"></i>
+
+                                <span>
+                                    Jewelry Consultation
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="jewelry-styling"
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="wand-sparkles"></i>
+
+                                <span>
+                                    Jewelry Styling
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="book-option">
+
+                            <input
+                                type="radio"
+                                name="appointment-type"
+                                value="aftercare"
+                            >
+
+                            <span class="book-option__content">
+
+                                <i data-lucide="heart-handshake"></i>
+
+                                <span>
+                                    Aftercare Consultation
+                                </span>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =============================================
+                     03 — DATE & TIME
+                ============================================== -->
+
+                <div class="book-form__group">
+
+                    <div class="book-form__group-heading">
+
+                        <span class="book-form__number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <span class="book-form__label">
+                                PREFERRED TIME
+                            </span>
+
+                            <h2>
+                                When would you like to visit?
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="book-form__fields book-form__fields--two">
+
+
+                        <!-- DATE -->
+
+                        <div class="book-field">
+
+                            <label for="appointment-date">
+                                Preferred Date
+                            </label>
+
+                            <div class="book-field__control">
+
+                                <i data-lucide="calendar-days"></i>
+
+                                <input
+                                    type="date"
+                                    id="appointment-date"
+                                    name="appointment-date"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- TIME -->
+
+                        <div class="book-field">
+
+                            <label for="appointment-time">
+                                Preferred Time
+                            </label>
+
+                            <div class="book-field__control">
+
+                                <i data-lucide="clock-3"></i>
+
+                                <select
+                                    id="appointment-time"
+                                    name="appointment-time"
+                                    required
+                                >
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled
+                                    >
+                                        Select a time
+                                    </option>
+
+                                    <option value="10:00">
+                                        10:00 AM
+                                    </option>
+
+                                    <option value="11:00">
+                                        11:00 AM
+                                    </option>
+
+                                    <option value="12:00">
+                                        12:00 PM
+                                    </option>
+
+                                    <option value="13:00">
+                                        1:00 PM
+                                    </option>
+
+                                    <option value="14:00">
+                                        2:00 PM
+                                    </option>
+
+                                    <option value="15:00">
+                                        3:00 PM
+                                    </option>
+
+                                    <option value="16:00">
+                                        4:00 PM
+                                    </option>
+
+                                    <option value="17:00">
+                                        5:00 PM
+                                    </option>
+
+                                    <option value="18:00">
+                                        6:00 PM
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =============================================
+                     04 — NOTES
+                ============================================== -->
+
+                <div class="book-form__group">
+
+                    <div class="book-form__group-heading">
+
+                        <span class="book-form__number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <span class="book-form__label">
+                                ADDITIONAL NOTES
+                            </span>
+
+                            <h2>
+                                Anything we should know?
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="book-field">
+
+                        <label for="appointment-message">
+                            Message
+                        </label>
+
+                        <div class="book-field__control book-field__control--textarea">
+
+                            <i data-lucide="message-circle"></i>
+
+                            <textarea
+                                id="appointment-message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us anything you'd like us to know..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =============================================
+                     SUBMIT
+                ============================================== -->
+
+                <div class="book-form__submit">
+
+                    <p>
+                        We'll review your request and
+                        contact you with appointment availability.
+                    </p>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+
+                        <span>
+                            Request Appointment
+                        </span>
+
+                        <i data-lucide="arrow-up-right"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- SUCCESS -->
+
+                <div
+                    class="book-form__success"
+                    id="appointment-success"
+                    role="status"
+                    aria-live="polite"
+                >
+
+                    <i data-lucide="circle-check"></i>
+
+                    <div>
+
+                        <strong>
+                            Request received.
+                        </strong>
+
+                        <span>
+                            We'll be in touch soon.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         GLOBAL JS
+         Handles the SAME theme + RTL system
+    ====================================================== -->
+
+    <script src="assets/js/global.js"></script>
+
+
+    <!-- =====================================================
+         BOOK APPOINTMENT JS
+    ====================================================== -->
+
+    <script src="assets/js/book-now.js"></script>
+
+</body>
+
+</html>
