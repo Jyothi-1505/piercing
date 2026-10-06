@@ -2675,3 +2675,308 @@ html[data-theme="dark"]
         font-size: 0.52rem;
     }
 }
+
+/* =========================================================
+   SERVICES HERO — IMAGE HOVER EFFECT
+========================================================= */
+
+.services-hero__image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* IMAGE */
+
+.services-hero__image {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.8s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.services-hero__image-wrap:hover
+.services-hero__image {
+
+    transform: scale(1.06);
+
+    filter: brightness(0.94);
+}
+
+
+/* =========================================================
+   PREMIUM IMAGE OVERLAY
+========================================================= */
+
+.services-hero__image-wrap::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.10),
+            transparent 35%,
+            transparent 70%,
+            rgba(0, 0, 0, 0.10)
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.7s ease;
+}
+
+
+.services-hero__image-wrap:hover::after {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.services-hero__image-wrap::before {
+    content: "";
+
+    position: absolute;
+
+    top: 16px;
+    left: -16px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--color-primary);
+
+    opacity: 0.55;
+
+    transition:
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.6s ease;
+}
+
+
+.services-hero__image-wrap:hover::before {
+
+    transform: translate(
+        7px,
+        7px
+    );
+
+    opacity: 0.85;
+}
+
+.services-hero__image-number,
+.services-hero__image-label,
+.services-hero__image-mark {
+    transition:
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.5s ease;
+}
+
+
+.services-hero__image-wrap:hover
+.services-hero__image-number {
+    transform: translate(
+        -4px,
+        4px
+    );
+}
+
+
+.services-hero__image-wrap:hover
+.services-hero__image-label {
+    transform: translateY(-3px);
+}
+
+
+.services-hero__image-wrap:hover
+.services-hero__image-mark {
+    transform: translate(
+        -3px,
+        -3px
+    );
+}
+
+/* =========================================================
+   AURIA EXPERIENCE — CARD HOVER EFFECT
+========================================================= */
+
+.services-experience__step {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        background-color 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.45s ease;
+}
+
+
+/* =========================================================
+   PREMIUM HOVER BACKGROUND
+========================================================= */
+
+.services-experience__step::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(192, 132, 151, 0.08),
+            transparent 65%
+        );
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.services-experience__step:hover {
+    background: var(--color-surface-secondary);
+
+    transform: translateY(-5px);
+
+    border-color: var(--color-primary);
+}
+
+
+.services-experience__step:hover::before {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   KEEP CONTENT ABOVE OVERLAY
+========================================================= */
+
+.services-experience__step > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   NUMBER HOVER
+========================================================= */
+
+.services-experience__step-top span {
+    transition:
+        letter-spacing 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+.services-experience__step:hover
+.services-experience__step-top span {
+    letter-spacing: 0.18em;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.services-experience__step-top svg {
+    transition:
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        color 0.4s ease;
+}
+
+
+.services-experience__step:hover
+.services-experience__step-top svg {
+    color: var(--color-primary);
+
+    transform:
+        translateY(-3px)
+        rotate(-8deg);
+}
+
+
+/* =========================================================
+   HEADING HOVER
+========================================================= */
+
+.services-experience__step h3 {
+    transition:
+        color 0.4s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.services-experience__step:hover h3 {
+    color: var(--color-primary);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   DESCRIPTION HOVER
+========================================================= */
+
+.services-experience__step p {
+    transition:
+        color 0.4s ease,
+        transform 0.45s ease;
+}
+
+
+.services-experience__step:hover p {
+    color: var(--color-text);
+
+    transform: translateX(4px);
+}
+
+/* =========================================================
+   RTL HOVER
+========================================================= */
+
+html[dir="rtl"] .services-experience__step:hover
+.services-experience__step-top span,
+html[dir="rtl"] .services-experience__step:hover h3,
+html[dir="rtl"] .services-experience__step:hover p {
+    transform: translateX(-4px);
+}
+

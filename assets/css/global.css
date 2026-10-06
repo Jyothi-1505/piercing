@@ -24,7 +24,7 @@
     --color-secondary-light: #624454;
     --color-secondary-soft: #EEE6EA;
     --color-secondary-dark: #291923;
-
+/* #3B2434 */
 
     /* -------------------------
        GLOBAL BACKGROUNDS
@@ -495,7 +495,7 @@ p {
 
     font-family: var(--font-body);
 
-    font-size: 6px;
+    font-size: 10px;
     font-weight: var(--weight-semibold);
 
     line-height: 1;
@@ -557,9 +557,9 @@ p {
     background: var(--color-transparent);
 
     color: var(--color-text);
-
-    font-size: 13px;
-    font-weight: var(--weight-medium);
+font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: var(--weight-semibold);
 
     white-space: nowrap;
 
@@ -776,11 +776,11 @@ p {
 
     background: var(--color-surface);
 
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-primary);
 
     border-radius: var(--radius-pill);
 
-    color: var(--color-icon);
+    color: var(--color-primary);
 
     font-size: 12px;
     font-weight: var(--weight-semibold);
@@ -802,9 +802,9 @@ p {
 */
 
 .header-action:hover {
-    color: var(--color-primary);
+    color: var(--color-white);
 
-    background: var(--color-primary-soft);
+    background: var(--color-primary);
 
     border-color: var(--color-primary);
 
@@ -1073,7 +1073,7 @@ p {
 
     gap: 55px;
 
-    padding-block: 72px 60px;
+    padding-block: 45px 60px;
 }
 
 
@@ -1118,16 +1118,18 @@ p {
     gap: 9px;
 
     margin-top: 24px;
+
 }
 
 
 .social-link {
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
 
     background: var(--color-surface);
 
@@ -1135,7 +1137,7 @@ p {
 
     border-radius: 50%;
 
-    color: var(--color-icon);
+    color: var(--color-primary);
 
     transition:
         color var(--transition-normal),

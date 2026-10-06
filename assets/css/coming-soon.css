@@ -1,0 +1,1369 @@
+/* =========================================================
+   AURIA
+   COMING SOON PAGE
+========================================================= */
+
+
+/* =========================================================
+   01. PAGE
+========================================================= */
+
+.coming-page {
+    width: 100%;
+    min-width: 0;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color var(--transition-normal),
+        color var(--transition-normal);
+}
+
+
+/* =========================================================
+   02. FIXED CONTROLS
+========================================================= */
+
+.coming-page__controls {
+    position: fixed;
+
+    top: 20px;
+    right: 24px;
+
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+[dir="rtl"] .coming-page__controls {
+    right: auto;
+    left: 24px;
+}
+
+
+/* =========================================================
+   03. MAIN
+========================================================= */
+
+.coming-page__main {
+    position: relative;
+
+    width: 100%;
+    max-width: 100vw;
+
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 80px 24px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    isolation: isolate;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   04. BACKGROUND CIRCLES
+========================================================= */
+
+.coming-page__main::before,
+.coming-page__main::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    opacity: 0.7;
+}
+
+
+.coming-page__main::before {
+    width: 360px;
+    height: 360px;
+
+    top: -285px;
+    left: -150px;
+}
+
+
+.coming-page__main::after {
+    width: 480px;
+    height: 480px;
+
+    right: -330px;
+    bottom: -330px;
+}
+
+
+/* =========================================================
+   05. CARD
+========================================================= */
+
+.coming-card {
+    position: relative;
+
+    width: 680px;
+
+    max-width: calc(100vw - 48px);
+
+    min-width: 0;
+
+    margin: 0 auto;
+
+    flex: 0 0 auto;
+
+    box-sizing: border-box;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-soft);
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transition:
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+/* =========================================================
+   06. BRAND
+========================================================= */
+
+.coming-card__brand {
+    width: fit-content;
+
+    margin: 36px auto 25px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   07. EDITORIAL HEADER
+========================================================= */
+
+.coming-card__header {
+    position: relative;
+
+    width: calc(100% - 68px);
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.coming-card__eyebrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.16em;
+}
+
+
+.coming-card__line {
+    width: 30px;
+    height: 1px;
+
+    flex: 0 0 30px;
+
+    background: var(--color-border);
+}
+
+
+.coming-card__number {
+    position: absolute;
+
+    right: 0;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.1em;
+}
+
+
+[dir="rtl"] .coming-card__number {
+    right: auto;
+    left: 0;
+}
+
+
+/* =========================================================
+   08. VISUAL
+========================================================= */
+
+.coming-card__visual {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 19px;
+}
+
+
+.coming-card__visual-ring {
+    position: relative;
+
+    width: 86px;
+    height: 86px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 50%;
+
+    color: var(--color-primary);
+
+    transition:
+        transform var(--transition-slow),
+        background-color var(--transition-normal);
+}
+
+
+.coming-card__visual-inner {
+    position: absolute;
+
+    inset: 9px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 50%;
+}
+
+
+.coming-card__visual-ring::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 118px;
+
+    background: var(--color-border);
+
+    transform: rotate(45deg);
+}
+
+
+.coming-card__visual-ring svg {
+    position: relative;
+
+    z-index: 2;
+
+    width: 23px;
+    height: 23px;
+
+    stroke-width: 1.4;
+}
+
+
+.coming-card__visual-dot {
+    position: absolute;
+
+    top: 12px;
+    right: 14px;
+
+    width: 6px;
+    height: 6px;
+
+    background: var(--color-primary);
+
+    border-radius: 50%;
+}
+
+
+.coming-card__visual-ring:hover {
+    transform: rotate(10deg) scale(1.05);
+
+    background: var(--color-primary-soft);
+}
+
+
+/* =========================================================
+   09. MAIN LABEL
+========================================================= */
+
+.coming-card__label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 10px;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.2em;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   10. TITLE
+========================================================= */
+
+.coming-card__title {
+    width: calc(100% - 60px);
+
+    max-width: 550px;
+
+    margin: 0 auto 17px;
+
+    color: var(--color-heading);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(
+        2.7rem,
+        5vw,
+        4rem
+    );
+
+    font-weight: var(--weight-regular);
+
+    line-height: 0.98;
+
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+
+.coming-card__title span {
+    display: block;
+
+    color: var(--color-secondary);
+}
+
+
+/* =========================================================
+   11. DESCRIPTION
+========================================================= */
+
+.coming-card__description {
+    width: calc(100% - 100px);
+
+    max-width: 480px;
+
+    margin: 0 auto 25px;
+
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   12. COUNTDOWN
+========================================================= */
+
+.coming-card__countdown {
+    width: calc(100% - 90px);
+
+    max-width: 510px;
+
+    margin: 0 auto 22px;
+
+    padding: 20px 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+.coming-card__countdown-item {
+    min-width: 78px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.coming-card__countdown-value {
+    display: block;
+
+    color: var(--color-secondary);
+
+    font-family: var(--font-heading);
+
+    font-size: 2.5rem;
+
+    font-weight: var(--weight-regular);
+
+    line-height: 0.95;
+
+    font-variant-numeric: tabular-nums;
+
+    transition:
+        color var(--transition-normal);
+}
+
+
+.coming-card__countdown-label {
+    display: block;
+
+    margin-top: 8px;
+
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 7px;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.12em;
+}
+
+
+.coming-card__countdown-separator {
+    align-self: flex-start;
+
+    margin-top: 1px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 1.7rem;
+
+    line-height: 1;
+
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   13. COUNTDOWN HOVER
+========================================================= */
+
+.coming-card__countdown-item {
+    transition:
+        transform var(--transition-fast);
+}
+
+
+.coming-card__countdown-item:hover {
+    transform: translateY(-3px);
+}
+
+
+.coming-card__countdown-item:hover
+.coming-card__countdown-value {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   14. STATUS
+========================================================= */
+
+.coming-card__status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    padding: 8px 13px;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-pill);
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.1em;
+}
+
+
+.coming-card__status-dot {
+    width: 6px;
+    height: 6px;
+
+    flex: 0 0 6px;
+
+    background: var(--color-primary);
+
+    border-radius: 50%;
+
+    animation: comingSoonPulse 2s ease-in-out infinite;
+}
+
+
+@keyframes comingSoonPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.7);
+    }
+
+}
+
+
+/* =========================================================
+   15. ACTION
+========================================================= */
+
+.coming-card__actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 32px;
+}
+
+
+.coming-card__actions .btn {
+    min-width: 150px;
+}
+
+
+/* =========================================================
+   16. BOTTOM
+========================================================= */
+
+.coming-card__bottom {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px 34px;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+.coming-card__bottom-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+.coming-card__bottom-left span {
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.1em;
+}
+
+
+.coming-card__bottom-brand {
+    flex-shrink: 0;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   17. RTL
+========================================================= */
+
+[dir="rtl"] .coming-card__bottom {
+    direction: rtl;
+}
+
+
+[dir="rtl"] .coming-card__bottom-left {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   18. DARK MODE
+========================================================= */
+
+[data-theme="dark"] .coming-card {
+    background: var(--color-surface);
+
+    border-color: var(--color-border);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+/* =========================================================
+   19. 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .coming-page__main {
+        padding: 80px 24px 40px;
+    }
+
+
+    .coming-card {
+        width: 680px;
+
+        max-width: calc(100vw - 48px);
+    }
+
+
+    .coming-card__brand {
+        margin-top: 36px;
+    }
+
+
+    .coming-card__visual-ring {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .coming-card__title {
+        font-size: clamp(
+            2.7rem,
+            4.8vw,
+            3.8rem
+        );
+    }
+
+}
+
+
+/* =========================================================
+   20. 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .coming-page__main {
+        min-height: 100vh;
+
+        padding: 78px 20px 30px;
+    }
+
+
+    .coming-page__controls {
+        top: 16px;
+        right: 18px;
+
+        gap: 8px;
+    }
+
+
+    [dir="rtl"] .coming-page__controls {
+        right: auto;
+        left: 18px;
+    }
+
+
+    .coming-card {
+        width: 620px;
+
+        max-width: calc(100vw - 40px);
+
+        border-radius: var(--radius-lg);
+    }
+
+
+    .coming-card__brand {
+        margin-top: 32px;
+        margin-bottom: 22px;
+    }
+
+
+    .coming-card__header {
+        width: calc(100% - 50px);
+    }
+
+
+    .coming-card__visual-ring {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .coming-card__visual-ring svg {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .coming-card__visual-ring::after {
+        height: 95px;
+    }
+
+
+    .coming-card__title {
+        width: calc(100% - 40px);
+
+        max-width: 520px;
+
+        font-size: 3.1rem;
+    }
+
+
+    .coming-card__description {
+        width: calc(100% - 70px);
+
+        max-width: 470px;
+
+        font-size: 12px;
+    }
+
+
+    .coming-card__countdown {
+        width: calc(100% - 70px);
+
+        padding: 18px 12px;
+    }
+
+
+    .coming-card__countdown-item {
+        min-width: 65px;
+    }
+
+
+    .coming-card__countdown-value {
+        font-size: 2.2rem;
+    }
+
+
+    .coming-card__countdown-separator {
+        font-size: 1.5rem;
+    }
+
+
+    .coming-card__bottom {
+        padding: 16px 26px;
+    }
+
+
+    .coming-card__bottom-left {
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   21. 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .coming-page__main {
+        min-height: 100vh;
+
+        padding: 65px 16px 20px;
+    }
+
+
+    .coming-page__controls {
+        top: 12px;
+        right: 12px;
+
+        gap: 8px;
+    }
+
+
+    [dir="rtl"] .coming-page__controls {
+        right: auto;
+        left: 12px;
+    }
+
+
+    .coming-card {
+        width: calc(100vw - 32px);
+
+        max-width: calc(100vw - 32px);
+
+        border-radius: var(--radius-md);
+    }
+
+
+    .coming-card__brand {
+        margin-top: 28px;
+        margin-bottom: 19px;
+    }
+
+
+    .coming-card__header {
+        width: calc(100% - 36px);
+
+        margin-bottom: 17px;
+    }
+
+
+    .coming-card__eyebrow {
+        gap: 8px;
+
+        font-size: 7px;
+    }
+
+
+    .coming-card__line {
+        width: 20px;
+
+        flex-basis: 20px;
+    }
+
+
+    .coming-card__number {
+        font-size: 8px;
+    }
+
+
+    .coming-card__visual {
+        margin-bottom: 16px;
+    }
+
+
+    .coming-card__visual-ring {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    .coming-card__visual-ring::before {
+        inset: 7px;
+    }
+
+
+    .coming-card__visual-ring::after {
+        height: 80px;
+    }
+
+
+    .coming-card__visual-ring svg {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .coming-card__visual-dot {
+        width: 5px;
+        height: 5px;
+
+        top: 9px;
+        right: 11px;
+    }
+
+
+    .coming-card__label {
+        font-size: 8px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .coming-card__title {
+        width: calc(100% - 20px);
+
+        max-width: 390px;
+
+        font-size: 2.3rem;
+
+        line-height: 1.02;
+    }
+
+
+    .coming-card__description {
+        width: calc(100% - 30px);
+
+        max-width: 360px;
+
+        font-size: 12px;
+
+        line-height: 1.65;
+    }
+
+
+    .coming-card__countdown {
+        width: calc(100% - 28px);
+
+        padding: 16px 5px;
+
+        margin-bottom: 19px;
+    }
+
+
+    .coming-card__countdown-item {
+        min-width: 54px;
+    }
+
+
+    .coming-card__countdown-value {
+        font-size: 1.8rem;
+    }
+
+
+    .coming-card__countdown-label {
+        margin-top: 6px;
+
+        font-size: 6px;
+    }
+
+
+    .coming-card__countdown-separator {
+        font-size: 1.2rem;
+    }
+
+
+    .coming-card__status {
+        margin-bottom: 21px;
+
+        padding: 7px 11px;
+
+        font-size: 7px;
+    }
+
+
+    .coming-card__actions {
+        margin-bottom: 25px;
+    }
+
+
+    .coming-card__actions .btn {
+        min-width: 145px;
+    }
+
+
+    .coming-card__bottom {
+        padding: 14px 18px;
+
+        gap: 10px;
+    }
+
+
+    .coming-card__bottom-left {
+        gap: 9px;
+    }
+
+
+    .coming-card__bottom-left span {
+        font-size: 7px;
+    }
+
+
+    .coming-card__bottom-brand {
+        font-size: 18px;
+    }
+
+
+    .coming-page__main::before {
+        width: 250px;
+        height: 250px;
+
+        top: -190px;
+        left: -140px;
+    }
+
+
+    .coming-page__main::after {
+        width: 330px;
+        height: 330px;
+
+        right: -230px;
+        bottom: -220px;
+    }
+
+}
+
+
+/* =========================================================
+   22. 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .coming-page__main {
+        width: 100%;
+        max-width: 100vw;
+
+        min-height: 100svh;
+
+        padding: 58px 12px 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+
+    .coming-page__controls {
+        position: fixed;
+
+        top: 10px;
+        right: 10px;
+
+        gap: 6px;
+    }
+
+
+    [dir="rtl"] .coming-page__controls {
+        right: auto;
+        left: 10px;
+    }
+
+
+    .coming-card {
+        width: calc(100vw - 24px);
+
+        max-width: calc(100vw - 24px);
+
+        min-width: 0;
+
+        margin: 0 auto;
+
+        border-radius: var(--radius-md);
+    }
+
+
+    .coming-card__brand {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+
+    .coming-card__brand .brand-logo__image {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .coming-card__brand .brand-logo__main {
+        font-size: 21px;
+    }
+
+
+    .coming-card__brand .brand-logo__tagline {
+        font-size: 7px;
+    }
+
+
+    .coming-card__header {
+        width: calc(100% - 28px);
+
+        margin-bottom: 13px;
+    }
+
+
+    .coming-card__eyebrow {
+        gap: 6px;
+
+        font-size: 6px;
+
+        letter-spacing: 0.13em;
+    }
+
+
+    .coming-card__line {
+        width: 16px;
+
+        flex-basis: 16px;
+    }
+
+
+    .coming-card__number {
+        font-size: 7px;
+    }
+
+
+    .coming-card__visual {
+        margin-bottom: 13px;
+    }
+
+
+    .coming-card__visual-ring {
+        width: 54px;
+        height: 54px;
+    }
+
+
+    .coming-card__visual-ring::before {
+        inset: 6px;
+    }
+
+
+    .coming-card__visual-ring::after {
+        height: 68px;
+    }
+
+
+    .coming-card__visual-ring svg {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .coming-card__visual-dot {
+        width: 5px;
+        height: 5px;
+
+        top: 8px;
+        right: 10px;
+    }
+
+
+    .coming-card__label {
+        margin-bottom: 9px;
+
+        font-size: 7px;
+
+        letter-spacing: 0.17em;
+    }
+
+
+    .coming-card__title {
+        width: calc(100% - 20px);
+
+        max-width: 320px;
+
+        margin-inline: auto;
+
+        font-size: 2rem;
+
+        line-height: 1.02;
+    }
+
+
+    .coming-card__description {
+        width: calc(100% - 24px);
+
+        max-width: 310px;
+
+        margin: 0 auto 17px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    .coming-card__countdown {
+        width: calc(100% - 18px);
+
+        padding: 13px 2px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .coming-card__countdown-item {
+        min-width: 47px;
+    }
+
+
+    .coming-card__countdown-value {
+        font-size: 1.5rem;
+    }
+
+
+    .coming-card__countdown-label {
+        margin-top: 5px;
+
+        font-size: 5px;
+
+        letter-spacing: 0.08em;
+    }
+
+
+    .coming-card__countdown-separator {
+        font-size: 1rem;
+    }
+
+
+    .coming-card__status {
+        max-width: calc(100% - 28px);
+
+        margin-bottom: 18px;
+
+        padding: 6px 9px;
+
+        font-size: 6px;
+
+        letter-spacing: 0.07em;
+    }
+
+
+    .coming-card__status-dot {
+        width: 5px;
+        height: 5px;
+
+        flex-basis: 5px;
+    }
+
+
+    .coming-card__actions {
+        margin-bottom: 21px;
+    }
+
+
+    .coming-card__actions .btn {
+        min-width: 140px;
+    }
+
+
+    .coming-card__bottom {
+        width: 100%;
+
+        padding: 12px 14px;
+
+        gap: 7px;
+
+        box-sizing: border-box;
+    }
+
+
+    .coming-card__bottom-left {
+        gap: 6px;
+
+        min-width: 0;
+    }
+
+
+    .coming-card__bottom-left span {
+        font-size: 5.5px;
+
+        letter-spacing: 0.05em;
+    }
+
+
+    .coming-card__bottom-brand {
+        font-size: 16px;
+    }
+
+
+    .coming-page__main::before {
+        width: 220px;
+        height: 220px;
+
+        top: -170px;
+        left: -120px;
+    }
+
+
+    .coming-page__main::after {
+        width: 280px;
+        height: 280px;
+
+        right: -200px;
+        bottom: -190px;
+    }
+
+}

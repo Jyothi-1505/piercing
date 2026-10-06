@@ -111,7 +111,7 @@
 
 
     .brand-logo__tagline {
-        font-size: 5px;
+        font-size: 8px;
     }
 
 
@@ -797,7 +797,7 @@
 
     .brand-logo__tagline {
 
-        font-size: 4.5px;
+        font-size: 6px;
 
         letter-spacing: 0.12em;
     }
@@ -3670,4 +3670,250 @@
     .testimonial-card__author span {
         font-size: 7px;
     }
+}
+
+/* =========================================================
+   MOBILE NAVIGATION - CENTER LINKS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    #main-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-navigation .navigation-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-navigation .navigation-list > li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-navigation .navigation-list > li > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Home dropdown */
+    #main-navigation .home-dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-navigation .home-dropdown-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-navigation .home-dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-navigation .home-dropdown-menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* =========================================================
+   CENTER HOME DROPDOWN
+========================================================= */
+
+@media (max-width: 768px) {
+
+    #main-navigation .home-dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-navigation .home-dropdown-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-navigation .home-dropdown-toggle span {
+        text-align: center;
+    }
+
+    #main-navigation .home-dropdown-toggle svg {
+        position: absolute;
+        right: 20px;
+    }
+
+    #main-navigation .home-dropdown-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #main-navigation .home-dropdown-menu a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   RTL - HOME DROPDOWN
+========================================================= */
+
+@media (max-width: 768px) {
+
+    [dir="rtl"] #main-navigation .home-dropdown-toggle svg {
+        right: auto;
+        left: 20px;
+    }
+
+}
+/* =========================================================
+   MOBILE HOME + DROPDOWN — CENTERED
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Home wrapper */
+    #main-navigation .home-dropdown {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    /* Home button */
+    #main-navigation .home-dropdown-toggle {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        text-align: center;
+    }
+
+
+    /* Home text */
+    #main-navigation .home-dropdown-toggle span {
+        display: block;
+
+        width: auto;
+
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    /* Dropdown arrow */
+    #main-navigation .home-dropdown-toggle svg {
+        position: absolute;
+
+        right: 20px;
+
+        width: 12px;
+        height: 12px;
+    }
+
+
+    /* Dropdown container */
+    #main-navigation .home-dropdown-menu {
+        position: static !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        margin: 8px auto 0 !important;
+        padding: 0 !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        transform: none !important;
+    }
+
+
+    /* Dropdown items */
+    #main-navigation .home-dropdown-menu li {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Dropdown links */
+    #main-navigation .home-dropdown-menu a {
+        width: 220px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 2px auto;
+
+        text-align: center;
+    }
+
+
+    /* RTL */
+    [dir="rtl"] #main-navigation .home-dropdown-toggle svg {
+        right: auto;
+        left: 20px;
+    }
+
 }

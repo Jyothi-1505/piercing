@@ -3059,3 +3059,573 @@
     }
 
 }
+
+/* =========================================================
+   AFTERCARE FIRST DAY — HOVER EFFECT
+========================================================= */
+
+.aftercare-first-day__step {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* ---------------------------------------------------------
+   SUBTLE HOVER LIGHT
+--------------------------------------------------------- */
+
+.aftercare-first-day__step::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(192, 132, 151, 0.10),
+            rgba(192, 132, 151, 0.035) 55%,
+            transparent 100%
+        );
+
+    opacity: 0;
+
+    transform: translateY(14px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.aftercare-first-day__step:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ---------------------------------------------------------
+   KEEP CONTENT ABOVE EFFECT
+--------------------------------------------------------- */
+
+.aftercare-first-day__step-top,
+.aftercare-first-day__step h3,
+.aftercare-first-day__step p {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER
+--------------------------------------------------------- */
+
+.aftercare-first-day__step-number {
+    transition:
+        color 0.4s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.aftercare-first-day__step:hover
+.aftercare-first-day__step-number {
+    color: var(--color-primary);
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+--------------------------------------------------------- */
+
+.aftercare-first-day__icon {
+    transition:
+        color 0.4s ease,
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.aftercare-first-day__step:hover
+.aftercare-first-day__icon {
+    color: var(--color-primary);
+
+    transform:
+        translateY(-4px)
+        scale(1.12);
+}
+
+
+/* ---------------------------------------------------------
+   DIFFERENT ICON MOTION
+--------------------------------------------------------- */
+
+/* Droplets */
+.aftercare-first-day__step:nth-child(1):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(-5deg);
+}
+
+
+/* Hand */
+.aftercare-first-day__step:nth-child(2):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(5deg);
+}
+
+
+/* Moon */
+.aftercare-first-day__step:nth-child(3):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(-7deg);
+}
+
+
+/* ---------------------------------------------------------
+   HEADING
+--------------------------------------------------------- */
+
+.aftercare-first-day__step h3 {
+    transition:
+        color 0.4s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.aftercare-first-day__step:hover h3 {
+    color: var(--color-primary);
+
+    transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   DESCRIPTION
+--------------------------------------------------------- */
+
+.aftercare-first-day__step p {
+    transition:
+        color 0.4s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.aftercare-first-day__step:hover p {
+    transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   RTL
+--------------------------------------------------------- */
+
+[dir="rtl"] .aftercare-first-day__step:hover h3,
+[dir="rtl"] .aftercare-first-day__step:hover p {
+    transform: translateX(-3px);
+}
+
+
+[dir="rtl"] .aftercare-first-day__step:nth-child(1):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(5deg);
+}
+
+
+[dir="rtl"] .aftercare-first-day__step:nth-child(2):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(-5deg);
+}
+
+
+[dir="rtl"] .aftercare-first-day__step:nth-child(3):hover
+.aftercare-first-day__icon {
+    transform:
+        translateY(-4px)
+        scale(1.12)
+        rotate(7deg);
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+
+[data-theme="dark"] .aftercare-first-day__step:hover {
+    background: var(--color-background);
+}
+
+
+[data-theme="dark"] .aftercare-first-day__step:hover::before {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(192, 132, 151, 0.09),
+            rgba(192, 132, 151, 0.025) 55%,
+            transparent 100%
+        );
+}
+
+
+/* ---------------------------------------------------------
+   TOUCH DEVICES
+--------------------------------------------------------- */
+
+@media (hover: none) {
+
+    .aftercare-first-day__step:hover {
+        background: transparent;
+    }
+
+    .aftercare-first-day__step:hover::before {
+        opacity: 0;
+        transform: none;
+    }
+
+    .aftercare-first-day__step:hover
+    .aftercare-first-day__step-number,
+    .aftercare-first-day__step:hover
+    .aftercare-first-day__icon,
+    .aftercare-first-day__step:hover h3,
+    .aftercare-first-day__step:hover p {
+        transform: none;
+    }
+
+}
+
+/* =========================================================
+   AFTERCARE AVOID — HOVER EFFECTS
+========================================================= */
+
+/* ---------------------------------------------------------
+   CARE ITEM
+--------------------------------------------------------- */
+
+.aftercare-avoid__item {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        background-color 0.35s ease,
+        padding-left 0.4s ease,
+        padding-right 0.4s ease;
+}
+
+
+/* subtle editorial background sweep */
+.aftercare-avoid__item::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(192, 132, 151, 0.08),
+            rgba(192, 132, 151, 0.025),
+            transparent
+        );
+
+    opacity: 0;
+
+    transform: translateX(-18px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+
+.aftercare-avoid__item:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Keep content above background effect */
+
+.aftercare-avoid__number,
+.aftercare-avoid__icon,
+.aftercare-avoid__content {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER
+--------------------------------------------------------- */
+
+.aftercare-avoid__number {
+    transition:
+        color 0.35s ease,
+        transform 0.4s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.aftercare-avoid__item:hover .aftercare-avoid__number {
+    color: var(--color-primary);
+
+    transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   ICON CIRCLE
+--------------------------------------------------------- */
+
+.aftercare-avoid__icon {
+    transition:
+        background-color 0.35s ease,
+        border-color 0.35s ease,
+        color 0.35s ease,
+        transform 0.45s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.aftercare-avoid__item:hover .aftercare-avoid__icon {
+    background: var(--color-background);
+
+    border-color: var(--color-primary);
+
+    color: var(--color-primary);
+
+    transform:
+        translateY(-3px)
+        scale(1.08);
+}
+
+
+/* ---------------------------------------------------------
+   DIFFERENT ICON MOTION
+--------------------------------------------------------- */
+
+/* 01 — Don't twist */
+.aftercare-avoid__item:nth-child(1):hover .aftercare-avoid__icon {
+    transform:
+        translateY(-3px)
+        scale(1.08)
+        rotate(-8deg);
+}
+
+
+/* 02 — Avoid pressure */
+.aftercare-avoid__item:nth-child(2):hover .aftercare-avoid__icon {
+    transform:
+        translateY(-3px)
+        scale(1.08)
+        rotate(8deg);
+}
+
+
+/* 03 — Skip harsh products */
+.aftercare-avoid__item:nth-child(3):hover .aftercare-avoid__icon {
+    transform:
+        translateY(-3px)
+        scale(1.08)
+        rotate(-6deg);
+}
+
+
+/* 04 — Don't rush */
+.aftercare-avoid__item:nth-child(4):hover .aftercare-avoid__icon {
+    transform:
+        translateY(-3px)
+        scale(1.08);
+}
+
+
+/* ---------------------------------------------------------
+   HEADING
+--------------------------------------------------------- */
+
+.aftercare-avoid__content h3 {
+    transition:
+        color 0.35s ease,
+        transform 0.4s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.aftercare-avoid__item:hover .aftercare-avoid__content h3 {
+    color: var(--color-primary);
+
+    transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   DESCRIPTION
+--------------------------------------------------------- */
+
+.aftercare-avoid__content p {
+    transition:
+        color 0.35s ease,
+        transform 0.4s ease;
+}
+
+
+.aftercare-avoid__item:hover .aftercare-avoid__content p {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RIGHT — LESS IS MORE
+========================================================= */
+
+.aftercare-avoid__statement {
+    transition:
+        background-color 0.4s ease;
+}
+
+
+.aftercare-avoid__statement-copy {
+    transition:
+        transform 0.55s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.aftercare-avoid__statement:hover
+.aftercare-avoid__statement-copy {
+    transform: translateX(4px);
+}
+
+
+/* Accent word */
+
+.aftercare-avoid__statement-accent {
+    transition:
+        color 0.4s ease;
+}
+
+
+.aftercare-avoid__statement:hover
+.aftercare-avoid__statement-accent {
+    color: var(--color-primary);
+}
+
+
+/* Caption line */
+
+.aftercare-avoid__statement-caption {
+    transition:
+        border-color 0.35s ease,
+        transform 0.4s ease;
+}
+
+
+.aftercare-avoid__statement:hover
+.aftercare-avoid__statement-caption {
+    border-color: var(--color-primary);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .aftercare-avoid__item::before {
+    transform: translateX(18px);
+    background:
+        linear-gradient(
+            270deg,
+            rgba(192, 132, 151, 0.08),
+            rgba(192, 132, 151, 0.025),
+            transparent
+        );
+}
+
+[dir="rtl"] .aftercare-avoid__item:hover::before {
+    transform: translateX(0);
+}
+
+[dir="rtl"] .aftercare-avoid__item:hover
+.aftercare-avoid__number,
+[dir="rtl"] .aftercare-avoid__item:hover
+.aftercare-avoid__content h3,
+[dir="rtl"] .aftercare-avoid__item:hover
+.aftercare-avoid__content p,
+[dir="rtl"] .aftercare-avoid__statement:hover
+.aftercare-avoid__statement-copy,
+[dir="rtl"] .aftercare-avoid__statement:hover
+.aftercare-avoid__statement-caption {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+[data-theme="dark"] .aftercare-avoid__item:hover {
+    background: var(--color-background);
+}
+
+[data-theme="dark"] .aftercare-avoid__item::before {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(192, 132, 151, 0.07),
+            rgba(192, 132, 151, 0.02),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .aftercare-avoid__item:hover {
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .aftercare-avoid__item:hover::before {
+        opacity: 0;
+        transform: none;
+    }
+
+    .aftercare-avoid__item:hover .aftercare-avoid__number,
+    .aftercare-avoid__item:hover .aftercare-avoid__icon,
+    .aftercare-avoid__item:hover .aftercare-avoid__content h3,
+    .aftercare-avoid__item:hover .aftercare-avoid__content p {
+        transform: none;
+    }
+
+    .aftercare-avoid__statement:hover
+    .aftercare-avoid__statement-copy,
+    .aftercare-avoid__statement:hover
+    .aftercare-avoid__statement-caption {
+        transform: none;
+    }
+
+}

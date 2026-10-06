@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AURIA — Page not found."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="./assets/images/logo/auria-logo.png"
+    >
+
+    <title>404 | AURIA</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/global.css"
+    >
+
+
+    <!-- =====================================================
+         404 PAGE CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/404.css"
+    >
+
+
+    <!-- =====================================================
+         LUCIDE ICONS
+    ====================================================== -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+
+    <!-- =====================================================
+         404 PAGE JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="./assets/js/404.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="error-page">
+
+
+    <!-- =====================================================
+         FIXED PAGE CONTROLS
+
+         SAME GLOBAL CONTROLS AS BOOK APPOINTMENT
+    ====================================================== -->
+
+    <div
+        class="error-page__controls"
+        aria-label="Page controls"
+    >
+
+        <button
+            class="header-action"
+            id="rtl-toggle"
+            type="button"
+            aria-label="Switch layout direction"
+        >
+            RTL
+        </button>
+
+
+        <button
+            class="header-action header-action--theme"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+        >
+
+            <i
+                data-lucide="moon"
+                class="theme-icon theme-icon--moon"
+            ></i>
+
+            <i
+                data-lucide="sun"
+                class="theme-icon theme-icon--sun"
+            ></i>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         404 PAGE
+    ====================================================== -->
+
+    <main class="error-page__main">
+
+        <section
+            class="error-card"
+            aria-labelledby="error-title"
+        >
+
+
+            <!-- =================================================
+                 BRAND
+            ================================================== -->
+
+            <a
+                href="./index.html"
+                class="brand-logo error-card__brand"
+                aria-label="AURIA Home"
+            >
+
+                <span class="brand-logo__image">
+
+                    <img
+                        src="./assets/images/logo/auria-logo.png"
+                        alt="AURIA logo"
+                        data-light-logo="./assets/images/logo/auria-logo.png"
+                        data-dark-logo="./assets/images/logo/auria-logo-dark.png"
+                    >
+
+                </span>
+
+
+                <span class="brand-logo__content">
+
+                    <span class="brand-logo__main">
+
+                        <span class="brand-logo__primary">
+                            AU
+                        </span>
+
+                        <span class="brand-logo__secondary">
+                            RIA
+                        </span>
+
+                    </span>
+
+
+                    <span class="brand-logo__tagline">
+                        PIERCING &amp; JEWELRY
+                    </span>
+
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 ERROR NUMBER
+            ================================================== -->
+
+            <div
+                class="error-card__number"
+                aria-hidden="true"
+            >
+
+                <span class="error-card__digit">
+                    4
+                </span>
+
+
+                <span class="error-card__orb">
+
+                    <i data-lucide="sparkles"></i>
+
+                </span>
+
+
+                <span class="error-card__digit">
+                    4
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ERROR LABEL
+            ================================================== -->
+
+            <span class="error-card__eyebrow">
+                PAGE NOT FOUND
+            </span>
+
+
+
+            <!-- =================================================
+                 TITLE
+            ================================================== -->
+
+            <h1
+                class="error-card__title"
+                id="error-title"
+            >
+
+                Looks like this page
+                <span>took a wrong turn.</span>
+
+            </h1>
+
+
+
+            <!-- =================================================
+                 DESCRIPTION
+            ================================================== -->
+
+            <p class="error-card__description">
+
+                The page you're looking for may have been moved,
+                removed, or the link might be incorrect.
+                Let's get you back to AURIA.
+
+            </p>
+
+
+
+            <!-- =================================================
+                 ACTIONS
+            ================================================== -->
+
+            <div class="error-card__actions">
+
+                <a
+                    href="./index.html"
+                    class="btn btn-primary"
+                >
+
+                    <span>
+                        Back to Home
+                    </span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+
+                <a
+                    href="./services.html"
+                    class="btn btn-secondary"
+                >
+
+                    <span>
+                        Explore Services
+                    </span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BOTTOM INFORMATION
+            ================================================== -->
+
+            <div class="error-card__bottom">
+
+                <div class="error-card__bottom-mark">
+
+                    <i data-lucide="compass"></i>
+
+                </div>
+
+
+                <div class="error-card__bottom-content">
+
+                    <span>
+                        LOOKING FOR SOMETHING?
+                    </span>
+
+                    <p>
+                        Visit the home page or explore our services.
+                    </p>
+
+                </div>
+
+
+                <span class="error-card__bottom-number">
+                    404
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

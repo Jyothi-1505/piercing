@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A new AURIA experience is coming soon."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="./assets/images/logo/auria-logo.png"
+    >
+
+    <title>Coming Soon | AURIA</title>
+
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/global.css"
+    >
+
+
+    <!-- =====================================================
+         COMING SOON CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/coming-soon.css"
+    >
+
+
+    <!-- =====================================================
+         LUCIDE
+    ====================================================== -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+
+    <!-- =====================================================
+         COMING SOON JS
+    ====================================================== -->
+
+    <script
+        src="./assets/js/coming-soon.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="coming-page">
+
+
+    <!-- =====================================================
+         FIXED CONTROLS
+    ====================================================== -->
+
+    <div
+        class="coming-page__controls"
+        aria-label="Page controls"
+    >
+
+        <button
+            class="header-action"
+            id="rtl-toggle"
+            type="button"
+            aria-label="Switch layout direction"
+        >
+            RTL
+        </button>
+
+
+        <button
+            class="header-action header-action--theme"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+        >
+
+            <i
+                data-lucide="moon"
+                class="theme-icon theme-icon--moon"
+            ></i>
+
+            <i
+                data-lucide="sun"
+                class="theme-icon theme-icon--sun"
+            ></i>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="coming-page__main">
+
+        <section
+            class="coming-card"
+            aria-labelledby="coming-title"
+        >
+
+
+            <!-- =================================================
+                 BRAND
+            ================================================== -->
+
+            <a
+                href="./index.html"
+                class="brand-logo coming-card__brand"
+                aria-label="AURIA Home"
+            >
+
+                <span class="brand-logo__image">
+
+                    <img
+                        src="./assets/images/logo/auria-logo.png"
+                        alt="AURIA logo"
+                    >
+
+                </span>
+
+
+                <span class="brand-logo__content">
+
+                    <span class="brand-logo__main">
+
+                        <span class="brand-logo__primary">
+                            AU
+                        </span>
+
+                        <span class="brand-logo__secondary">
+                            RIA
+                        </span>
+
+                    </span>
+
+
+                    <span class="brand-logo__tagline">
+                        PIERCING &amp; JEWELRY
+                    </span>
+
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 EDITORIAL HEADER
+            ================================================== -->
+
+            <div class="coming-card__header">
+
+                <div class="coming-card__eyebrow">
+
+                    <span class="coming-card__line"></span>
+
+                    <span>
+                        AURIA / NEXT EDIT
+                    </span>
+
+                    <span class="coming-card__line"></span>
+
+                </div>
+
+
+                <!-- <span class="coming-card__number">
+                    01
+                </span> -->
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VISUAL
+            ================================================== -->
+
+            <div
+                class="coming-card__visual"
+                aria-hidden="true"
+            >
+
+                <div class="coming-card__visual-ring">
+
+                    <span class="coming-card__visual-inner"></span>
+
+                    <i data-lucide="sparkles"></i>
+
+                    <span class="coming-card__visual-dot"></span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TITLE
+            ================================================== -->
+
+            <span class="coming-card__label">
+                COMING SOON
+            </span>
+
+
+            <h1
+                class="coming-card__title"
+                id="coming-title"
+            >
+
+                Something new is
+
+                <span>
+                    taking shape.
+                </span>
+
+            </h1>
+
+
+            <p class="coming-card__description">
+
+                A new AURIA experience is on its way.
+                We're carefully preparing every detail
+                before we open the doors.
+
+            </p>
+
+
+
+            <!-- =================================================
+                 COUNTDOWN
+            ================================================== -->
+
+            <div
+                class="coming-card__countdown"
+                id="coming-countdown"
+                aria-label="Countdown until launch"
+            >
+
+                <div class="coming-card__countdown-item">
+
+                    <span
+                        class="coming-card__countdown-value"
+                        id="countdown-days"
+                    >
+                        00
+                    </span>
+
+                    <span class="coming-card__countdown-label">
+                        DAYS
+                    </span>
+
+                </div>
+
+
+                <span
+                    class="coming-card__countdown-separator"
+                    aria-hidden="true"
+                >
+                    :
+                </span>
+
+
+                <div class="coming-card__countdown-item">
+
+                    <span
+                        class="coming-card__countdown-value"
+                        id="countdown-hours"
+                    >
+                        00
+                    </span>
+
+                    <span class="coming-card__countdown-label">
+                        HOURS
+                    </span>
+
+                </div>
+
+
+                <span
+                    class="coming-card__countdown-separator"
+                    aria-hidden="true"
+                >
+                    :
+                </span>
+
+
+                <div class="coming-card__countdown-item">
+
+                    <span
+                        class="coming-card__countdown-value"
+                        id="countdown-minutes"
+                    >
+                        00
+                    </span>
+
+                    <span class="coming-card__countdown-label">
+                        MINUTES
+                    </span>
+
+                </div>
+
+
+                <span
+                    class="coming-card__countdown-separator"
+                    aria-hidden="true"
+                >
+                    :
+                </span>
+
+
+                <div class="coming-card__countdown-item">
+
+                    <span
+                        class="coming-card__countdown-value"
+                        id="countdown-seconds"
+                    >
+                        00
+                    </span>
+
+                    <span class="coming-card__countdown-label">
+                        SECONDS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COUNTDOWN STATUS
+            ================================================== -->
+
+            <div class="coming-card__status">
+
+                <span class="coming-card__status-dot"></span>
+
+                <span id="countdown-status">
+                    PREPARING SOMETHING SPECIAL
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ACTION
+            ================================================== -->
+
+            <div class="coming-card__actions">
+
+                <a
+                    href="./index.html"
+                    class="btn btn-primary"
+                >
+
+                    <span>
+                        Back to Home
+                    </span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <div class="coming-card__bottom">
+
+                <div class="coming-card__bottom-left">
+
+                    <span>
+                        CURATING
+                    </span>
+
+                    <span>
+                        CREATING
+                    </span>
+
+                    <span>
+                        REFINING
+                    </span>
+
+                </div>
+
+
+                <span class="coming-card__bottom-brand">
+                    AURIA
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

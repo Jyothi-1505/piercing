@@ -552,6 +552,7 @@
 .shop-product:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-primary);
 }
 
 /* =========================================================
@@ -614,7 +615,7 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(255,255,255,.7);
+    border: 1px solid var(--color-primary);
     border-radius: 50%;
 
     background: rgba(255,255,255,.88);
@@ -671,11 +672,16 @@
     opacity: 1;
     transform: translateY(0);
 }
+.shop-product:hover .shop-product__view:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
 
 .shop-product__view svg {
     width: 13px;
     height: 13px;
 }
+
 
 /* =========================================================
    PRODUCT CONTENT
@@ -3804,5 +3810,467 @@ body.product-modal-open {
 
     [dir="rtl"] .jewelry-final-cta__visual-number {
         left: .7rem;
+    }
+}
+
+/* =========================================================
+   JEWELRY SHOP — DARK MODE VISIBILITY FIX
+========================================================= */
+
+/* Product view button */
+[data-theme="dark"] .shop-product__view {
+    background: #FFFFFF;
+    color: #3B2434;
+    border-color: #FFFFFF;
+}
+
+[data-theme="dark"] .shop-product__view svg {
+    color: #3B2434;
+    stroke: #3B2434;
+}
+
+[data-theme="dark"] .shop-product__view:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .shop-product__view:hover svg {
+    color: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+
+/* Wishlist icon */
+[data-theme="dark"] .shop-product__wishlist {
+    background: #FFFFFF;
+    color: #3B2434;
+    border-color: rgba(255, 255, 255, .8);
+}
+
+[data-theme="dark"] .shop-product__wishlist svg {
+    color: #3B2434;
+    stroke: #3B2434;
+}
+
+[data-theme="dark"] .shop-product__wishlist:hover {
+    background: var(--color-primary);
+    color: #FFFFFF;
+    border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .shop-product__wishlist:hover svg {
+    color: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+
+/* Product card text */
+[data-theme="dark"] .shop-product__content h3 {
+    color: var(--color-heading);
+}
+
+[data-theme="dark"] .shop-product__price,
+[data-theme="dark"] .shop-product__material {
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .shop-product__category {
+    color: var(--color-primary);
+}
+
+
+/* Product filters */
+[data-theme="dark"] .shop-products__filter {
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .shop-products__filter:hover,
+[data-theme="dark"] .shop-products__filter.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+/* =========================================================
+   JEWELRY STANDARD
+   CARD HOVER EFFECT
+========================================================= */
+
+.jewelry-standard__card {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        background-color 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+
+/* =========================================================
+   HOVER BACKGROUND
+========================================================= */
+
+.jewelry-standard__card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(192, 132, 151, 0.12) 0%,
+            rgba(192, 132, 151, 0.05) 48%,
+            transparent 100%
+        );
+
+    opacity: 0;
+
+    transform: translateY(18px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.jewelry-standard__card:hover::before {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   KEEP CONTENT ABOVE HOVER LAYER
+========================================================= */
+
+.jewelry-standard__visual,
+.jewelry-standard__card-content {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.jewelry-standard__card:hover {
+    background-color: var(--color-surface-secondary);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(192, 132, 151, 0.08);
+}
+
+
+/* =========================================================
+   VISUAL AREA
+========================================================= */
+
+.jewelry-standard__visual {
+    transition:
+        background-color 0.5s ease;
+}
+
+
+.jewelry-standard__card:hover .jewelry-standard__visual {
+    background-color: rgba(192, 132, 151, 0.04);
+}
+
+
+/* =========================================================
+   LARGE NUMBER
+========================================================= */
+
+.jewelry-standard__visual-number {
+    transition:
+        color 0.4s ease,
+        opacity 0.4s ease,
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__visual-number {
+    color: var(--color-primary);
+
+    opacity: 0.28;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   LUCIDE ICON
+========================================================= */
+
+.jewelry-standard__visual svg {
+    transition:
+        color 0.4s ease,
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__visual svg {
+    color: var(--color-primary);
+
+    transform:
+        translateY(-5px)
+        scale(1.12);
+}
+
+
+/* =========================================================
+   MATERIAL ICON
+========================================================= */
+
+.jewelry-standard__visual--material:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(-4deg);
+}
+
+
+/* =========================================================
+   FIT ICON
+========================================================= */
+
+.jewelry-standard__visual--fit:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(8deg);
+}
+
+
+/* =========================================================
+   CARE ICON
+========================================================= */
+
+.jewelry-standard__visual--care:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(-6deg);
+}
+
+
+/* =========================================================
+   VISUAL WORD
+========================================================= */
+
+.jewelry-standard__visual-word {
+    transition:
+        color 0.4s ease,
+        letter-spacing 0.45s ease;
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__visual-word {
+    color: var(--color-primary);
+
+    letter-spacing: 0.24em;
+}
+
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+
+.jewelry-standard__card-label {
+    transition:
+        color 0.4s ease,
+        letter-spacing 0.4s ease;
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__card-label {
+    color: var(--color-primary);
+
+    letter-spacing: 0.18em;
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.jewelry-standard__card-content h3 {
+    transition:
+        color 0.4s ease,
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__card-content h3 {
+    color: var(--color-primary);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.jewelry-standard__card-content p {
+    transition:
+        color 0.4s ease,
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.jewelry-standard__card:hover
+.jewelry-standard__card-content p {
+    color: var(--color-text);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RTL SUPPORT
+========================================================= */
+
+[dir="rtl"]
+.jewelry-standard__card:hover
+.jewelry-standard__card-content h3,
+[dir="rtl"]
+.jewelry-standard__card:hover
+.jewelry-standard__card-content p {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   RTL ICON MOVEMENT
+========================================================= */
+
+[dir="rtl"]
+.jewelry-standard__visual--material:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(4deg);
+}
+
+
+[dir="rtl"]
+.jewelry-standard__visual--fit:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(-8deg);
+}
+
+
+[dir="rtl"]
+.jewelry-standard__visual--care:hover svg {
+    transform:
+        translateY(-5px)
+        scale(1.12)
+        rotate(6deg);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+[data-theme="dark"]
+.jewelry-standard__card:hover {
+    background-color: var(--color-surface-secondary);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(192, 132, 151, 0.12);
+}
+
+
+[data-theme="dark"]
+.jewelry-standard__card:hover::before {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(192, 132, 151, 0.10),
+            rgba(192, 132, 151, 0.03) 55%,
+            transparent 100%
+        );
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Prevent sticky hover on mobile/tablet
+========================================================= */
+
+@media (hover: none) {
+
+    .jewelry-standard__card:hover {
+        background-color: inherit;
+
+        border-color: inherit;
+
+        box-shadow: none;
+    }
+
+    .jewelry-standard__card:hover::before {
+        opacity: 0;
+
+        transform: none;
+    }
+
+    .jewelry-standard__card:hover
+    .jewelry-standard__visual-number {
+        color: inherit;
+
+        opacity: inherit;
+
+        transform: none;
+    }
+
+    .jewelry-standard__card:hover
+    .jewelry-standard__visual svg {
+        color: inherit;
+
+        transform: none;
+    }
+
+    .jewelry-standard__card:hover
+    .jewelry-standard__visual-word {
+        color: inherit;
+
+        letter-spacing: inherit;
+    }
+
+    .jewelry-standard__card:hover
+    .jewelry-standard__card-label {
+        color: inherit;
+
+        letter-spacing: inherit;
+    }
+
+    .jewelry-standard__card:hover
+    .jewelry-standard__card-content h3,
+    .jewelry-standard__card:hover
+    .jewelry-standard__card-content p {
+        transform: none;
     }
 }

@@ -1,0 +1,1255 @@
+/* =========================================================
+   AURIA
+   TERMS & CONDITIONS PAGE
+========================================================= */
+
+
+/* =========================================================
+   01. PAGE
+========================================================= */
+
+.terms-page {
+    width: 100%;
+    min-width: 0;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color var(--transition-normal),
+        color var(--transition-normal);
+}
+
+
+/* =========================================================
+   02. FIXED CONTROLS
+========================================================= */
+
+.terms-page__controls {
+    position: fixed;
+
+    top: 20px;
+    right: 24px;
+
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+[dir="rtl"] .terms-page__controls {
+    right: auto;
+    left: 24px;
+}
+
+
+/* =========================================================
+   03. MAIN
+========================================================= */
+
+.terms-page__main {
+    position: relative;
+
+    width: 100%;
+    max-width: 100vw;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 90px 24px 50px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    isolation: isolate;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   04. BACKGROUND DECORATION
+========================================================= */
+
+.terms-page__main::before,
+.terms-page__main::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    opacity: 0.65;
+}
+
+
+.terms-page__main::before {
+    width: 380px;
+    height: 380px;
+
+    top: -300px;
+    left: -170px;
+}
+
+
+.terms-page__main::after {
+    width: 500px;
+    height: 500px;
+
+    right: -350px;
+    bottom: -350px;
+}
+
+
+/* =========================================================
+   05. CARD
+========================================================= */
+
+.terms-card {
+    width: 900px;
+
+    max-width: calc(100vw - 48px);
+
+    min-width: 0;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-soft);
+
+    overflow: hidden;
+
+    transition:
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+
+/* =========================================================
+   06. BRAND
+========================================================= */
+
+.terms-card__brand {
+    width: fit-content;
+
+    margin: 38px auto 30px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   07. HEADER
+========================================================= */
+
+.terms-card__header {
+    position: relative;
+
+    width: calc(100% - 100px);
+
+    margin: 0 auto;
+
+    padding-bottom: 42px;
+
+    text-align: center;
+
+    border-bottom: 1px solid var(--color-border);
+
+    box-sizing: border-box;
+}
+
+
+.terms-card__eyebrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.16em;
+}
+
+
+.terms-card__line {
+    width: 32px;
+    height: 1px;
+
+    flex: 0 0 32px;
+
+    background: var(--color-border);
+}
+
+
+.terms-card__number {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+
+    letter-spacing: 0.1em;
+}
+
+
+[dir="rtl"] .terms-card__number {
+    right: auto;
+    left: 0;
+}
+
+
+/* =========================================================
+   08. TITLE
+========================================================= */
+
+.terms-card__title {
+    margin: 0 auto 20px;
+
+    color: var(--color-heading);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(
+        3.5rem,
+        6vw,
+        5.4rem
+    );
+
+    font-weight: var(--weight-regular);
+
+    line-height: 0.92;
+
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+
+.terms-card__title span {
+    display: block;
+
+    color: var(--color-secondary);
+}
+
+
+/* =========================================================
+   09. INTRO
+========================================================= */
+
+.terms-card__intro {
+    width: 100%;
+
+    max-width: 620px;
+
+    margin: 0 auto 20px;
+
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   10. UPDATED
+========================================================= */
+
+.terms-card__updated {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.1em;
+}
+
+
+.terms-card__updated svg {
+    width: 13px;
+    height: 13px;
+
+    stroke-width: 1.5;
+}
+
+
+/* =========================================================
+   11. CONTENT
+========================================================= */
+
+.terms-card__content {
+    width: calc(100% - 100px);
+
+    margin: 0 auto;
+
+    padding: 8px 0 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   12. SECTION
+========================================================= */
+
+.terms-section {
+    display: grid;
+
+    grid-template-columns: 65px minmax(0, 1fr);
+
+    gap: 28px;
+
+    padding: 34px 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    box-sizing: border-box;
+}
+
+
+.terms-section--last {
+    border-bottom: 0;
+
+    padding-bottom: 25px;
+}
+
+
+/* =========================================================
+   13. NUMBER
+========================================================= */
+
+.terms-section__number {
+    padding-top: 5px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================================
+   14. BODY
+========================================================= */
+
+.terms-section__body {
+    min-width: 0;
+}
+
+
+.terms-section__body h2 {
+    margin: 0 0 13px;
+
+    color: var(--color-heading);
+
+    font-family: var(--font-heading);
+
+    font-size: 2rem;
+
+    font-weight: var(--weight-regular);
+
+    line-height: 1.1;
+
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+
+.terms-section__body p {
+    max-width: 680px;
+
+    margin: 0 0 13px;
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.terms-section__body p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   15. LIST
+========================================================= */
+
+.terms-section__body ul {
+    margin: 17px 0 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.terms-section__body li {
+    position: relative;
+
+    margin-bottom: 9px;
+
+    padding-left: 18px;
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+.terms-section__body li::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0.75em;
+    left: 0;
+
+    width: 5px;
+    height: 5px;
+
+    background: var(--color-primary);
+
+    border-radius: 50%;
+}
+
+
+[dir="rtl"] .terms-section__body li {
+    padding-left: 0;
+    padding-right: 18px;
+}
+
+
+[dir="rtl"] .terms-section__body li::before {
+    left: auto;
+    right: 0;
+}
+
+
+/* =========================================================
+   16. CONTACT LINK
+========================================================= */
+
+.terms-card__contact-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+
+    font-size: 11px;
+
+    font-weight: var(--weight-semibold);
+
+    letter-spacing: 0.04em;
+
+    text-decoration: none;
+
+    transition:
+        color var(--transition-fast),
+        gap var(--transition-fast);
+}
+
+
+.terms-card__contact-link svg {
+    width: 14px;
+    height: 14px;
+
+    stroke-width: 1.5;
+
+    transition:
+        transform var(--transition-fast);
+}
+
+
+.terms-card__contact-link:hover {
+    color: var(--color-secondary);
+
+    gap: 11px;
+}
+
+
+.terms-card__contact-link:hover svg {
+    transform: translate(2px, -2px);
+}
+
+
+[dir="rtl"] .terms-card__contact-link:hover svg {
+    transform: translate(-2px, -2px);
+}
+
+
+/* =========================================================
+   17. BOTTOM
+========================================================= */
+
+.terms-card__bottom {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 18px 50px;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+.terms-card__bottom-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+.terms-card__bottom-left span {
+    color: var(--color-muted);
+
+    font-family: var(--font-body);
+
+    font-size: 8px;
+
+    font-weight: var(--weight-medium);
+
+    letter-spacing: 0.1em;
+}
+
+
+.terms-card__bottom-brand {
+    flex-shrink: 0;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   18. RTL
+========================================================= */
+
+[dir="rtl"] .terms-card__bottom {
+    direction: rtl;
+}
+
+
+[dir="rtl"] .terms-card__bottom-left {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   19. DARK MODE
+========================================================= */
+
+[data-theme="dark"] .terms-card {
+    background: var(--color-surface);
+
+    border-color: var(--color-border);
+
+    box-shadow: var(--shadow-soft);
+}
+
+
+[data-theme="dark"] .terms-section__body p,
+[data-theme="dark"] .terms-section__body li {
+    color: var(--color-text);
+}
+
+
+[data-theme="dark"] .terms-card__intro {
+    color: var(--color-muted);
+}
+
+
+[data-theme="dark"] .terms-card__updated {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   20. 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .terms-page__main {
+        padding: 80px 24px 40px;
+    }
+
+
+    .terms-card {
+        width: 820px;
+
+        max-width: calc(100vw - 48px);
+    }
+
+
+    .terms-card__header,
+    .terms-card__content {
+        width: calc(100% - 80px);
+    }
+
+
+    .terms-card__title {
+        font-size: clamp(
+            3.4rem,
+            6vw,
+            4.8rem
+        );
+    }
+
+}
+
+
+/* =========================================================
+   21. 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .terms-page__main {
+        min-height: 100vh;
+
+        padding: 78px 20px 30px;
+    }
+
+
+    .terms-page__controls {
+        top: 16px;
+        right: 18px;
+
+        gap: 8px;
+    }
+
+
+    [dir="rtl"] .terms-page__controls {
+        right: auto;
+        left: 18px;
+    }
+
+
+    .terms-card {
+        width: 680px;
+
+        max-width: calc(100vw - 40px);
+
+        border-radius: var(--radius-lg);
+    }
+
+
+    .terms-card__brand {
+        margin-top: 32px;
+        margin-bottom: 26px;
+    }
+
+
+    .terms-card__header,
+    .terms-card__content {
+        width: calc(100% - 50px);
+    }
+
+
+    .terms-card__header {
+        padding-bottom: 32px;
+    }
+
+
+    .terms-card__eyebrow {
+        margin-bottom: 20px;
+    }
+
+
+    .terms-card__title {
+        font-size: 3.6rem;
+    }
+
+
+    .terms-card__intro {
+        max-width: 520px;
+
+        font-size: 13px;
+    }
+
+
+    .terms-section {
+        grid-template-columns: 48px minmax(0, 1fr);
+
+        gap: 18px;
+
+        padding: 28px 0;
+    }
+
+
+    .terms-section__body h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .terms-section__body p,
+    .terms-section__body li {
+        font-size: 13px;
+    }
+
+
+    .terms-card__bottom {
+        padding: 16px 25px;
+    }
+
+
+    .terms-card__bottom-left {
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   22. 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .terms-page__main {
+        min-height: 100vh;
+
+        padding: 65px 16px 20px;
+    }
+
+
+    .terms-page__controls {
+        top: 12px;
+        right: 12px;
+
+        gap: 8px;
+    }
+
+
+    [dir="rtl"] .terms-page__controls {
+        right: auto;
+        left: 12px;
+    }
+
+
+    .terms-card {
+        width: calc(100vw - 32px);
+
+        max-width: calc(100vw - 32px);
+
+        border-radius: var(--radius-md);
+    }
+
+
+    .terms-card__brand {
+        margin-top: 28px;
+        margin-bottom: 22px;
+    }
+
+
+    .terms-card__header,
+    .terms-card__content {
+        width: calc(100% - 30px);
+    }
+
+
+    .terms-card__header {
+        padding-bottom: 27px;
+    }
+
+
+    .terms-card__eyebrow {
+        gap: 8px;
+
+        margin-bottom: 18px;
+
+        font-size: 7px;
+    }
+
+
+    .terms-card__line {
+        width: 20px;
+
+        flex-basis: 20px;
+    }
+
+
+    .terms-card__number {
+        font-size: 8px;
+    }
+
+
+    .terms-card__title {
+        font-size: 2.8rem;
+
+        line-height: 0.98;
+    }
+
+
+    .terms-card__intro {
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    .terms-card__updated {
+        font-size: 7px;
+    }
+
+
+    .terms-card__updated svg {
+        width: 11px;
+        height: 11px;
+    }
+
+
+    .terms-card__content {
+        padding-top: 3px;
+    }
+
+
+    .terms-section {
+        grid-template-columns: 30px minmax(0, 1fr);
+
+        gap: 12px;
+
+        padding: 24px 0;
+    }
+
+
+    .terms-section__number {
+        padding-top: 3px;
+
+        font-size: 7px;
+    }
+
+
+    .terms-section__body h2 {
+        margin-bottom: 10px;
+
+        font-size: 1.55rem;
+
+        line-height: 1.1;
+    }
+
+
+    .terms-section__body p,
+    .terms-section__body li {
+        font-size: 11px;
+
+        line-height: 1.75;
+    }
+
+
+    .terms-section__body ul {
+        margin-top: 13px;
+    }
+
+
+    .terms-section__body li {
+        margin-bottom: 7px;
+
+        padding-left: 14px;
+    }
+
+
+    [dir="rtl"] .terms-section__body li {
+        padding-left: 0;
+        padding-right: 14px;
+    }
+
+
+    .terms-section__body li::before {
+        width: 4px;
+        height: 4px;
+    }
+
+
+    .terms-card__contact-link {
+        font-size: 9px;
+    }
+
+
+    .terms-card__bottom {
+        padding: 14px 16px;
+
+        gap: 8px;
+    }
+
+
+    .terms-card__bottom-left {
+        gap: 8px;
+    }
+
+
+    .terms-card__bottom-left span {
+        font-size: 6px;
+    }
+
+
+    .terms-card__bottom-brand {
+        font-size: 17px;
+    }
+
+
+    .terms-page__main::before {
+        width: 250px;
+        height: 250px;
+
+        top: -190px;
+        left: -140px;
+    }
+
+
+    .terms-page__main::after {
+        width: 330px;
+        height: 330px;
+
+        right: -230px;
+        bottom: -220px;
+    }
+
+}
+
+
+/* =========================================================
+   23. 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .terms-page__main {
+        width: 100%;
+        max-width: 100vw;
+
+        min-height: 100svh;
+
+        padding: 58px 12px 18px;
+
+        box-sizing: border-box;
+    }
+
+
+    .terms-page__controls {
+        position: fixed;
+
+        top: 10px;
+        right: 10px;
+
+        gap: 6px;
+    }
+
+
+    [dir="rtl"] .terms-page__controls {
+        right: auto;
+        left: 10px;
+    }
+
+
+    .terms-card {
+        width: calc(100vw - 24px);
+
+        max-width: calc(100vw - 24px);
+
+        min-width: 0;
+
+        border-radius: var(--radius-md);
+    }
+
+
+    .terms-card__brand {
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+
+
+    .terms-card__brand .brand-logo__image {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .terms-card__brand .brand-logo__main {
+        font-size: 21px;
+    }
+
+
+    .terms-card__brand .brand-logo__tagline {
+        font-size: 7px;
+    }
+
+
+    .terms-card__header,
+    .terms-card__content {
+        width: calc(100% - 22px);
+    }
+
+
+    .terms-card__header {
+        padding-bottom: 23px;
+    }
+
+
+    .terms-card__eyebrow {
+        gap: 6px;
+
+        margin-bottom: 15px;
+
+        font-size: 6px;
+
+        letter-spacing: 0.13em;
+    }
+
+
+    .terms-card__line {
+        width: 16px;
+
+        flex-basis: 16px;
+    }
+
+
+    .terms-card__number {
+        font-size: 7px;
+    }
+
+
+    .terms-card__title {
+        margin-bottom: 15px;
+
+        font-size: 2.35rem;
+
+        line-height: 1;
+    }
+
+
+    .terms-card__intro {
+        font-size: 10px;
+
+        line-height: 1.65;
+    }
+
+
+    .terms-card__updated {
+        font-size: 6px;
+
+        letter-spacing: 0.07em;
+    }
+
+
+    .terms-card__updated svg {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .terms-section {
+        grid-template-columns: 24px minmax(0, 1fr);
+
+        gap: 8px;
+
+        padding: 20px 0;
+    }
+
+
+    .terms-section__number {
+        padding-top: 2px;
+
+        font-size: 6px;
+    }
+
+
+    .terms-section__body {
+        min-width: 0;
+    }
+
+
+    .terms-section__body h2 {
+        margin-bottom: 8px;
+
+        font-size: 1.3rem;
+
+        line-height: 1.08;
+    }
+
+
+    .terms-section__body p,
+    .terms-section__body li {
+        font-size: 10px;
+
+        line-height: 1.7;
+    }
+
+
+    .terms-section__body ul {
+        margin-top: 11px;
+    }
+
+
+    .terms-section__body li {
+        padding-left: 12px;
+
+        margin-bottom: 6px;
+    }
+
+
+    [dir="rtl"] .terms-section__body li {
+        padding-left: 0;
+        padding-right: 12px;
+    }
+
+
+    .terms-section__body li::before {
+        width: 3px;
+        height: 3px;
+
+        top: 0.8em;
+    }
+
+
+    .terms-card__contact-link {
+        font-size: 8px;
+
+        gap: 6px;
+    }
+
+
+    .terms-card__contact-link svg {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .terms-card__bottom {
+        padding: 12px 13px;
+
+        gap: 6px;
+    }
+
+
+    .terms-card__bottom-left {
+        gap: 6px;
+    }
+
+
+    .terms-card__bottom-left span {
+        font-size: 5.5px;
+
+        letter-spacing: 0.04em;
+    }
+
+
+    .terms-card__bottom-brand {
+        font-size: 15px;
+    }
+
+
+    .terms-page__main::before {
+        width: 220px;
+        height: 220px;
+
+        top: -170px;
+        left: -120px;
+    }
+
+
+    .terms-page__main::after {
+        width: 280px;
+        height: 280px;
+
+        right: -200px;
+        bottom: -190px;
+    }
+
+}

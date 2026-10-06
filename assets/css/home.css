@@ -2464,7 +2464,11 @@
 
     background: var(--color-surface);
 }
+.testimonial-feature:hover {
+    transform: translateY(-4px);
 
+    border-color: var(--color-primary);
+}
 
 /* QUOTE */
 
@@ -2613,7 +2617,7 @@
 .testimonial-card__number {
     color: var(--color-primary);
 
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
 
     letter-spacing: 0.1em;
@@ -3378,7 +3382,7 @@ html[data-theme="dark"] .aftercare-section {
 
     margin: 0 auto;
 
-    padding: 5rem 4rem;
+    padding: 3rem 4rem;
 
     text-align: center;
 
