@@ -3917,3 +3917,1133 @@
     }
 
 }
+
+/* =========================================================
+   FINAL FIX — MOBILE HOME + DROPDOWN
+   HOME CENTERED
+   DROPDOWN DIRECTLY BELOW HOME
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       HOME DROPDOWN LIST ITEM
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-list
+    .navigation-item--dropdown {
+
+        position: relative !important;
+
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME BUTTON
+       Keep HOME exactly in the center
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle,
+
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link {
+
+        position: relative !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-height: 48px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+
+        padding: 8px 40px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME TEXT
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle > span,
+
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link > span {
+
+        display: block !important;
+
+        width: auto !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+
+        flex: 0 0 auto !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ARROW
+       Does NOT affect the centered HOME text
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle
+    .navigation-dropdown-icon,
+
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link
+    .navigation-dropdown-icon {
+
+        position: absolute !important;
+
+        top: 50% !important;
+        right: 20px !important;
+
+        width: 12px !important;
+        height: 12px !important;
+
+        margin: 0 !important;
+
+        transform: translateY(-50%) !important;
+
+        flex-shrink: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       RTL ARROW
+    ----------------------------------------------------- */
+
+    [dir="rtl"]
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle
+    .navigation-dropdown-icon,
+
+    [dir="rtl"]
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link
+    .navigation-dropdown-icon {
+
+        right: auto !important;
+        left: 20px !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN
+       FORCE IT BELOW HOME
+       NEVER BESIDE HOME
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown,
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-menu {
+
+        position: static !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+
+        margin: 0 !important;
+        padding: 4px 0 8px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        box-sizing: border-box !important;
+
+        transform: none !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN CLOSED
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown:not(.is-open)
+    .home-dropdown,
+
+    #main-navigation
+    .navigation-item--dropdown:not(.is-open)
+    .home-dropdown-menu {
+
+        max-height: 0 !important;
+
+        overflow: hidden !important;
+
+        opacity: 0 !important;
+
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN OPEN
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown.is-open
+    .home-dropdown,
+
+    #main-navigation
+    .navigation-item--dropdown.is-open
+    .home-dropdown-menu {
+
+        max-height: 180px !important;
+
+        overflow: visible !important;
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        margin: 0 !important;
+
+        padding: 4px 0 8px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN LIST
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown ul,
+
+    #main-navigation
+    .home-dropdown-menu ul {
+
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        list-style: none !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN ITEMS
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown li,
+
+    #main-navigation
+    .home-dropdown-menu li {
+
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN LINKS
+       CENTERED UNDER HOME
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown .dropdown-link,
+
+    #main-navigation
+    .home-dropdown-menu .dropdown-link,
+
+    #main-navigation
+    .home-dropdown-menu a {
+
+        position: relative !important;
+
+        width: 220px !important;
+        max-width: calc(100% - 40px) !important;
+
+        min-height: 40px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 8px !important;
+
+        margin: 2px auto !important;
+        padding: 7px 12px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        transform: none !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN NUMBER
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown
+    .dropdown-link__number,
+
+    #main-navigation
+    .home-dropdown-menu
+    .dropdown-link__number {
+
+        width: auto !important;
+        min-width: auto !important;
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN TEXT
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown
+    .dropdown-link > span:not(.dropdown-link__number),
+
+    #main-navigation
+    .home-dropdown-menu
+    .dropdown-link > span:not(.dropdown-link__number) {
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       CLASSIC / PREMIUM TEXT
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown
+    .dropdown-link strong,
+
+    #main-navigation
+    .home-dropdown-menu
+    .dropdown-link strong {
+
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    #main-navigation
+    .home-dropdown
+    .dropdown-link small,
+
+    #main-navigation
+    .home-dropdown-menu
+    .dropdown-link small {
+
+        display: block !important;
+
+        margin: 1px 0 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       REMOVE SIDE POSITIONING
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown,
+    
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-menu {
+
+        inset: auto !important;
+
+        float: none !important;
+
+        right: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px — COMPACT VERSION
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle,
+
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link {
+
+        min-height: 46px !important;
+
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle
+    .navigation-dropdown-icon,
+
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link
+    .navigation-dropdown-icon {
+
+        right: 16px !important;
+
+        width: 11px !important;
+        height: 11px !important;
+    }
+
+
+    [dir="rtl"]
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown-toggle
+    .navigation-dropdown-icon,
+
+    [dir="rtl"]
+    #main-navigation
+    .navigation-item--dropdown
+    > .navigation-link
+    .navigation-dropdown-icon {
+
+        right: auto !important;
+        left: 16px !important;
+    }
+
+
+    #main-navigation
+    .home-dropdown .dropdown-link,
+
+    #main-navigation
+    .home-dropdown-menu .dropdown-link,
+
+    #main-navigation
+    .home-dropdown-menu a {
+
+        width: 200px !important;
+
+        max-width: calc(100% - 30px) !important;
+
+        min-height: 38px !important;
+
+        padding: 6px 10px !important;
+
+        font-size: 11px !important;
+    }
+}
+
+/* =========================================================
+   MOBILE MENU — BOOK APPOINTMENT AT BOTTOM
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Keep appointment action after all navigation links */
+    #main-navigation .mobile-navigation-action {
+
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 14px 0 0 !important;
+
+        padding: 14px 0 4px !important;
+
+        border-top: 1px solid var(--color-border) !important;
+
+        box-sizing: border-box !important;
+
+        order: 999 !important;
+    }
+
+
+    /* Appointment button */
+    #main-navigation .mobile-navigation-action__button {
+
+        width: 220px !important;
+        max-width: calc(100% - 30px) !important;
+
+        min-height: 46px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 9px !important;
+
+        margin: 0 auto !important;
+
+        padding: 11px 20px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* Button icon */
+    #main-navigation
+    .mobile-navigation-action__button svg {
+
+        width: 15px !important;
+        height: 15px !important;
+
+        flex: 0 0 auto !important;
+    }
+
+
+    /* Make sure the navigation list comes before the button */
+    #main-navigation .navigation-list {
+
+        order: 1 !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px — MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    #main-navigation .mobile-navigation-action {
+
+        margin-top: 10px !important;
+
+        padding: 11px 0 3px !important;
+    }
+
+
+    #main-navigation .mobile-navigation-action__button {
+
+        width: 200px !important;
+
+        max-width: calc(100% - 24px) !important;
+
+        min-height: 43px !important;
+
+        padding: 9px 16px !important;
+
+        font-size: 11px !important;
+    }
+
+
+    #main-navigation
+    .mobile-navigation-action__button svg {
+
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+}
+/* =========================================================
+   MOBILE NAVIGATION — FINAL ALIGNMENT
+   ALL LINKS CENTERED
+   BOOK APPOINTMENT BELOW CONTACT
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       MAIN MOBILE NAVIGATION
+       Force everything into one vertical column
+    ----------------------------------------------------- */
+
+    #main-navigation {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        text-align: center !important;
+
+        margin: 0 !important;
+        padding: 0 20px 18px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVIGATION LIST
+       Full width + centered
+    ----------------------------------------------------- */
+
+    #main-navigation .navigation-list {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        list-style: none !important;
+
+        text-align: center !important;
+
+        order: 1 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       EVERY NAV ITEM
+    ----------------------------------------------------- */
+
+    #main-navigation .navigation-item {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       NORMAL NAV LINKS
+       Services / Jewelry Shop / Aftercare / Contact
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item:not(.navigation-item--dropdown)
+    .navigation-link {
+
+        width: 100% !important;
+
+        min-height: 44px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 8px 20px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ITEM
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown {
+
+        position: relative !important;
+
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME BUTTON
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .navigation-dropdown-toggle {
+
+        position: relative !important;
+
+        width: 100% !important;
+
+        min-height: 44px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 8px 35px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+
+    /* Home text stays perfectly centered */
+
+    #main-navigation
+    .navigation-dropdown-toggle > span {
+
+        display: block !important;
+
+        margin: 0 auto !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME ARROW
+       Keep arrow at the right without moving Home
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-dropdown-toggle
+    .navigation-dropdown-icon {
+
+        position: absolute !important;
+
+        top: 50% !important;
+        right: 18px !important;
+
+        width: 11px !important;
+        height: 11px !important;
+
+        margin: 0 !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+
+    /* RTL arrow */
+
+    [dir="rtl"]
+    #main-navigation
+    .navigation-dropdown-toggle
+    .navigation-dropdown-icon {
+
+        right: auto !important;
+        left: 18px !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HOME DROPDOWN
+       DIRECTLY BELOW HOME
+       NEVER BESIDE HOME
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .navigation-item--dropdown
+    .home-dropdown {
+
+        position: static !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: none !important;
+
+        text-align: center !important;
+    }
+
+
+    /* Closed dropdown */
+
+    #main-navigation
+    .navigation-item--dropdown:not(.is-open)
+    .home-dropdown {
+
+        max-height: 0 !important;
+
+        overflow: hidden !important;
+
+        opacity: 0 !important;
+
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+    }
+
+
+    /* Open dropdown */
+
+    #main-navigation
+    .navigation-item--dropdown.is-open
+    .home-dropdown {
+
+        max-height: 140px !important;
+
+        overflow: visible !important;
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        padding: 3px 0 6px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       DROPDOWN LINKS
+       CENTERED BELOW HOME
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .home-dropdown .dropdown-link {
+
+        width: 220px !important;
+
+        max-width: 90% !important;
+
+        min-height: 38px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 2px auto !important;
+
+        padding: 6px 12px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        transform: none !important;
+    }
+
+
+    /* Dropdown number */
+
+    #main-navigation
+    .home-dropdown .dropdown-link__number {
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 7px 0 0 !important;
+    }
+
+
+    /* Dropdown content */
+
+    #main-navigation
+    .home-dropdown .dropdown-link__content {
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    #main-navigation
+    .home-dropdown .dropdown-link__content small,
+    #main-navigation
+    .home-dropdown .dropdown-link__content strong {
+
+        display: block !important;
+
+        margin: 0 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       BOOK APPOINTMENT
+       MUST COME AFTER THE ENTIRE NAVIGATION LIST
+    ----------------------------------------------------- */
+
+    #main-navigation .mobile-navigation-action {
+
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        order: 2 !important;
+
+        margin: 10px 0 0 !important;
+        padding: 14px 0 0 !important;
+
+        border-top: 1px solid var(--color-border) !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+
+    /* -----------------------------------------------------
+       BOOK APPOINTMENT BUTTON
+    ----------------------------------------------------- */
+
+    #main-navigation
+    .mobile-navigation-action
+    .mobile-navigation-action__button {
+
+        width: 210px !important;
+
+        max-width: 100% !important;
+
+        min-height: 42px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 8px !important;
+
+        margin: 0 auto !important;
+
+        padding: 9px 18px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* Button icon */
+
+    #main-navigation
+    .mobile-navigation-action
+    .mobile-navigation-action__button svg {
+
+        width: 14px !important;
+        height: 14px !important;
+
+        flex: 0 0 auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    #main-navigation {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        padding-bottom: 14px !important;
+    }
+
+
+    #main-navigation
+    .navigation-dropdown-toggle {
+
+        min-height: 42px !important;
+    }
+
+
+    #main-navigation
+    .navigation-item:not(.navigation-item--dropdown)
+    .navigation-link {
+
+        min-height: 42px !important;
+    }
+
+
+    #main-navigation
+    .home-dropdown .dropdown-link {
+
+        width: 195px !important;
+
+        min-height: 35px !important;
+
+        padding: 5px 10px !important;
+    }
+
+
+    #main-navigation
+    .mobile-navigation-action {
+
+        margin-top: 8px !important;
+
+        padding-top: 11px !important;
+    }
+
+
+    #main-navigation
+    .mobile-navigation-action
+    .mobile-navigation-action__button {
+
+        width: 195px !important;
+
+        min-height: 40px !important;
+
+        padding: 8px 14px !important;
+
+        font-size: 11px !important;
+    }
+
+}
