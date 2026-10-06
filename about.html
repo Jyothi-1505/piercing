@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="AURIA Piercing & Jewelry Boutique — professional piercing services, curated jewelry and aftercare."
+    >
+<link rel="icon" type="image/png" href="./assets/images/logo/auria-logo.png">
+    <title>AURIA | Piercing & Jewelry Boutique</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+>
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+<link rel="stylesheet" href="./assets/css/global.css">
+<link rel="stylesheet" href="./assets/css/about.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- =====================================================
+         LUCIDE ICONS
+    ====================================================== -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SITE HEADER
+    ====================================================== -->
+
+<header 
+    class="site-header" 
+    id="site-header"
+>
+
+    <div class="container site-header__container">
+
+        <!-- =====================================================
+             LOGO
+        ====================================================== -->
+
+        <a 
+            href="./index.html" 
+            class="brand-logo" 
+            aria-label="AURIA Home"
+        >
+
+            <span class="brand-logo__image">
+
+                <img 
+                    src="./assets/images/logo/auria-logo.png"
+                    alt="AURIA logo"
+                    data-light-logo="assets/images/logo/auria-logo.png"
+                    data-dark-logo="assets/images/logo/auria-logo-dark.png"
+                >
+
+            </span>
+
+
+            <span class="brand-logo__content">
+
+                <span class="brand-logo__main">
+
+                    <span class="brand-logo__primary">
+                        AU
+                    </span>
+
+                    <span class="brand-logo__secondary">
+                        RIA
+                    </span>
+
+                </span>
+
+
+                <span class="brand-logo__tagline">
+                        PIERCING &amp; JEWELRY
+                    </span>
+
+            </span>
+
+        </a>
+
+
+        <!-- =====================================================
+             MAIN NAVIGATION
+        ====================================================== -->
+
+        <nav 
+            class="main-navigation" 
+            id="main-navigation" 
+            aria-label="Main navigation"
+        >
+
+            <ul class="navigation-list">
+
+
+                <!-- HOME -->
+                <li class="navigation-item navigation-item--dropdown">
+
+                    <button 
+                        type="button"
+                        class="navigation-link navigation-dropdown-toggle"
+                        id="home-dropdown-toggle"
+                        aria-expanded="false"
+                        aria-controls="home-dropdown"
+                    >
+
+                        <span>
+                            Home
+                        </span>
+
+                        <i 
+                            data-lucide="chevron-down"
+                            class="navigation-dropdown-icon"
+                        ></i>
+
+                    </button>
+
+
+                    <!-- HOME DROPDOWN -->
+
+                    <div 
+                        class="home-dropdown"
+                        id="home-dropdown"
+                    >
+
+                        <a 
+                            href="./index.html"
+                            class="dropdown-link"
+                            data-page="home1"
+                        >
+
+                            <span class="dropdown-link__number">
+                                01
+                            </span>
+
+                            <span class="dropdown-link__content">
+
+                                <small>
+                                    Home 1
+                                </small>
+
+                                <strong>
+                                    Classic
+                                </strong>
+
+                            </span>
+
+                        </a>
+
+
+                        <a 
+                            href="./home2.html"
+                            class="dropdown-link"
+                            data-page="home2"
+                        >
+
+                            <span class="dropdown-link__number">
+                                02
+                            </span>
+
+                            <span class="dropdown-link__content">
+
+                                <small>
+                                    Home 2
+                                </small>
+
+                                <strong>
+                                    Premium
+                                </strong>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- SERVICES -->
+                
+                <li class="navigation-item">
+
+                    <a 
+                        href="./about.html"
+                        class="navigation-link"
+                        data-page="about"
+                    >
+                        About
+                    </a>
+
+                </li>
+
+                <li class="navigation-item">
+
+                    <a 
+                        href="./services.html"
+                        class="navigation-link"
+                        data-page="services"
+                    >
+                        Services
+                    </a>
+
+                </li>
+
+                <!-- JEWELRY SHOP -->
+
+                <li class="navigation-item">
+
+                    <a 
+                        href="./jewelry-shop.html"
+                        class="navigation-link"
+                        data-page="jewelry-shop"
+                    >
+                        Jewelry Shop
+                    </a>
+
+                </li>
+
+
+                <!-- AFTERCARE -->
+
+                <li class="navigation-item">
+
+                    <a 
+                        href="./aftercare.html"
+                        class="navigation-link"
+                        data-page="aftercare"
+                    >
+                        Aftercare
+                    </a>
+
+                </li>
+
+
+                <!-- CONTACT -->
+
+                <li class="navigation-item">
+
+                    <a 
+                        href="./contact.html"
+                        class="navigation-link"
+                        data-page="contact"
+                    >
+                        Contact
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- =================================================
+                 MOBILE BOOK APPOINTMENT
+                 Appears BELOW CONTACT
+            ================================================== -->
+
+            <div class="mobile-navigation-action">
+
+                <a 
+                    href="./book-now.html"
+                    class="btn btn-primary mobile-navigation-action__button"
+                >
+
+                    <span>
+                        Book Appointment
+                    </span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =====================================================
+             HEADER ACTIONS
+        ====================================================== -->
+
+        <div class="header-actions">
+
+
+            <!-- RTL -->
+
+            <button 
+                type="button"
+                class="header-action"
+                id="rtl-toggle"
+                aria-label="Switch layout direction"
+            >
+                RTL
+            </button>
+
+
+            <!-- DARK MODE -->
+
+            <button 
+                type="button"
+                class="header-action header-action--theme"
+                id="theme-toggle"
+                aria-label="Toggle dark mode"
+            >
+
+                <i 
+                    data-lucide="moon"
+                    class="theme-icon theme-icon--moon"
+                ></i>
+
+                <i 
+                    data-lucide="sun"
+                    class="theme-icon theme-icon--sun"
+                ></i>
+
+            </button>
+
+
+            <!-- DESKTOP BOOK APPOINTMENT -->
+
+            <a 
+                href="./book-now.html"
+                class="btn btn-primary header-book-button"
+            >
+
+                <span>
+                    Book Appointment
+                </span>
+
+                <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button 
+                type="button"
+                class="mobile-menu-toggle"
+                id="mobile-menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+
+                <i 
+                    data-lucide="menu"
+                    class="mobile-menu-icon mobile-menu-icon--open"
+                ></i>
+
+                <i 
+                    data-lucide="x"
+                    class="mobile-menu-icon mobile-menu-icon--close"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+<!-- <div id="global-header"></div> -->
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main id="main-content">
+
+<section class="about-hero" id="about-hero">
+
+    <div class="about-hero__container container">
+
+        <!-- <div class="about-hero__top">
+
+            <div class="about-hero__eyebrow">
+                <span class="about-hero__line"></span>
+                <span>ABOUT AURIA</span>
+            </div>
+
+            <span class="about-hero__index">
+                01 / 07
+            </span>
+
+        </div> -->
+
+
+        <div class="about-hero__main">
+
+            <div class="about-hero__content">
+
+    <h1 class="about-hero__title">
+
+        <span>
+            Made for
+        </span>
+
+        <span class="about-hero__title-accent">
+            your expression.
+        </span>
+
+    </h1>
+
+
+    <p class="about-hero__description">
+        AURIA is a piercing and jewelry studio built around
+        thoughtful placement, considered jewelry and an
+        experience that feels entirely your own.
+    </p>
+
+
+    <!-- HERO POINTS -->
+
+    <div class="about-hero__points">
+
+        <div class="about-hero__point">
+
+            <span class="about-hero__point-number">
+                01
+            </span>
+
+            <div class="about-hero__point-content">
+
+                <h3>
+                    Thoughtful Placement
+                </h3>
+
+                <p>
+                    Piercings planned around your anatomy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-hero__point">
+
+            <span class="about-hero__point-number">
+                02
+            </span>
+
+            <div class="about-hero__point-content">
+
+                <h3>
+                    Curated Jewelry
+                </h3>
+
+                <p>
+                    Pieces selected for quality and individuality.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-hero__point">
+
+            <span class="about-hero__point-number">
+                03
+            </span>
+
+            <div class="about-hero__point-content">
+
+                <h3>
+                    Personal Experience
+                </h3>
+
+                <p>
+                    A calm experience from consultation to aftercare.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <div class="about-hero__visual">
+
+                <img
+                    src="./assets/images/about/hero.png"
+                    alt="AURIA piercing and jewelry"
+                    class="about-hero__image"
+                >
+
+                <span class="about-hero__image-label">
+                    AURIA / PIERCING / JEWELRY
+                </span>
+
+                <span class="about-hero__image-number">
+                    01
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-hero__bottom">
+
+            <span>
+                PRECISION / PERSONALITY / CARE
+            </span>
+
+            <span>
+                AURIA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-story" id="about-story">
+
+    <div class="about-story__container">
+
+        <!-- HEADER -->
+
+        <div class="about-story__header">
+
+            <div class="about-story__eyebrow">
+
+                <span class="about-story__line"></span>
+
+                <span>
+                    THE AURIA STORY
+                </span>
+
+            </div>
+
+            <!-- <span class="about-story__index">
+                02 / 07
+            </span> -->
+
+        </div>
+
+
+        <!-- MAIN -->
+
+        <div class="about-story__main">
+
+            <!-- LEFT -->
+
+            <div class="about-story__statement">
+
+                <!-- <span class="about-story__number">
+                    02
+                </span> -->
+
+                <h2 class="about-story__title">
+
+                    <span>
+                        More than
+                    </span>
+
+                    <span class="about-story__title-accent">
+                        a piercing.
+                    </span>
+
+                </h2>
+
+
+                <!-- IMAGE -->
+
+                <div class="about-story__image-wrap">
+
+                    <img
+                        src="./assets/images/about/section-2.png"
+                        alt="AURIA piercing experience"
+                        class="about-story__image"
+                    >
+
+                    <span class="about-story__image-label">
+                        AURIA / THE STORY
+                    </span>
+
+                    <span class="about-story__image-number">
+                        02
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <div class="about-story__content">
+
+                <p class="about-story__lead">
+                    AURIA was created for people who see
+                    piercing as part of their identity,
+                    not simply an appointment.
+                </p>
+
+                <p class="about-story__text">
+                    From thoughtful placement to carefully
+                    selected jewelry, every part of the
+                    experience is approached with intention.
+                    We believe the smallest details can become
+                    meaningful expressions of who you are.
+                </p>
+
+
+                <div class="about-story__details">
+
+                    <div class="about-story__detail">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Precision
+                            </h3>
+
+                            <p>
+                                Placement considered around
+                                your anatomy and expression.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-story__detail">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Curation
+                            </h3>
+
+                            <p>
+                                Jewelry selected for comfort,
+                                quality and personal style.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-story__detail">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Care
+                            </h3>
+
+                            <p>
+                                Guidance that continues beyond
+                                your appointment.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="about-story__footer">
+
+            <span>
+                PRECISION / CURATION / CARE
+            </span>
+
+            <span>
+                AURIA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-values" id="about-values">
+
+    <div class="about-values__container">
+
+        <!-- HEADER -->
+
+        <div class="about-values__header">
+
+            <div class="about-values__eyebrow">
+
+                <span class="about-values__line"></span>
+
+                <span>
+                    OUR PHILOSOPHY
+                </span>
+
+            </div>
+
+            <!-- <span class="about-values__index">
+                03 / 07
+            </span> -->
+
+        </div>
+
+
+        <!-- INTRO -->
+
+        <div class="about-values__intro">
+
+            <span class="about-values__number">
+                ...
+            </span>
+
+            <div class="about-values__heading">
+
+                <h2 class="about-values__title">
+
+                    <span>
+                        Wear what
+                    </span>
+
+                    <span class="about-values__title-accent">
+                        feels like you.
+                    </span>
+
+                </h2>
+
+            </div>
+
+            <p class="about-values__description">
+                There is no single way to wear AURIA.
+                Your jewelry can be subtle, expressive,
+                unexpected or completely your own.
+            </p>
+
+        </div>
+
+
+        <!-- PHILOSOPHY -->
+
+        <div class="about-values__list">
+
+            <!-- 01 -->
+
+            <article class="about-values__item">
+
+                <div class="about-values__item-top">
+
+                    <span>
+                        01
+                    </span>
+
+                    <i data-lucide="sparkles"></i>
+
+                </div>
+
+                <span class="about-values__item-label">
+                    INDIVIDUALITY
+                </span>
+
+                <h3>
+                    No two stories look alike.
+                </h3>
+
+                <p>
+                    Your choices do not need to follow a
+                    formula. We make space for the details
+                    that make your style distinctly yours.
+                </p>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="about-values__item">
+
+                <div class="about-values__item-top">
+
+                    <span>
+                        02
+                    </span>
+
+                    <i data-lucide="sun"></i>
+
+                </div>
+
+                <span class="about-values__item-label">
+                    EXPRESSION
+                </span>
+
+                <h3>
+                    Small details can speak loudly.
+                </h3>
+
+                <p>
+                    A single piece can change the feeling
+                    of a look. Sometimes the smallest
+                    detail says the most.
+                </p>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="about-values__item">
+
+                <div class="about-values__item-top">
+
+                    <span>
+                        03
+                    </span>
+
+                    <i data-lucide="smile"></i>
+
+                </div>
+
+                <span class="about-values__item-label">
+                    CONFIDENCE
+                </span>
+
+                <h3>
+                    Choose what feels right.
+                </h3>
+
+                <p>
+                    Trends come and go. The pieces you
+                    genuinely connect with are the ones
+                    worth keeping close.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="about-values__footer">
+
+            <span>
+                IDENTITY / EXPRESSION / CONFIDENCE
+            </span>
+
+            <span>
+                AURIA / 03
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-journey" id="about-journey">
+
+    <div class="about-journey__container">
+
+        <!-- HEADER -->
+
+        <div class="about-journey__header">
+
+            <div class="about-journey__eyebrow">
+
+                <span class="about-journey__line"></span>
+
+                <span>
+                    THE AURIA JOURNEY
+                </span>
+
+            </div>
+
+            <!-- <span class="about-journey__index">
+                04 / 07
+            </span> -->
+
+        </div>
+
+
+        <!-- INTRO -->
+
+        <div class="about-journey__intro">
+
+            <div class="about-journey__intro-main">
+
+                <span class="about-journey__kicker">
+                    FROM FIRST THOUGHT TO FINAL PIECE
+                </span>
+
+                <h2 class="about-journey__title">
+
+                    <span>
+                        It starts with
+                    </span>
+
+                    <span class="about-journey__title-accent">
+                        an idea.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="about-journey__intro-copy">
+
+                <span class="about-journey__copy-label">
+                    YOUR JOURNEY WITH AURIA
+                </span>
+
+                <p>
+                    Every AURIA story begins with a thought,
+                    becomes something personal, and ends with
+                    a piece that feels entirely your own.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOURNEY TIMELINE -->
+
+        <div class="about-journey__journey">
+
+
+            <!-- 01 -->
+
+            <article class="about-journey__step">
+
+                <div class="about-journey__marker">
+                    <span>01</span>
+                </div>
+
+                <div class="about-journey__content">
+
+                    <span class="about-journey__label">
+                        THE IDEA
+                    </span>
+
+                    <h3>
+                        Imagine it.
+                    </h3>
+
+                    <p>
+                        A feeling, a reference or simply the
+                        desire for something new becomes the
+                        beginning of your AURIA story.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="about-journey__step">
+
+                <div class="about-journey__marker">
+                    <span>02</span>
+                </div>
+
+                <div class="about-journey__content">
+
+                    <span class="about-journey__label">
+                        THE CONVERSATION
+                    </span>
+
+                    <h3>
+                        Talk it through.
+                    </h3>
+
+                    <p>
+                        We listen to what you want,
+                        understand your style and help
+                        shape the possibilities around you.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="about-journey__step">
+
+                <div class="about-journey__marker">
+                    <span>03</span>
+                </div>
+
+                <div class="about-journey__content">
+
+                    <span class="about-journey__label">
+                        THE CREATION
+                    </span>
+
+                    <h3>
+                        Make it yours.
+                    </h3>
+
+                    <p>
+                        Placement, proportion and jewelry
+                        come together to create something
+                        that feels distinctly personal.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 -->
+
+            <article class="about-journey__step">
+
+                <div class="about-journey__marker">
+                    <span>04</span>
+                </div>
+
+                <div class="about-journey__content">
+
+                    <span class="about-journey__label">
+                        THE MEMORY
+                    </span>
+
+                    <h3>
+                        Keep the feeling.
+                    </h3>
+
+                    <p>
+                        What began as an appointment becomes
+                        a piece of your personal expression,
+                        long after you leave the studio.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="about-journey__footer">
+
+            <span>
+                IDEA / CONVERSATION / CREATION / MEMORY
+            </span>
+
+            <span>
+                AURIA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-approach" id="about-approach">
+
+    <div class="about-approach__container">
+
+        <!-- HEADER -->
+
+        <div class="about-approach__header">
+
+            <div class="about-approach__eyebrow">
+
+                <span class="about-approach__line"></span>
+
+                <span>
+                    WHAT MATTERS TO US
+                </span>
+
+            </div>
+
+            <!-- <span class="about-approach__index">
+                05 / 07
+            </span> -->
+
+        </div>
+
+
+        <!-- MANIFESTO -->
+
+        <div class="about-approach__manifesto">
+
+            <!-- <span class="about-approach__manifesto-number">
+                05
+            </span> -->
+
+            <h2 class="about-approach__title">
+
+                <span>
+                    Good design
+                </span>
+
+                <span class="about-approach__title-accent">
+                    feels personal.
+                </span>
+
+            </h2>
+
+            <p class="about-approach__manifesto-text">
+                We believe the most meaningful pieces are the ones
+                that become part of your everyday life — chosen
+                because they feel right, not because they are expected.
+            </p>
+
+        </div>
+
+
+        <!-- PRINCIPLES -->
+
+        <div class="about-approach__principles">
+
+            <article class="about-approach__principle">
+
+                <div class="about-approach__principle-number">
+                    01
+                </div>
+
+                <div class="about-approach__principle-icon">
+                    <i data-lucide="eye"></i>
+                </div>
+
+                <div class="about-approach__principle-content">
+
+                    <span>
+                        SEE
+                    </span>
+
+                    <h3>
+                        Notice the details.
+                    </h3>
+
+                    <p>
+                        Style often lives in the smallest choices,
+                        from one subtle piece to an unexpected combination.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="about-approach__principle">
+
+                <div class="about-approach__principle-number">
+                    02
+                </div>
+
+                <div class="about-approach__principle-icon">
+                    <i data-lucide="compass"></i>
+                </div>
+
+                <div class="about-approach__principle-content">
+
+                    <span>
+                        EXPLORE
+                    </span>
+
+                    <h3>
+                        Follow your instinct.
+                    </h3>
+
+                    <p>
+                        There is room to experiment, change your mind
+                        and discover something you did not expect.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="about-approach__principle">
+
+                <div class="about-approach__principle-number">
+                    03
+                </div>
+
+                <div class="about-approach__principle-icon">
+                    <i data-lucide="circle-check"></i>
+                </div>
+
+                <div class="about-approach__principle-content">
+
+                    <span>
+                        KEEP
+                    </span>
+
+                    <h3>
+                        Choose what stays.
+                    </h3>
+
+                    <p>
+                        The pieces worth keeping are the ones that
+                        continue to feel like you long after the moment.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="about-approach__footer">
+
+            <span>
+                SEE / EXPLORE / KEEP
+            </span>
+
+            <span>
+                AURIA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-belief" id="about-belief">
+
+    <div class="about-belief__container">
+
+        <!-- HEADER -->
+
+        <div class="about-belief__header">
+
+            <div class="about-belief__eyebrow">
+                <span class="about-belief__line"></span>
+                <span>WHAT DEFINES AURIA</span>
+            </div>
+
+            <span class="about-belief__intro">
+                MORE THAN THE DETAIL
+            </span>
+
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <div class="about-belief__intro-block">
+
+            <span class="about-belief__number">
+                "
+            </span>
+
+            <h2 class="about-belief__title">
+                <span>Designed around</span>
+                <span class="about-belief__title-accent">
+                    you.
+                </span>
+            </h2>
+
+            <p class="about-belief__description">
+                Every part of AURIA is shaped around individuality —
+                from thoughtful piercing placement to jewelry that
+                becomes unmistakably yours.
+            </p>
+
+        </div>
+
+
+        <!-- FOUR PRINCIPLES -->
+
+        <div class="about-belief__principles">
+
+            <article class="about-belief__principle">
+
+                <span class="about-belief__principle-number">
+                    01
+                </span>
+
+                <div class="about-belief__icon">
+                    <i data-lucide="scan-line"></i>
+                </div>
+
+                <h3>
+                    INTENTIONAL
+                </h3>
+
+                <p>
+                    Every placement and every piece has a reason.
+                </p>
+
+            </article>
+
+
+            <article class="about-belief__principle">
+
+                <span class="about-belief__principle-number">
+                    02
+                </span>
+
+                <div class="about-belief__icon">
+                    <i data-lucide="sparkles"></i>
+                </div>
+
+                <h3>
+                    EXPRESSIVE
+                </h3>
+
+                <p>
+                    Your jewelry should reflect the person wearing it.
+                </p>
+
+            </article>
+
+
+            <article class="about-belief__principle">
+
+                <span class="about-belief__principle-number">
+                    03
+                </span>
+
+                <div class="about-belief__icon">
+                    <i data-lucide="heart"></i>
+                </div>
+
+                <h3>
+                    PERSONAL
+                </h3>
+
+                <p>
+                    No two stories need to look exactly the same.
+                </p>
+
+            </article>
+
+
+            <article class="about-belief__principle">
+
+                <span class="about-belief__principle-number">
+                    04
+                </span>
+
+                <div class="about-belief__icon">
+                    <i data-lucide="infinity"></i>
+                </div>
+
+                <h3>
+                    TIMELESS
+                </h3>
+
+                <p>
+                    Pieces chosen to stay meaningful beyond a moment.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- CLOSING LINE -->
+
+        <div class="about-belief__closing">
+
+            <span class="about-belief__closing-line"></span>
+
+            <p>
+                YOUR STYLE DOESN'T NEED TO FOLLOW A FORMULA.
+            </p>
+
+            <span class="about-belief__closing-line"></span>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="about-belief__footer">
+
+            <span>
+                INTENTIONAL / EXPRESSIVE / PERSONAL / TIMELESS
+            </span>
+
+            <span>
+                AURIA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-promise" id="about-promise">
+    <div class="about-promise__container">
+
+        <div class="about-promise__header">
+            <div class="about-promise__eyebrow">
+                <span class="about-promise__line"></span>
+                <span>THE AURIA PROMISE</span>
+            </div>
+
+            <!-- <span class="about-promise__index">07 / 07</span> -->
+        </div>
+
+        <div class="about-promise__content">
+
+            <!-- <span class="about-promise__number">07</span> -->
+
+            <div class="about-promise__statement">
+                <h2 class="about-promise__title">
+                    <span>Wear it.</span>
+                    <span>Own it.</span>
+                    <span class="about-promise__accent">Make it yours.</span>
+                </h2>
+
+                <p class="about-promise__description">
+                    From the first piercing to the piece you never take off,
+                    AURIA is here to make every detail feel personal.
+                </p>
+
+                <a href="./book-now.html" class="btn btn-primary about-promise__button">
+                    <span>Book Your Appointment</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="about-promise__orbit">
+            <span class="about-promise__orbit-word">PIERCE</span>
+            <span class="about-promise__orbit-word">STYLE</span>
+            <span class="about-promise__orbit-word">EXPRESS</span>
+            <span class="about-promise__orbit-word">BELONG</span>
+        </div>
+
+        <div class="about-promise__footer">
+            <span>YOUR BODY / YOUR STYLE / YOUR STORY</span>
+            <span>AURIA</span>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand-logo brand-logo--footer"
+                        aria-label="AURIA Home"
+                    >
+
+                        <span class="brand-logo__image">
+
+                            <img
+                                src="assets/images/logo/auria-logo.png"
+                                alt="AURIA logo"
+                            >
+
+                        </span>
+
+
+                        <span class="brand-logo__content">
+
+                            <span class="brand-logo__main">
+
+                                <span class="brand-logo__primary">
+                                    AU
+                                </span>
+
+                                <span class="brand-logo__secondary">
+                                    RIA
+                                </span>
+
+                            </span>
+
+
+                            <span class="brand-logo__tagline">
+                        PIERCING &amp; JEWELRY
+                    </span>
+
+                        </span>
+
+                    </a>
+
+
+                    <p class="footer-description">
+                        Professional piercing, carefully curated jewelry,
+                        and thoughtful aftercare — created to celebrate
+                        your individual style.
+                    </p>
+
+
+                    <div class="footer-socials" aria-label="Social media links">
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Facebook"
+    >
+        <i class="bi bi-facebook"></i>
+    </a>
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Instagram"
+    >
+        <i class="bi bi-instagram"></i>
+    </a>
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Twitter"
+    >
+        <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="YouTube"
+    >
+        <i class="bi bi-youtube"></i>
+    </a>
+
+</div>
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3 class="footer-title">
+                        Explore
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="jewelry-shop.html">
+                                Jewelry Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="aftercare.html">
+                                Aftercare
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="404.html">
+                                404 Page
+                            </a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3 class="footer-title">
+                        Services
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="services.html#ear-piercing">
+                                Ear Piercing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html#nose-piercing">
+                                Nose Piercing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html#body-piercing">
+                                Body Piercing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="jewelry-shop.html">
+                                Jewelry Styling
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="404.html">
+                                404 Page
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="coming-soon.html">
+                                Coming Soon
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="maintenance.html">
+                                Maintainance
+                            </a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column footer-column--contact">
+
+                    <h3 class="footer-title">
+                        Visit AURIA
+                    </h3>
+
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i data-lucide="map-pin"></i>
+
+                            <span>
+                                Your Studio Address<br>
+                                Hyderabad, India
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <i data-lucide="phone"></i>
+
+                            <a href="tel:+910000000000">
+                                +91 00000 00000
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <i data-lucide="mail"></i>
+
+                            <a href="mailto:hello@auria.com">
+                                hello@auria.com
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <div class="footer-hours">
+
+                        <span class="footer-hours__label">
+                            Studio Hours
+                        </span>
+
+                        <span>
+                            Mon – Sat · 10:00 AM – 7:00 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 AURIA Piercing & Jewelry Boutique.
+                    All rights reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms-conditions.html">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         GLOBAL JS
+    ====================================================== -->
+
+    <script src="./assets/js/global.js"></script>
+ <script src="https://unpkg.com/lucide@latest"></script>
+ <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
+   
+</body>
+
+</html>
